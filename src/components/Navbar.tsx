@@ -4,7 +4,7 @@ const Navbar = () => {
   const location = useLocation();
   
   const navLinks = [
-    { name: "All Blogs", path: "/" },
+    { name: "All Blogs", path: "/blog" },
     { name: "Math", path: "/category/math" },
     { name: "Music", path: "/category/music" },
     { name: "Tech", path: "/category/tech" },
