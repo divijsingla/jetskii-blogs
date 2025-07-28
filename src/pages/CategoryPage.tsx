@@ -20,7 +20,7 @@ const CategoryPage = () => {
       <BlogListSection
         posts={posts}
         headerLines={[
-          `Found ${posts.length} entries${posts.length !== 1 ? "s" : ""}  • Sorted by descending date`,
+          `Found ${posts.length} entries • Sorted by descending date`,
           "If you also think date sorted blog posts are boring, click here."
         ]}
         emptyState="No posts in this category yet."
