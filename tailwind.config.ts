@@ -61,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				blog: {
+					warm: 'hsl(var(--blog-warm))',
+					'warm-hover': 'hsl(var(--blog-warm-hover))',
+					shadow: 'hsl(var(--blog-shadow))',
+					tag: 'hsl(var(--blog-tag))',
+					'tag-hover': 'hsl(var(--blog-tag-hover))'
 				}
 			},
 			borderRadius: {

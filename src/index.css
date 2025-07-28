@@ -8,33 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm light brown & white theme for nerdy blog */
+    --background: 36 20% 98%;
+    --foreground: 25 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 35% 25%;
+    --primary-foreground: 36 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 36 40% 92%;
+    --secondary-foreground: 25 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 36 30% 94%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 50% 88%;
+    --accent-foreground: 25 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 36 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 36 25% 90%;
+    --input: 36 25% 90%;
+    --ring: 25 35% 25%;
+
+    /* Blog-specific design tokens */
+    --blog-warm: 35 40% 85%;
+    --blog-warm-hover: 35 50% 80%;
+    --blog-shadow: 25 25% 15%;
+    --blog-tag: 40 60% 75%;
+    --blog-tag-hover: 40 70% 70%;
 
     --radius: 0.5rem;
 
@@ -101,5 +109,33 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+    line-height: 1.6;
+  }
+
+  /* Blog-specific styles */
+  .blog-shadow {
+    box-shadow: 0 2px 8px -2px hsl(var(--blog-shadow) / 0.1);
+  }
+
+  .blog-shadow-hover {
+    box-shadow: 0 4px 16px -4px hsl(var(--blog-shadow) / 0.15);
+  }
+
+  .blog-tag {
+    background-color: hsl(var(--blog-tag));
+    transition: background-color 0.2s ease;
+  }
+
+  .blog-tag:hover {
+    background-color: hsl(var(--blog-tag-hover));
+  }
+
+  .blog-warm {
+    background-color: hsl(var(--blog-warm));
+  }
+
+  .blog-warm-hover:hover {
+    background-color: hsl(var(--blog-warm-hover));
   }
 }
