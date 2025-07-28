@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Warm light brown & white theme for nerdy blog */
-    --background: 36 20% 98%;
-    --foreground: 25 25% 15%;
+    /* Raw geek theme - terminal inspired */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 25% 15%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 25% 15%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 25 35% 25%;
-    --primary-foreground: 36 20% 98%;
+    --primary: 142 52% 45%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 36 40% 92%;
-    --secondary-foreground: 25 25% 15%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 36 30% 94%;
-    --muted-foreground: 25 15% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 35 50% 88%;
-    --accent-foreground: 25 25% 15%;
+    --accent: 60 100% 50%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 36 20% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 36 25% 90%;
-    --input: 36 25% 90%;
-    --ring: 25 35% 25%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 142 52% 45%;
 
-    /* Blog-specific design tokens */
-    --blog-warm: 35 40% 85%;
-    --blog-warm-hover: 35 50% 80%;
-    --blog-shadow: 25 25% 15%;
-    --blog-tag: 40 60% 75%;
-    --blog-tag-hover: 40 70% 70%;
+    /* Geek-specific design tokens */
+    --terminal-green: 142 52% 45%;
+    --terminal-amber: 45 100% 60%;
+    --code-bg: 0 0% 97%;
+    --divider: 0 0% 85%;
+    --post-hover: 142 52% 45%;
 
     --radius: 0.5rem;
 
@@ -110,32 +110,52 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
   }
 
-  /* Blog-specific styles */
-  .blog-shadow {
-    box-shadow: 0 2px 8px -2px hsl(var(--blog-shadow) / 0.1);
+  /* Terminal-inspired geek styles */
+  .terminal-cursor::after {
+    content: '▋';
+    animation: blink 1s infinite;
+    color: hsl(var(--terminal-green));
   }
 
-  .blog-shadow-hover {
-    box-shadow: 0 4px 16px -4px hsl(var(--blog-shadow) / 0.15);
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
   }
 
-  .blog-tag {
-    background-color: hsl(var(--blog-tag));
-    transition: background-color 0.2s ease;
+  .post-divider {
+    border-left: 2px solid hsl(var(--divider));
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+    transition: border-color 0.3s ease;
   }
 
-  .blog-tag:hover {
-    background-color: hsl(var(--blog-tag-hover));
+  .post-divider:hover {
+    border-left-color: hsl(var(--post-hover));
   }
 
-  .blog-warm {
-    background-color: hsl(var(--blog-warm));
+  .geek-tag {
+    background: hsl(var(--code-bg));
+    border: 1px solid hsl(var(--divider));
+    color: hsl(var(--terminal-green));
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 500;
   }
 
-  .blog-warm-hover:hover {
-    background-color: hsl(var(--blog-warm-hover));
+  .geek-tag:hover {
+    background: hsl(var(--terminal-green) / 0.1);
+    border-color: hsl(var(--terminal-green));
+  }
+
+  .ascii-art {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    line-height: 1;
+    color: hsl(var(--muted-foreground));
+    white-space: pre;
   }
 }

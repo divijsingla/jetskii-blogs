@@ -62,13 +62,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				blog: {
-					warm: 'hsl(var(--blog-warm))',
-					'warm-hover': 'hsl(var(--blog-warm-hover))',
-					shadow: 'hsl(var(--blog-shadow))',
-					tag: 'hsl(var(--blog-tag))',
-					'tag-hover': 'hsl(var(--blog-tag-hover))'
-				}
+				'terminal-green': 'hsl(var(--terminal-green))',
+				'terminal-amber': 'hsl(var(--terminal-amber))',
+				'code-bg': 'hsl(var(--code-bg))',
+				'divider': 'hsl(var(--divider))',
+				'post-hover': 'hsl(var(--post-hover))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

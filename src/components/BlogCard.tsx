@@ -17,47 +17,50 @@ interface BlogCardProps {
 
 const BlogCard = ({ post }: BlogCardProps) => {
   return (
-    <article className="bg-card border border-border rounded-lg p-6 blog-shadow hover:blog-shadow-hover transition-all duration-300 hover:-translate-y-1">
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-          <div className="flex items-center space-x-1">
-            <Calendar size={14} />
-            <time dateTime={post.date}>{post.date}</time>
-          </div>
-          <div className="flex items-center space-x-1">
-            <Clock size={14} />
-            <span>{post.readTime}</span>
-          </div>
-        </div>
+    <article className="py-8 post-divider group">
+      {/* Terminal-style header */}
+      <div className="flex items-center space-x-4 text-xs text-muted-foreground mb-2 font-mono">
+        <span className="text-primary">$</span>
+        <span>cat posts/{post.slug}.md</span>
+        <span className="text-muted-foreground">|</span>
+        <time dateTime={post.date}>{post.date}</time>
+        <span>({post.readTime})</span>
       </div>
       
-      <Link to={`/blog/${post.slug}`} className="group">
-        <h2 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+      {/* Title with terminal styling */}
+      <Link to={`/blog/${post.slug}`} className="group/title">
+        <h2 className="text-2xl font-bold text-foreground mb-3 group-hover/title:text-primary transition-colors duration-200">
+          <span className="text-muted-foreground text-lg mr-2">//</span>
           {post.title}
+          <span className="opacity-0 group-hover/title:opacity-100 transition-opacity text-primary ml-1">_</span>
         </h2>
       </Link>
       
-      <p className="text-muted-foreground mb-4 leading-relaxed">
+      {/* Excerpt */}
+      <div className="text-muted-foreground mb-4 leading-relaxed">
+        <span className="text-xs text-muted-foreground mr-2">→</span>
         {post.excerpt}
-      </p>
+      </div>
       
-      <div className="flex items-center justify-between">
+      {/* Footer */}
+      <div className="flex items-center justify-between mt-6">
         <div className="flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <span
+            <code
               key={tag}
-              className="inline-block px-3 py-1 text-xs font-medium blog-tag rounded-full text-foreground"
+              className="geek-tag px-2 py-1 rounded text-xs transition-all duration-200"
             >
-              #{tag}
-            </span>
+              {tag}
+            </code>
           ))}
         </div>
         
         <Link
           to={`/blog/${post.slug}`}
-          className="text-sm text-primary hover:text-primary/80 font-medium transition-colors"
+          className="text-sm text-primary hover:text-primary/80 font-medium transition-colors group/link"
         >
-          Read more →
+          <span className="group-hover/link:mr-2 transition-all">read</span>
+          <span className="text-terminal-green">--more</span>
         </Link>
       </div>
     </article>
