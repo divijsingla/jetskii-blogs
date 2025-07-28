@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Calendar, Clock } from "lucide-react";
 
 interface BlogPost {
   slug: string;
@@ -17,51 +16,24 @@ interface BlogCardProps {
 
 const BlogCard = ({ post }: BlogCardProps) => {
   return (
-    <article className="py-8 post-divider group">
-      {/* Terminal-style header */}
-      <div className="flex items-center space-x-4 text-xs text-muted-foreground mb-2 font-mono">
-        <span className="text-primary">$</span>
-        <span>cat posts/{post.slug}.md</span>
-        <span className="text-muted-foreground">|</span>
-        <time dateTime={post.date}>{post.date}</time>
-        <span>({post.readTime})</span>
-      </div>
-      
-      {/* Title with terminal styling */}
-      <Link to={`/blog/${post.slug}`} className="group/title">
-        <h2 className="text-2xl font-bold text-foreground mb-3 group-hover/title:text-primary transition-colors duration-200">
-          <span className="text-muted-foreground text-lg mr-2">//</span>
+    <article className="py-4">
+      <Link to={`/blog/${post.slug}`}>
+        <h2 className="text-lg text-foreground hover:text-primary">
           {post.title}
-          <span className="opacity-0 group-hover/title:opacity-100 transition-opacity text-primary ml-1">_</span>
         </h2>
       </Link>
-      
-      {/* Excerpt */}
-      <div className="text-muted-foreground mb-4 leading-relaxed">
-        <span className="text-xs text-muted-foreground mr-2">→</span>
-        {post.excerpt}
-      </div>
-      
-      {/* Footer */}
-      <div className="flex items-center justify-between mt-6">
-        <div className="flex flex-wrap gap-2">
-          {post.tags.map((tag) => (
-            <code
-              key={tag}
-              className="geek-tag px-2 py-1 rounded text-xs transition-all duration-200"
-            >
+      {/* <p className="mt-1 text-muted-foreground">{post.excerpt}</p> */}
+      <div className="mt-2 text-sm text-muted-foreground flex items-center gap-x-2">
+        <time dateTime={post.date}>{post.date}</time>
+        <span>&middot;</span>
+        <div className="flex flex-wrap gap-x-2">
+          {post.tags.map((tag, idx) => (
+            <span key={tag}>
               {tag}
-            </code>
+              {idx < post.tags.length - 1 ? "," : ""}
+            </span>
           ))}
         </div>
-        
-        <Link
-          to={`/blog/${post.slug}`}
-          className="text-sm text-primary hover:text-primary/80 font-medium transition-colors group/link"
-        >
-          <span className="group-hover/link:mr-2 transition-all">read</span>
-          <span className="text-terminal-green">--more</span>
-        </Link>
       </div>
     </article>
   );
