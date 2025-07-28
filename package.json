@@ -9,9 +9,8 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d dist",
-    "postbuild": "cp dist/index.html dist/404.html"
+    "predeploy": "vite build && cp dist/index.html dist/404.html",
+    "deploy": "gh-pages -d dist --dotfiles --add"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
