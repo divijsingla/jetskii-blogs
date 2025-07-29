@@ -1,6 +1,6 @@
 import BlogLayout from "@/components/BlogLayout";
 import BlogListSection from "@/components/BlogListSection";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts } from "@/blogPosts";
 
 const BlogList = () => {
   return (
@@ -9,7 +9,7 @@ const BlogList = () => {
         posts={blogPosts}
         headerLines={[
           `Found ${blogPosts.length} entries${blogPosts.length !== 1 ? "s" : ""}  • Sorted by descending date`,
-          "If you also think date sorted blog posts are boring, click here."
+          // "If you also think date sorted blog posts are boring, click here."
         ]}
         compact
       />

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import BlogLayout from "@/components/BlogLayout";
 import BlogListSection from "@/components/BlogListSection";
-import { getPostsByCategory } from "@/data/blogPosts";
+import { getPostsByCategory } from "@/blogPosts";
 
 const categoryTitles: Record<string, string> = {
   math: "Mathematics",
@@ -13,7 +13,6 @@ const categoryTitles: Record<string, string> = {
 const CategoryPage = () => {
   const { category } = useParams<{ category: string }>();
   const posts = category ? getPostsByCategory(category) : [];
-  const categoryTitle = category ? categoryTitles[category] || category : "Unknown Category";
 
   return (
     <BlogLayout>
@@ -21,7 +20,7 @@ const CategoryPage = () => {
         posts={posts}
         headerLines={[
           `Found ${posts.length} entries • Sorted by descending date`,
-          "If you also think date sorted blog posts are boring, click here."
+          // "If you also think date sorted blog posts are boring, click here."
         ]}
         emptyState="No posts in this category yet."
         compact
