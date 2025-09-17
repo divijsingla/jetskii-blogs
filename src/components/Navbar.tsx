@@ -9,6 +9,7 @@ const Navbar = () => {
     { name: "Music", path: "/category/music" },
     { name: "Tech", path: "/category/tech" },
     { name: "Misc", path: "/category/misc" },
+    { name: "Books", path: "/books" },
   ];
 
   const isActive = (path: string) => {

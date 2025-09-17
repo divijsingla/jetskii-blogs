@@ -1,17 +1,39 @@
 // Removed BlogPost interface for JS compatibility
-import fourierContent from './blogs/01_the-genesis-block.md?raw';
+import intro from './blogs/01_test-blog.md?raw';
+import rocket from './blogs/02_test-blog-2.md?raw';
+import schedule from './blogs/02_test-blog-3.md?raw';
 
 export const blogPosts = [
-  {
-    slug: "the-genesis-block",
-    title: "Blockchains, not Cryptocurrencies",
+    {
+    slug: "rocket",
+    title: "Massless rockets can't go to space (test blog)",
     excerpt: "",
-    content: fourierContent,
-    date: "2024-01-15",
+    content: rocket,
+    date: "15 September 2025",
+    readTime: "10 min read",
+    tags: [],
+    category: "misc"
+  },
+  {
+    slug: "schedule",
+    title: "My Schedule (test blog)",
+    excerpt: "",
+    content: schedule,
+    date: "28 August 2025",
+    readTime: "10 min read",
+    tags: [],
+    category: "misc"
+  },
+  {
+    slug: "intro",
+    title: "Randomness (test blog)",
+    excerpt: "",
+    content: intro,
+    date: "29 July 2025",
     readTime: "8 min read",
-    tags: ["mathematics", "blockchain", "cryptography"],
-    category: "tech"
-  }
+    tags: [],
+    category: "misc"
+  },
 ];
 
 export const getPostsByCategory = (category) => {
