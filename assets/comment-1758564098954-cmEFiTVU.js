@@ -1,0 +1,6 @@
+const e=`_id: 2fa4f8c0-97de-11f0-b316-8f423e966a1a
+name: Divij
+email: ''
+message: test
+date: '2025-09-22T18:01:38.952Z'
+`;export{e as default};
