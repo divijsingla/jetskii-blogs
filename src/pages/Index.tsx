@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <SuperPage isHome>
       <p>
-        This is a five thousand years old website from the future.
+        This is a five thousand year old website from the future.
       </p>
       <p>
         You can find my latest posts on the{" "}
