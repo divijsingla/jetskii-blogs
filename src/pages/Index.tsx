@@ -5,8 +5,7 @@ const Index = () => {
   return (
     <SuperPage isHome>
       <p>
-        This is a space for my thoughts on technology, startups, and
-        anything else that I find interesting.
+        This is a five thousand years old website from the future.
       </p>
       <p>
         You can find my latest posts on the{" "}

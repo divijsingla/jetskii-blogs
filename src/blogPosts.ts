@@ -5,35 +5,35 @@ import schedule from './blogs/02_test-blog-3.md?raw';
 
 export const blogPosts = [
   {
-    slug: "rocket",
-    title: "Massless rockets can't go to space (test blog)",
+    slug: "massless-rockets",
+    title: "Massless rockets can't go to space",
     excerpt: "",
     content: rocket,
     date: "15 September 2025",
     readTime: "10 min read",
-    tags: [],
+    tags: ["overthinking", "thought experiment"],
     category: "misc",
     image: "cars.jpeg"
   },
   {
-    slug: "schedule",
-    title: "My Schedule (test blog)",
+    slug: "my-schedule",
+    title: "My Schedule",
     excerpt: "",
     content: schedule,
     date: "28 August 2025",
     readTime: "10 min read",
-    tags: [],
+    tags: ["timetable", "tabletime"],
     category: "misc",
     image: "guitar.jpeg"
   },
   {
     slug: "intro",
-    title: "Randomness (test blog)",
+    title: "Randomness",
     excerpt: "",
     content: intro,
     date: "29 July 2025",
     readTime: "8 min read",
-    tags: [],
+    tags: ["intro", "hello world"],
     category: "misc",
     image: "mystery.jpeg"
   },

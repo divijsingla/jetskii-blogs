@@ -86,7 +86,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
         />
       </div>
       {error && <div className="text-red-600">{error}</div>}
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+  <button type="submit" className="bg-[hsl(24,60%,30%)] hover:bg-[hsl(24,60%,25%)] text-white px-4 py-2 rounded transition-colors">Submit</button>
     </form>
   );
 };

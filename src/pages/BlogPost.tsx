@@ -6,6 +6,7 @@ import { getPostBySlug } from "@/blogPosts";
 import { Button } from "@/components/ui/button";
 import SuperPage from "@/components/SuperPage";
 import { CommentForm } from "@/components/CommentForm";
+import { CommentList } from "@/components/CommentList";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -39,8 +40,11 @@ const BlogPost = () => {
     >
       {/* Minimalist Comment Section */}
       <section className="mt-12 border-t border-border pt-8">
-        <h2 className="text-xl font-semibold mb-4 text-[hsl(24,60%,30%)]">Want to say something?</h2>
+  <h2 className="text-xl font-semibold mb-4 text-[hsl(24,60%,30%)]">Want to say something?</h2>
         <CommentForm slug={slug ?? ""} />
+        <div className="mt-10">
+          <CommentList slug={slug ?? ""} />
+        </div>
       </section>
     </SuperPage>
   );
