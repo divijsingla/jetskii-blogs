@@ -4,7 +4,7 @@ import rocket from './blogs/02_test-blog-2.md?raw';
 import schedule from './blogs/02_test-blog-3.md?raw';
 
 export const blogPosts = [
-    {
+  {
     slug: "rocket",
     title: "Massless rockets can't go to space (test blog)",
     excerpt: "",
@@ -12,7 +12,8 @@ export const blogPosts = [
     date: "15 September 2025",
     readTime: "10 min read",
     tags: [],
-    category: "misc"
+    category: "misc",
+    image: "cars.jpeg"
   },
   {
     slug: "schedule",
@@ -22,7 +23,8 @@ export const blogPosts = [
     date: "28 August 2025",
     readTime: "10 min read",
     tags: [],
-    category: "misc"
+    category: "misc",
+    image: "guitar.jpeg"
   },
   {
     slug: "intro",
@@ -32,7 +34,8 @@ export const blogPosts = [
     date: "29 July 2025",
     readTime: "8 min read",
     tags: [],
-    category: "misc"
+    category: "misc",
+    image: "mystery.jpeg"
   },
 ];
 

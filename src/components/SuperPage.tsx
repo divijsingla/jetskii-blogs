@@ -9,6 +9,7 @@ interface SuperPageProps {
   readTime?: string;
   tags?: string[];
   content?: string;
+  image?: string;
   children?: React.ReactNode;
 }
 
@@ -21,6 +22,7 @@ const SuperPage = ({
   readTime,
   tags,
   content,
+  image,
   children
 }: SuperPageProps) => {
   return (
@@ -29,7 +31,11 @@ const SuperPage = ({
         {/* Top Image */}
         <img src={`${base}assets/heading.png`} alt="Heading" className="w-full max-w-xl mb-4 opacity-5" />
         <div className="flex gap-0 mb-2">
-          <img src={`${base}assets/drawing.jpeg`} alt="Visual" className="w-72 h-72 object-cover opacity-100" />
+          <img
+            src={`${base}assets/${image || "drawing.jpeg"}`}
+            alt="Visual"
+            className="w-72 h-72 object-cover opacity-100"
+          />
         </div>
         {/* Home Page Content */}
         {isHome ? (
@@ -49,9 +55,6 @@ const SuperPage = ({
                   <time dateTime={date}>{date}</time>
                 </div>
               )}
-              {/* {readTime && (
-                <span className="text-sm text-muted-foreground">{readTime}</span>
-              )} */}
             </div>
             {/* Tags */}
             {tags && tags.length > 0 && (
@@ -92,6 +95,8 @@ const SuperPage = ({
                 </div>
               </div>
             )}
+            {/* Render children after blog content (e.g., comments section) */}
+            {children}
           </>
         )}
       </div>

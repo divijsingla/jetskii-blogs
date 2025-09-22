@@ -1,0 +1,25 @@
+# Add the public key for Staticman encryption
+publicKey: -----BEGIN PUBLIC KEY-----
+  MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgHpZesDPgSMOMeF/nurQAy60J4VV
+  u1bYKeER2fRhOik/ZHT4R+dvqsMthkM1NEXLKaTlGZ3eJCT6RbsggPK+Dl88BbOj
+  xW3x3RdInk0gdviDIcGCR2BJG+z5tiZDuCqJpPrzW6OuF+yrluIALaVVOVAQwQO5
+  6hOs1viQ42XLSg03AgMBAAE=
+  -----END PUBLIC KEY-----
+# Staticman configuration for blog comments
+# Docs: https://staticman.net/docs/configuration.html
+
+comments:
+  allowedFields: ["name", "email", "message"]
+  requiredFields: ["name", "message"]
+  branch: "main"
+  path: "src/comments/{options.slug}"
+  filename: "comment-{@timestamp}"
+  format: "yml"
+  moderation: true
+  reCaptcha:
+    enabled: false
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
