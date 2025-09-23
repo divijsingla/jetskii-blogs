@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import CategoryPage from "./pages/CategoryPage";
 import BooksPage from "./pages/BooksPage";
 import NotFound from "./pages/NotFound";
+import AnalyticsWrapper from "@/components/AnalyticsWrapper";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/jetskii-blogs">
+        <AnalyticsWrapper />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<BlogList />} />
