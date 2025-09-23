@@ -1,3 +1,23 @@
+/* Brown headings and bold for markdown preview */
+.markdown-brown h1,
+.markdown-brown h2,
+.markdown-brown h3,
+.markdown-brown h4,
+.markdown-brown h5,
+.markdown-brown h6 {
+  color: hsl(24,60%,30%) !important;
+}
+.markdown-brown strong, .markdown-brown b {
+  color: hsl(24,60%,30%) !important;
+}
+@keyframes loading-bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-loading-bar {
+  animation: loading-bar 1.2s linear infinite;
+  will-change: transform;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

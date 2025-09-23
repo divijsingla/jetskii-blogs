@@ -79,8 +79,14 @@ const SuperPage = ({
                 <div className="w-full" style={{ maxWidth: '70rem' }}>
                   <MarkdownPreview 
                     source={content} 
-                    style={{ background: 'transparent', fontFamily: 'inherit', color: 'inherit', fontSize: '1rem' }}
-                    className="!bg-transparent !text-foreground !font-mono !text-base"
+                    style={{ 
+                      background: 'transparent', 
+                      fontFamily: 'inherit', 
+                      color: 'inherit', 
+                      fontSize: '1rem',
+                      '--brown': 'hsl(24,60%,30%)',
+                    } as React.CSSProperties}
+                    className="!bg-transparent !text-foreground !font-mono !text-base markdown-brown"
                     components={{
                       hr: (props) => (
                         <hr
