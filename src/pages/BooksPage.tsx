@@ -85,7 +85,7 @@ function BookRecommendationForm() {
   }
   return (
     <form className="mb-8 flex flex-col gap-2" onSubmit={handleSubmit} autoComplete="off">
-      <label htmlFor="book-recommendation" className="font-semibold text-[hsl(24,60%,30%)]">Book Recommendations!</label>
+      <label htmlFor="book-recommendation" className="font-semibold text-[hsl(24,60%,30%)]">Anonymous Book Recommendations!</label>
       <div className="flex flex-row gap-2 w-full">
         <input
           id="book-recommendation"
