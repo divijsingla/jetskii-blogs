@@ -23,6 +23,6 @@ Then COVID-era code met modern GitHub tokens, and the integrations exploded. I h
 
 ##
 
-If you’ve made it this far, you should have assumed it as your moral responsibility to drop a comment, unless you’re a psychopath who enjoys watching people suffer.
+If you’ve made it this far, you should have assumed it as your moral responsibility to drop a comment, unless you’re a psychopath who enjoys watching people suffer. I don't know, crack a bad joke, drop a conspiracy theory, share life advice, or just say something absurd. Whatever you do, don’t let this comment box go to waste.
 
 That said, I didn't want spam attacks from cryptocurrency scammers who run a thread of bots convincing each other how Alice is the best crypto portfolio manager you can have. So I've enabled moderation, and all your comments first get approved by me before they appear here on the website (yes, I deserve to be a dictator of my blog website).
