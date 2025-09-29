@@ -11,6 +11,7 @@ import CategoryPage from "./pages/CategoryPage";
 import BooksPage from "./pages/BooksPage";
 import NotFound from "./pages/NotFound";
 import AnalyticsWrapper from "@/components/AnalyticsWrapper";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/jetskii-blogs">
         <AnalyticsWrapper />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<BlogList />} />

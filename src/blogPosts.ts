@@ -25,7 +25,7 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["overthinking", "thought experiment"],
     category: "misc",
-    image: "cars.jpeg"
+    image: "car_and_bus_2.jpeg"
   },
   {
     slug: "my-schedule",
@@ -36,7 +36,7 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["timetable", "tabletime"],
     category: "misc",
-    image: "guitar.jpeg"
+    image: "el_metador.jpeg"
   },
   {
     slug: "intro",

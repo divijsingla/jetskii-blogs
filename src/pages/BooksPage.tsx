@@ -92,7 +92,7 @@ function BookRecommendationForm() {
           type="text"
           value={recommendation}
           onChange={e => setRecommendation(e.target.value)}
-          placeholder="Recommend a book, any book!"
+          placeholder="Recommend a book, any book."
           className="border border-[hsl(24,60%,80%)] rounded px-3 py-2 w-full sm:w-[32rem] focus:outline-none focus:ring-2 focus:ring-[hsl(24,60%,60%)]"
           required
         />
