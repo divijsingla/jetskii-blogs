@@ -92,7 +92,7 @@ function BookRecommendationForm() {
           type="text"
           value={recommendation}
           onChange={e => setRecommendation(e.target.value)}
-          placeholder="Recommend a book, any book! (Add your name or reason if you want)"
+          placeholder="Recommend a book, any book!"
           className="border border-[hsl(24,60%,80%)] rounded px-3 py-2 w-full sm:w-[32rem] focus:outline-none focus:ring-2 focus:ring-[hsl(24,60%,60%)]"
           required
         />
@@ -104,7 +104,7 @@ function BookRecommendationForm() {
         </button>
       </div>
       <div className="mt-1 text-xs italic text-muted-foreground">
-        You can include your name or a reason in the same field if you want. Or keep it mysterious!
+        You can include your name or a reason in the same field if you want. Or keep it mysterious. Randomness is welcome.
       </div>
       {error && <div className="text-red-600 text-xs mt-1">{error}</div>}
     </form>
