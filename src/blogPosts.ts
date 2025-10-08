@@ -22,7 +22,7 @@ export const blogPosts = [
     title: "A special one, for the special ones",
     excerpt: "",
     content: asileave,
-    date: "15 September 2025",
+    date: "8 October 2025",
     readTime: "10 min read",
     tags: ["goodbye", "emo"],
     category: "misc",
