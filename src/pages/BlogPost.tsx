@@ -84,23 +84,34 @@ So, type your name and step in, if you're one of the special ones, you'll be abl
       {/* Render extra images at the end if present */}
       {post.extraImages && post.extraImages.length > 0 && (
         <section className="mt-12 border-t border-border pt-8">
-          {/* First image full width */}
-          <div className="w-full flex justify-center mb-6">
+          {/* First image full width with caption */}
+          <div className="w-full flex flex-col items-center mb-6">
             <img
               src={`${import.meta.env.BASE_URL}assets/${post.extraImages[0]}`}
               alt={`Attached 1`}
               className="rounded-lg shadow border border-[hsl(24,60%,30%)] w-full max-w-3xl max-h-96 object-cover"
             />
+            {post.imageCaptions && post.imageCaptions[post.extraImages[0]] && (
+              <p className="text-center text-[hsl(24,60%,30%)] italic mt-2 font-medium">
+                {post.imageCaptions[post.extraImages[0]]}
+              </p>
+            )}
           </div>
-          {/* Middle images in pairs */}
+          {/* Middle images in pairs with captions */}
           <div className="flex flex-wrap gap-6 justify-center">
             {post.extraImages.slice(1, post.extraImages.length - 1).map((img, idx) => (
-              <img
-                key={idx + 1}
-                src={`${import.meta.env.BASE_URL}assets/${img}`}
-                alt={`Attached ${idx + 2}`}
-                className="rounded-lg shadow border border-[hsl(24,60%,30%)] max-w-xs max-h-80 object-cover"
-              />
+              <div key={idx + 1} className="flex flex-col items-center mb-4">
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/${img}`}
+                  alt={`Attached ${idx + 2}`}
+                  className="rounded-lg shadow border border-[hsl(24,60%,30%)] max-w-xs max-h-80 object-cover"
+                />
+                {post.imageCaptions && post.imageCaptions[img] && (
+                  <p className="text-center text-[hsl(24,60%,30%)] italic mt-2 font-medium max-w-xs">
+                    {post.imageCaptions[img]}
+                  </p>
+                )}
+              </div>
             ))}
           </div>
           {/* Last image full width, only if more than one image */}

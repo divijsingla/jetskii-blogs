@@ -37,6 +37,10 @@ export const blogPosts = [
       "memories_blr/01_wp.jpeg",
       "memories_blr/05_wp.jpeg"
     ],
+    imageCaptions: {
+      "memories_blr/02_wp.jpeg": "Last Sunday, despite Daksh having a fever and Hitesh just returning exhausted from a Mysore trip, they still made time to come see me before I leave",
+      "memories_blr/03_wp.jpeg": "Despite me ditching Gautam a day before, he still came to meet me even though he had to leave for a trip the next day",
+    },
     restrictedImages: [
       {
         src: "memories_blr/06_wp.jpeg",
