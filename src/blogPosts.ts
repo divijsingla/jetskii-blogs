@@ -58,8 +58,6 @@ export const blogPosts = [
     tags: ["overthinking", "thought experiment"],
     category: "misc",
     image: "car_and_bus_2.jpeg",
-    protected: true,
-    allowedNames: ["Alice", "Bob", "Charlie"]
   },
   {
     slug: "my-schedule",
