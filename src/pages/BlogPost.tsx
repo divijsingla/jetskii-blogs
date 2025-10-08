@@ -62,7 +62,7 @@ const BlogPost = () => {
             <div className="text-sm text-[hsl(24,60%,30%)] mb-4 text-center">Yeah, this isn't some top-tier encryption, it's actually pretty shitty. But that's the point.
 It's not about security; it's about effort.
 The fact that I sat down to code this page at 2AM just so only a few names could open it, that's me saying you matter. <br />
-So, type your name and step in, if you're one of the special ones</div>
+So, type your name and step in, if you're one of the special ones, you'll be able to read this.</div>
             <Button type="submit" className="w-full bg-[hsl(24,60%,30%)] text-white hover:bg-[hsl(24,60%,20%)]">Enter</Button>
           </form>
           {error && <p className="text-red-500 mt-2 text-center">{error}</p>}
