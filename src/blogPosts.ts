@@ -44,7 +44,7 @@ export const blogPosts = [
     restrictedImages: [
       {
         src: "memories_blr/06_wp.jpeg",
-        allowedNames: ["Aditi"]
+        allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Nikunj", "Hitesh", "Gautam", "Ujjawal"]
       }
     ]
   },
