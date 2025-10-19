@@ -59,7 +59,7 @@ Masters don’t act to reach somewhere, they act because action itself becomes t
 
 Dissatisfaction doesn’t exist when your actions are truly Nishkam, i.e. free from attachment to the result.
 
-That doesn’t mean “be content with everything” or “do nothing.” That’s against the very spirit of this. It’s not about being happy anywhere. If that were the goal, Krishna would’ve told Arjun to just walk away from the battlefield and meditate in the jungle, be happy anywhere.
+That doesn’t mean "be content with everything" or "do nothing". That’s against the very spirit of this. It’s not about being happy anywhere. If that were the goal, Krishna would’ve told Arjun to just walk away from the battlefield and meditate in the jungle, be happy anywhere.
 
 The question is: whatever you’re doing, is it being done out of your ego, or for Krishna, the Truth, the Higher self? If it’s ego driven, stop, it can't give you fulfilment. If it’s aligned with Truth, go on. That’s where real contentment lies.
 
@@ -69,10 +69,10 @@ Love, in its purest form, is the most natural example of Nishkam Karma. You don�
 
 They act with intensity, but without attachment. They fail, but they don’t crumble. They succeed, but they don’t lose themselves. Because for them, the act itself is the reward.
 
-When love or passion is pure, it doesn’t create conflict, it ends it. You stop asking, “Should I keep going?” and start feeling, “I can’t not do this.” That’s Nirvikalp. That’s freedom from the inner tug of options.
+When love or passion is pure, it doesn’t create conflict, it ends it. You stop asking, “Should I keep going?" and start feeling, “I can’t not do this". That’s Nirvikalp. That’s freedom from the inner tug of options.
 
 Love the process.
 
 ## Framework
 
-Eliminating choices is a big task but will always be followed if you completely internalise and face the root cause of the choices you feel. It feels tricky if can’t even clearly list down the choices our mind has made, let alone try to eliminate them. It requires immense focus and that's why ordinary people stay mediocre and conflicted.
+Eliminating choices is a big task but will always be followed if you completely internalise and face the root cause of the choices you feel. It feels tricky if one can’t even clearly list down the choices their mind has made, let alone try to eliminate them. It requires immense focus and that's why ordinary people stay mediocre and conflicted.
