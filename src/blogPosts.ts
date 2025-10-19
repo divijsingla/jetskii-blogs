@@ -3,20 +3,21 @@ import intro from './blogs/01_test-blog.md?raw';
 import rocket from './blogs/02_test-blog-2.md?raw';
 import schedule from './blogs/02_test-blog-3.md?raw';
 import paperchase from './blogs/04_paper-chase.md?raw';
+import basis from './blogs/05_basis.md?raw';
 import asileave from './blogs/04_as-i-leave.md?raw';
 
 export const blogPosts = [
-  // {
-  //   slug: "paper-chase",
-  //   title: "Paper chase",
-  //   excerpt: "",
-  //   content: paperchase,
-  //   date: "15 September 2025",
-  //   readTime: "10 min read",
-  //   tags: ["eternal green", "money"],
-  //   category: "tech",
-  //   image: "cars.jpeg"
-  // },
+  {
+    slug: "basis-of-effortlessness",
+    title: "Effortlessness",
+    excerpt: "",
+    content: basis,
+    date: "18 October 2025",
+    readTime: "10 min read",
+    tags: ["conflicts", "choices"],
+    category: "misc",
+    image: "scenery.jpeg"
+  },
   {
     slug: "a-special-one",
     title: "A special one, for the special ones",
@@ -28,7 +29,7 @@ export const blogPosts = [
     category: "misc",
     image: "heart.jpeg",
     protected: true,
-    allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Nikunj", "Hitesh", "Gautam", "Ujjawal"],
+    allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"],
     extraImages: [
       "memories_blr/02_wp.jpeg",
       "memories_blr/03_wp.jpeg",
@@ -44,7 +45,7 @@ export const blogPosts = [
     restrictedImages: [
       {
         src: "memories_blr/06_wp.jpeg",
-        allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Nikunj", "Hitesh", "Gautam", "Ujjawal"]
+        allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"]
       }
     ]
   },
