@@ -20,7 +20,7 @@ Where there’s no alternative, there’s no mental struggle. All psychological 
 
 When you’re nirvikalp, you’re peaceful. You can make peace with any situation no matter how difficult it is, as you know it is what it is and all other routes have already closed. So what’s the point of resisting? Even to feel good or bad, you need comparison among choices, and what is comparison for a person who is nirvikalp, for whom there is no concept of "choice".
 
-Effortlessness doesn’t mean there’s no physical work. It just means there’s no mental restlessness. The body and brain will still work hard, but the mind isn’t struggling anymore. Work stops when physical limits arrive, not mental ones. A Nishkam Karmi works intensely, not because they seek pleasure, but because pleasure has become irrelevant. They seek Truth.
+Effortlessness doesn’t mean there’s no physical work. It just means there’s no mental restlessness. The body and brain will still work hard, but the mind isn’t struggling anymore. Work stops when physical limits arrive, not mental ones. A Nishkaam Karmi works intensely, not because they seek pleasure, but because pleasure has become irrelevant. They seek Truth.
 
 ## Illusion of No Choice
 
@@ -40,24 +40,24 @@ But the world isn’t something separate from us. And what we’re truly seeking
 
 The search for completeness in the material world always fails.
 
-When we act with the hope of finding fulfillment or peace in the results, that’s Sakam Karma, action driven by desire.
+When we act with the hope of finding fulfillment or peace in the results, that’s Saakaam Karma, action driven by desire.
 
 Now I'm not asking you to leave the world and go sit on a mountain and say the nature is all false. Use nature as a path to achieve mastery while understanding whatever materialistic thing this nature has to offer won't lead to fulfilment.
 
-When we act without that craving, when the intent is not to squeeze satisfaction from the world but to transcend the world, that’s Nishkam Karma.
+When we act without that craving, when the intent is not to squeeze satisfaction from the world but to transcend the world, that’s Nishkaam Karma.
 The world then stops being the goal, and simply becomes the medium. Not the end, but the path.
 
 ## Mastery
 
 Einstein didn’t study time to win a Nobel Prize. Leonardo da Vinci didn't study nature for society to call him a genius. They studied it because they couldn’t not do it. The idea gripped them so deeply that the choice of not pursuing it simply didn’t exist. That’s what being Nirvikalp means, choiceless action born out of inner clarity.
 
-When action flows from that space, it generally becomes Nishkam Karma. There’s effort, but no restlessness. Work continues, but the mind stays still. The outcome stops mattering, because the process itself becomes sacred.
+When action flows from that space, it generally becomes Nishkaam Karma. There’s effort, but no restlessness. Work continues, but the mind stays still. The outcome stops mattering, because the process itself becomes sacred.
 
 Masters don’t act to reach somewhere, they act because action itself becomes their expression of truth. They don’t need results to validate them, the act of doing is the fulfillment.
 
 ## Dissatisfaction
 
-Dissatisfaction doesn’t exist when your actions are truly Nishkam, i.e. free from attachment to the result.
+Dissatisfaction doesn’t exist when your actions are truly Nishkaam, i.e. free from attachment to the result.
 
 That doesn’t mean "be content with everything" or "do nothing". That’s against the very spirit of this. It’s not about being happy anywhere. If that were the goal, Krishna would’ve told Arjun to just walk away from the battlefield and meditate in the jungle, be happy anywhere.
 
@@ -65,7 +65,7 @@ The question is: whatever you’re doing, is it being done out of your ego, or f
 
 ## Love
 
-Love, in its purest form, is the most natural example of Nishkam Karma. You don’t love to get something back. You love because that’s your nature in that moment. If it’s real, you don’t even think of alternatives. You don’t weigh the pros and cons of loving, you just do. That’s what makes it Nirvikalp, choiceless, effortless, yet all consuming. The artists who lose track of time, the founders who build without knowing if it’ll work.
+Love, in its purest form, is the most natural example of Nishkaam Karma. You don’t love to get something back. You love because that’s your nature in that moment. If it’s real, you don’t even think of alternatives. You don’t weigh the pros and cons of loving, you just do. That’s what makes it Nirvikalp, choiceless, effortless, yet all consuming. The artists who lose track of time, the founders who build without knowing if it’ll work.
 
 They act with intensity, but without attachment. They fail, but they don’t crumble. They succeed, but they don’t lose themselves. Because for them, the act itself is the reward.
 
