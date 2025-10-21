@@ -40,7 +40,7 @@ But the world isn’t something separate from us. And what we’re truly seeking
 
 The search for completeness in the material world always fails.
 
-When we act with the hope of finding fulfillment or peace in the results, that’s Saakaam Karma, action driven by desire.
+When we act with the hope of finding fulfillment or peace in the results, that’s Sakaam Karma, action driven by desire.
 
 Now I'm not asking you to leave the world and go sit on a mountain and say the nature is all false. Use nature as a path to achieve mastery while understanding whatever materialistic thing this nature has to offer won't lead to fulfilment.
 
