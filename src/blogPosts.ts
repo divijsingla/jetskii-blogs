@@ -15,7 +15,7 @@ export const blogPosts = [
     content: musings1,
     date: "18 October 2025",
     readTime: "10 min read",
-    tags: ["", ""],
+    tags: ["no need to rhyme", "im not free"],
     category: "musings",
     image: "wanna_fall_wide_awake.jpeg"
   },
