@@ -17,7 +17,7 @@ to uske bare me hi zyada keh raha hounga<br><br>
 Shabd kam karta mai gaya, kohish me hatane uske nishaan<br>
 Samit gaya ek hi lavz pe, vo bhi tha sala uska hi naam<br><br>
 Chuppi sadhni hi behtar samajh li fir<br>
-lagta hai prem karna hota hoga jataane se zyada aasaan<br>
+lagta hai prem karna hota hai jataane se zyada aasaan<br>
 </blockquote>
 
 <br><br>
