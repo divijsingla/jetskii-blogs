@@ -13,7 +13,7 @@ export const blogPosts = [
     title: "Wanna fall wide awake",
     excerpt: "",
     content: musings1,
-    date: "18 October 2025",
+    date: "",
     readTime: "10 min read",
     tags: ["no need to rhyme", "im not free"],
     category: "musings",
