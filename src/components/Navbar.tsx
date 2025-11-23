@@ -5,9 +5,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "All", path: "/blog" },
-    { name: "Math", path: "/category/math" },
-    { name: "Music", path: "/category/music" },
-    { name: "Tech", path: "/category/tech" },
+    // { name: "Math", path: "/category/math" },
+    { name: "Musings", path: "/category/musings" },
+    // { name: "Tech", path: "/category/tech" },
     { name: "Misc", path: "/category/misc" },
     { name: "Books", path: "/books" },
   ];

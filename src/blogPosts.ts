@@ -5,8 +5,20 @@ import schedule from './blogs/02_test-blog-3.md?raw';
 import paperchase from './blogs/04_paper-chase.md?raw';
 import basis from './blogs/05_basis.md?raw';
 import asileave from './blogs/04_as-i-leave.md?raw';
+import musings1 from './blogs/06_musings-1.md?raw';
 
 export const blogPosts = [
+  {
+    slug: "musings-1",
+    title: "Wanna fall wide awake",
+    excerpt: "",
+    content: musings1,
+    date: "18 October 2025",
+    readTime: "10 min read",
+    tags: ["", ""],
+    category: "musings",
+    image: "wanna_fall_wide_awake.jpeg"
+  },
   {
     slug: "basis-of-effortlessness",
     title: "Effortlessness",
