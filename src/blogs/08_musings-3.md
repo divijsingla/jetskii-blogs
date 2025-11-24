@@ -16,7 +16,7 @@ Life gets tricky like that sometimes,<br>
 makes you blur the places you once felt whole<br>
 You start hiding from the good parts,<br>
 start calling them mistakes<br>
-Don't fool yourself
+Fooling yourself is never good
 </blockquote>
 
 <br><br>

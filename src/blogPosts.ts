@@ -19,7 +19,10 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["love brings fear if we're weak", "we are weak"],
     category: "musings",
-    image: "heart_man.jpeg"
+    image: "heart_man.jpeg",
+    anonymousPrompt: {
+      title: "How can I make your life better?"
+    }
   },
   {
     slug: "musings-2",
@@ -30,7 +33,10 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["original thought", "it exists only for those who truly exist"],
     category: "musings",
-    image: "tower.jpeg"
+    image: "tower.jpeg",
+    anonymousPrompt: {
+      title: "If you were me for a moment, what part of me would you try to reshape?"
+    }
   },
   {
     slug: "musings-1",

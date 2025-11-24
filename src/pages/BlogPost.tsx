@@ -1,3 +1,90 @@
+// --- Anonymous Prompt Form Component ---
+function AnonymousPromptForm({ slug, promptTitle }) {
+  const [response, setResponse] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState("");
+  const [submitted, setSubmitted] = React.useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+    setSubmitted(false);
+    const actionUrl = `https://staticman-g2u2.onrender.com/v3/entry/github/divijsingla/jetskii-blogs/main/comments`;
+    const body = JSON.stringify({
+      fields: {
+        name: "MUSINGS-2",
+        email: "",
+        message: response
+      },
+      options: {
+        slug: slug
+      }
+    });
+    try {
+      const res = await fetch(actionUrl, {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body,
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        setResponse("");
+      } else {
+        setError("Failed to submit response. Please try again later.");
+      }
+    } catch (err) {
+      setError("Failed to submit response. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="p-4 bg-[hsl(24,60%,95%)] text-[hsl(24,60%,20%)] border border-[hsl(24,60%,40%)] rounded mb-8">
+        <div className="w-full h-2 mb-3 bg-[hsl(24,60%,85%)] rounded overflow-hidden">
+          <div className="h-full bg-[hsl(24,60%,40%)] animate-loading-bar" style={{ width: '100%' }}></div>
+        </div>
+        <span>Sending your response to the server gods...</span>
+      </div>
+    );
+  }
+  if (submitted) {
+    return (
+      <div className="p-4 bg-[hsl(24,60%,90%)] text-[hsl(24,60%,20%)] border border-[hsl(24,60%,40%)] rounded mb-8">
+        Got it, I'll reflect on it for sure! Thanks!
+      </div>
+    );
+  }
+  return (
+    <form className="mb-8 flex flex-col gap-2" onSubmit={handleSubmit} autoComplete="off">
+      <label htmlFor="anonymous-prompt-response" className="font-semibold text-[hsl(24,60%,30%)]">{promptTitle}</label>
+      <div className="flex flex-row gap-2 w-full">
+        <input
+          id="anonymous-prompt-response"
+          type="text"
+          value={response}
+          onChange={e => setResponse(e.target.value)}
+          placeholder="Your honest, anonymous answer..."
+          className="border border-[hsl(24,60%,80%)] rounded px-3 py-2 w-full sm:w-[32rem] focus:outline-none focus:ring-2 focus:ring-[hsl(24,60%,60%)]"
+          required
+        />
+        <button
+          type="submit"
+          className="bg-[hsl(24,60%,30%)] hover:bg-[hsl(24,60%,25%)] text-white px-4 py-2 rounded transition-colors"
+        >
+          Submit
+        </button>
+      </div>
+      <div className="mt-1 text-xs italic text-muted-foreground">
+Most probably you’ve met me, coz this blog website is not famous, lol. But even if not, based on my writings or whatever you know about me.      </div>
+      {error && <div className="text-red-600 text-xs mt-1">{error}</div>}
+    </form>
+  );
+}
 
 
 import React from "react";
@@ -81,6 +168,13 @@ So, type your name and step in, if you're one of the special ones, you'll be abl
       content={post.content}
       image={post.image}
     >
+      {/* Anonymous Prompt Form for musings-2 */}
+      {post.anonymousPrompt && (
+        <div className="mt-10">
+          <hr className="border-t border-[hsl(24,60%,80%)] mb-8" />
+          <AnonymousPromptForm slug={post.slug} promptTitle={post.anonymousPrompt.title} />
+        </div>
+      )}
       {/* Render extra images at the end if present */}
       {post.extraImages && post.extraImages.length > 0 && (
         <section className="mt-12 border-t border-border pt-8">
