@@ -11,20 +11,6 @@ import musings3 from './blogs/08_musings-3.md?raw';
 
 export const blogPosts = [
   {
-    slug: "musings-3",
-    title: "Don't give up, it's rare",
-    excerpt: "",
-    content: musings3,
-    date: "",
-    readTime: "10 min read",
-    tags: ["love brings fear if we're weak", "we are weak"],
-    category: "musings",
-    image: "heart_man.jpeg",
-    anonymousPrompt: {
-      title: "How can I make your life better?"
-    }
-  },
-  {
     slug: "musings-2",
     title: "Finding myself",
     excerpt: "",
@@ -48,6 +34,20 @@ export const blogPosts = [
     tags: ["no need to rhyme", "im not free"],
     category: "musings",
     image: "wanna_fall_wide_awake.jpeg"
+  },
+    {
+    slug: "musings-3",
+    title: "Don't give up, it's rare",
+    excerpt: "",
+    content: musings3,
+    date: "",
+    readTime: "10 min read",
+    tags: ["love brings fear if we're weak", "we are weak"],
+    category: "musings",
+    image: "heart_man.jpeg",
+    anonymousPrompt: {
+      title: "How can I make your life better?"
+    }
   },
   {
     slug: "basis-of-effortlessness",
