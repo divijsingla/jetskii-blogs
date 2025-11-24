@@ -12,7 +12,7 @@ import musings3 from './blogs/08_musings-3.md?raw';
 export const blogPosts = [
   {
     slug: "musings-3",
-    title: "Finding That",
+    title: "Don't give up, it's rare",
     excerpt: "",
     content: musings3,
     date: "",
