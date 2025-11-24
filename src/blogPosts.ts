@@ -6,8 +6,32 @@ import paperchase from './blogs/04_paper-chase.md?raw';
 import basis from './blogs/05_basis.md?raw';
 import asileave from './blogs/04_as-i-leave.md?raw';
 import musings1 from './blogs/06_musings-1.md?raw';
+import musings2 from './blogs/07_musings-2.md?raw';
+import musings3 from './blogs/08_musings-3.md?raw';
 
 export const blogPosts = [
+  {
+    slug: "musings-3",
+    title: "Finding That",
+    excerpt: "",
+    content: musings3,
+    date: "",
+    readTime: "10 min read",
+    tags: ["love brings fear if we're weak", "we are weak"],
+    category: "musings",
+    image: "heart_man.jpeg"
+  },
+  {
+    slug: "musings-2",
+    title: "Finding myself",
+    excerpt: "",
+    content: musings2,
+    date: "",
+    readTime: "10 min read",
+    tags: ["original thought", "it exists only for those who truly exist"],
+    category: "musings",
+    image: "tower.jpeg"
+  },
   {
     slug: "musings-1",
     title: "Wanna fall wide awake",
