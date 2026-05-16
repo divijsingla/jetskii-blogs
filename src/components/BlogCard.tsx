@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { Lock } from "lucide-react";
 
 const BlogCard = ({ post }) => {
+  const isProtected = !!post.protected;
   return (
     <article className="py-4">
       <div className="flex flex-row items-start gap-4 sm:gap-6 group sm:flex-nowrap flex-wrap">
@@ -15,10 +17,23 @@ const BlogCard = ({ post }) => {
           </Link>
         )}
         <div className="min-w-0 flex-1">
-          <Link to={`/blog/${post.slug}`}>
+          <Link
+            to={`/blog/${post.slug}`}
+            className="inline-flex items-baseline gap-2 flex-wrap"
+          >
             <h2 className="text-lg text-foreground group-hover:text-[hsl(24,60%,30%)] transition-colors break-words whitespace-normal">
               {post.title}
             </h2>
+            {isProtected && (
+              <span
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-[hsl(24,60%,30%)] text-[hsl(24,60%,30%)] bg-[hsl(24,60%,95%)] text-xs font-mono shrink-0"
+                title={post.protection?.type === "password" ? "Password protected" : "Private"}
+                aria-label={post.protection?.type === "password" ? "Password protected" : "Private"}
+              >
+                <Lock className="h-3 w-3" />
+                {post.protection?.type === "password" ? "password" : "private"}
+              </span>
+            )}
           </Link>
           {/* <p className="mt-1 text-muted-foreground">{post.excerpt}</p> */}
           <div className="mt-2 text-sm text-muted-foreground flex items-center gap-x-2 flex-wrap">

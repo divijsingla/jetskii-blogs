@@ -6,8 +6,9 @@ Is it mine? My original thought?<br>
 Or borrowed from someone else
 </blockquote>
 
-<br><br>
-
+<!-- 
+<br><br> -->
+<!-- 
 <blockquote style="color: #000000;">
 Kya vo sab kuch hi bata doon usse, ya kuch bhi na kahu,<br>
 Aisa na lage mai sochta hu bas uske bare,<br>
@@ -18,7 +19,7 @@ Shabd kam karta mai gaya, kohish me hatane uske nishaan<br>
 Samit gaya ek hi lavz pe, vo bhi tha sala uska hi naam<br><br>
 Chuppi sadhni hi behtar samajh li fir<br>
 lagta hai prem karna hota hai jataane se zyada aasaan<br>
-</blockquote>
+</blockquote> -->
 
 <br><br>
 

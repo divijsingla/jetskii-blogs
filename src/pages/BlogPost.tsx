@@ -96,10 +96,29 @@ import SuperPage from "@/components/SuperPage";
 import { CommentForm } from "@/components/CommentForm";
 import { CommentList } from "@/components/CommentList";
 
+// Generic gate for any post that has a `protection` config (or legacy allowedNames).
+// Returns the resolved protection config, or null if not protected.
+function getProtection(post) {
+  if (!post?.protected) return null;
+  if (post.protection) return post.protection;
+  // Legacy fallback: posts that used `allowedNames` directly.
+  if (post.allowedNames) {
+    return {
+      type: "names",
+      values: post.allowedNames,
+      label: "Enter your name to continue",
+      placeholder: "Your Name",
+      message: "Type your name to continue.",
+      errorMessage: "Sorry, you are not allowed to view this blog."
+    };
+  }
+  return null;
+}
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getPostBySlug(slug) : undefined;
-  const [name, setName] = React.useState("");
+  const [credential, setCredential] = React.useState("");
   const [allowed, setAllowed] = React.useState(false);
   const [error, setError] = React.useState("");
 
@@ -120,36 +139,47 @@ const BlogPost = () => {
     );
   }
 
+  const protection = getProtection(post);
+
   // Protected mode logic
-  if (post.protected && !allowed) {
+  if (protection && !allowed) {
+    const isPassword = protection.type === "password";
     return (
       <div className="min-h-screen flex items-center justify-center bg-[hsl(24,60%,94%)]">
         <div className="w-full max-w-sm p-8 rounded-lg shadow-lg border border-[hsl(24,60%,30%)] bg-white">
           <form
             onSubmit={e => {
               e.preventDefault();
-              if (post.allowedNames.some(n => n.toLowerCase() === name.trim().toLowerCase())) {
+              const entered = credential.trim().toLowerCase();
+              const matches = protection.values.some(
+                v => String(v).toLowerCase() === entered
+              );
+              if (matches) {
                 setAllowed(true);
                 setError("");
               } else {
-                setError("Sorry, you are not allowed to view this blog.");
+                setError(protection.errorMessage || "Incorrect, please try again.");
               }
             }}
           >
-            <label htmlFor="name" className="block text-lg font-medium text-[hsl(24,60%,30%)] mb-4 text-center">Enter your name to continue</label>
+            <label htmlFor="credential" className="block text-lg font-medium text-[hsl(24,60%,30%)] mb-4 text-center">
+              {protection.label}
+            </label>
             <input
-              id="name"
-              type="text"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              placeholder="Your Name"
+              id="credential"
+              type={isPassword ? "password" : "text"}
+              value={credential}
+              onChange={e => setCredential(e.target.value)}
+              placeholder={protection.placeholder || (isPassword ? "Password" : "Your Name")}
               className="border border-[hsl(24,60%,30%)] px-3 py-2 rounded w-full mb-2 focus:outline-none focus:ring-2 focus:ring-[hsl(24,60%,30%)] text-center"
               required
+              autoFocus
             />
-            <div className="text-sm text-[hsl(24,60%,30%)] mb-4 text-center">Yeah, this isn't some top-tier encryption, it's actually pretty shitty. But that's the point.
-It's not about security; it's about effort.
-The fact that I sat down to code this page at 2AM just so only a few names could open it, that's me saying you matter. <br />
-So, type your name and step in, if you're one of the special ones, you'll be able to read this.</div>
+            {protection.message && (
+              <div className="text-sm text-[hsl(24,60%,30%)] mb-4 text-center whitespace-pre-line">
+                {protection.message}
+              </div>
+            )}
             <Button type="submit" className="w-full bg-[hsl(24,60%,30%)] text-white hover:bg-[hsl(24,60%,20%)]">Enter</Button>
           </form>
           {error && <p className="text-red-500 mt-2 text-center">{error}</p>}
@@ -223,7 +253,7 @@ So, type your name and step in, if you're one of the special ones, you'll be abl
             <div className="w-full flex justify-center mt-6 overflow-auto">
               {post.restrictedImages.map((imgObj, idx) => {
                 // Only show if name matches allowedNames (case-insensitive)
-                if (name && imgObj.allowedNames.some(n => n.toLowerCase() === name.trim().toLowerCase())) {
+                if (credential && imgObj.allowedNames.some(n => n.toLowerCase() === credential.trim().toLowerCase())) {
                   return (
                     <img
                       key={idx}

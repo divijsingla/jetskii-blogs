@@ -10,6 +10,17 @@ import musings2 from './blogs/07_musings-2.md?raw';
 import musings3 from './blogs/08_musings-3.md?raw';
 
 export const blogPosts = [
+  // {
+  //   slug: "probab-1",
+  //   title: "Numbers game",
+  //   excerpt: "",
+  //   content: musings2,
+  //   date: "7 January 2026",
+  //   readTime: "10 min read",
+  //   tags: ["numbers", "probability", "second law"],
+  //   category: "math",
+  //   image: "tower.jpeg"
+  // },
   {
     slug: "musings-2",
     title: "Finding myself",
@@ -22,6 +33,15 @@ export const blogPosts = [
     image: "tower.jpeg",
     anonymousPrompt: {
       title: "If you were me for a moment, what part of me would you try to reshape?"
+    },
+    protected: true,
+    protection: {
+      type: "password",
+      values: ["Divij@123"],
+      label: "Enter the password to read",
+      placeholder: "Password",
+      message: "Some thoughts aren't meant for everyone. If I shared the password with you, you'll know what to type.",
+      errorMessage: "That's not it. Try again."
     }
   },
   {
@@ -33,7 +53,16 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["no need to rhyme", "im not free"],
     category: "musings",
-    image: "wanna_fall_wide_awake.jpeg"
+    image: "wanna_fall_wide_awake.jpeg",
+    protected: true,
+    protection: {
+      type: "password",
+      values: ["Divij@123"],
+      label: "Enter the password to read",
+      placeholder: "Password",
+      message: "Some thoughts aren't meant for everyone. If I shared the password with you, you'll know what to type.",
+      errorMessage: "That's not it. Try again."
+    }
   },
     {
     slug: "musings-3",
@@ -47,6 +76,15 @@ export const blogPosts = [
     image: "heart_man.jpeg",
     anonymousPrompt: {
       title: "How can I make your life better?"
+    },
+    protected: true,
+    protection: {
+      type: "password",
+      values: ["Divij@123"],
+      label: "Enter the password to read",
+      placeholder: "Password",
+      message: "Some thoughts aren't meant for everyone. If I shared the password with you, you'll know what to type.",
+      errorMessage: "That's not it. Try again."
     }
   },
   {
@@ -72,6 +110,14 @@ export const blogPosts = [
     image: "heart.jpeg",
     protected: true,
     allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"],
+    protection: {
+      type: "names",
+      values: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"],
+      label: "Enter your name to continue",
+      placeholder: "Your Name",
+      message: "Yeah, this isn't some top-tier encryption, it's actually pretty shitty. But that's the point.\nIt's not about security; it's about effort.\nThe fact that I sat down to code this page at 2AM just so only a few names could open it, that's me saying you matter.\nSo, type your name and step in, if you're one of the special ones, you'll be able to read this.",
+      errorMessage: "Sorry, you are not allowed to view this blog."
+    },
     extraImages: [
       "memories_blr/02_wp.jpeg",
       "memories_blr/03_wp.jpeg",
