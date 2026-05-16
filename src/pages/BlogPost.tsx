@@ -96,23 +96,10 @@ import SuperPage from "@/components/SuperPage";
 import { CommentForm } from "@/components/CommentForm";
 import { CommentList } from "@/components/CommentList";
 
-// Generic gate for any post that has a `protection` config (or legacy allowedNames).
-// Returns the resolved protection config, or null if not protected.
+// Returns the resolved protection config for a post, or null if it's not protected.
 function getProtection(post) {
-  if (!post?.protected) return null;
-  if (post.protection) return post.protection;
-  // Legacy fallback: posts that used `allowedNames` directly.
-  if (post.allowedNames) {
-    return {
-      type: "names",
-      values: post.allowedNames,
-      label: "Enter your name to continue",
-      placeholder: "Your Name",
-      message: "Type your name to continue.",
-      errorMessage: "Sorry, you are not allowed to view this blog."
-    };
-  }
-  return null;
+  if (!post?.protected || !post.protection) return null;
+  return post.protection;
 }
 
 const BlogPost = () => {

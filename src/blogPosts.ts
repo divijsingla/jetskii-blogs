@@ -40,7 +40,7 @@ export const blogPosts = [
       values: ["Divij@123"],
       label: "Enter the password to read",
       placeholder: "Password",
-      message: "Some thoughts aren't meant for everyone. If I shared the password with you, you'll know what to type.",
+      message: "This is a private blog.",
       errorMessage: "That's not it. Try again."
     }
   },
@@ -60,7 +60,7 @@ export const blogPosts = [
       values: ["Divij@123"],
       label: "Enter the password to read",
       placeholder: "Password",
-      message: "Some thoughts aren't meant for everyone. If I shared the password with you, you'll know what to type.",
+      message: "This is a private blog.",
       errorMessage: "That's not it. Try again."
     }
   },
@@ -83,7 +83,7 @@ export const blogPosts = [
       values: ["Divij@123"],
       label: "Enter the password to read",
       placeholder: "Password",
-      message: "Some thoughts aren't meant for everyone. If I shared the password with you, you'll know what to type.",
+      message: "This is a private blog.",
       errorMessage: "That's not it. Try again."
     }
   },
@@ -109,7 +109,6 @@ export const blogPosts = [
     category: "misc",
     image: "heart.jpeg",
     protected: true,
-    allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"],
     protection: {
       type: "names",
       values: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"],
