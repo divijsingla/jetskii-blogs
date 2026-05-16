@@ -8,7 +8,7 @@ const BlogList = () => {
       <BlogListSection
         posts={blogPosts}
         headerLines={[
-          `Found ${blogPosts.length} entries${blogPosts.length !== 1 ? "s" : ""}  • Sorted by descending date`,
+          `Found ${blogPosts.length} entr${blogPosts.length !== 1 ? "ies" : "y"}  • Sorted by descending date`,
           // "If you also think date sorted blog posts are boring, click here."
         ]}
         compact

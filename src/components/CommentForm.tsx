@@ -25,9 +25,9 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
 
   if (status === "loading") {
     return (
-      <div className="p-4 bg-[hsl(24,60%,95%)] text-[hsl(24,60%,20%)] border border-[hsl(24,60%,40%)] rounded">
-        <div className="w-full h-2 mb-3 bg-[hsl(24,60%,85%)] rounded overflow-hidden">
-          <div className="h-full bg-[hsl(24,60%,40%)] animate-loading-bar" style={{ width: '100%' }}></div>
+      <div className="p-4 bg-brand-95 text-brand-20 border border-brand-40 rounded">
+        <div className="w-full h-2 mb-3 bg-brand-85 rounded overflow-hidden">
+          <div className="h-full bg-brand-40 animate-loading-bar" style={{ width: '100%' }}></div>
         </div>
         <span>Sending your wit to the server gods...</span>
       </div>
@@ -35,7 +35,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
   }
 
   if (status === "submitted") {
-    return <div className="p-4 bg-[hsl(24,60%,90%)] text-[hsl(24,60%,20%)] border border-[hsl(24,60%,40%)] rounded">Nice one! Your comment is awaiting moderation.</div>;
+    return <div className="p-4 bg-brand-90 text-brand-20 border border-brand-40 rounded">Nice one! Your comment is awaiting moderation.</div>;
   }
 
   return (
@@ -73,7 +73,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
         />
       </div>
       {error && <div className="text-red-600">{error}</div>}
-      <button type="submit" className="bg-[hsl(24,60%,30%)] hover:bg-[hsl(24,60%,25%)] text-white px-4 py-2 rounded transition-colors">Submit</button>
+      <button type="submit" className="bg-brand hover:bg-brand-25 text-white px-4 py-2 rounded transition-colors">Submit</button>
     </form>
   );
 };

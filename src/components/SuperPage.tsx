@@ -45,7 +45,7 @@ const SuperPage = ({
           <>
             {/* Blog Title */}
             {title && (
-              <h1 className="text-3xl font-bold text-[hsl(24,60%,30%)] mb-2">{title}</h1>
+              <h1 className="text-3xl font-bold text-brand mb-2">{title}</h1>
             )}
             {/* Blog Meta */}
             <div className="flex flex-wrap items-center gap-4 mb-2">
@@ -58,11 +58,11 @@ const SuperPage = ({
             {/* Tags */}
             {tags && tags.length > 0 && (
               <div className="flex flex-wrap items-center gap-2 mt-1 text-sm mb-4">
-                <span className="mr-1 text-[hsl(24,60%,30%)]">tags:</span>
+                <span className="mr-1 text-brand">tags:</span>
                 {tags.map((tag) => (
                   <code
                     key={tag}
-                    className="geek-tag px-1 py-1 rounded text-sm transition-all duration-200 text-[hsl(24,60%,30%)] border-[hsl(24,60%,30%)]"
+                    className="geek-tag px-1 py-1 rounded text-sm transition-all duration-200 text-brand border-brand"
                   >
                     {tag}
                   </code>

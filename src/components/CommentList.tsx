@@ -49,13 +49,13 @@ export const CommentList: React.FC<CommentListProps> = ({ slug }) => {
   return (
     <div className="space-y-4 mb-8">
   <hr className="mb-6 border-border" />
-      <h3 className="text-lg font-semibold text-[hsl(24,60%,30%)] mb-2">Comments</h3>
+      <h3 className="text-lg font-semibold text-brand mb-2">Comments</h3>
       {comments.map((comment) => (
         <div
           key={comment._id}
-          className="bg-[hsl(24,60%,92%)] border border-[hsl(24,60%,70%)] rounded p-4 shadow-sm"
+          className="bg-brand-92 border border-brand-70 rounded p-4 shadow-sm"
         >
-          <div className="font-medium text-[hsl(24,60%,30%)]">{comment.name || "Anonymous"}</div>
+          <div className="font-medium text-brand">{comment.name || "Anonymous"}</div>
           <div className="text-sm text-muted-foreground mb-1">
             {comment.date ? new Date(comment.date).toLocaleString() : null}
           </div>

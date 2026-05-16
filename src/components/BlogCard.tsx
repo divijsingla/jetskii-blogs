@@ -27,12 +27,12 @@ const BlogCard = ({ post }: BlogCardProps) => {
             to={`/blog/${post.slug}`}
             className="inline-flex items-baseline gap-2 flex-wrap"
           >
-            <h2 className="text-lg text-foreground group-hover:text-[hsl(24,60%,30%)] transition-colors break-words whitespace-normal">
+            <h2 className="text-lg text-foreground group-hover:text-brand transition-colors break-words whitespace-normal">
               {post.title}
             </h2>
             {isProtected && (
               <span
-                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-[hsl(24,60%,30%)] text-[hsl(24,60%,30%)] bg-[hsl(24,60%,95%)] text-xs font-mono shrink-0"
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-brand text-brand bg-brand-95 text-xs font-mono shrink-0"
                 title={post.protection?.type === "password" ? "Password protected" : "Private"}
                 aria-label={post.protection?.type === "password" ? "Password protected" : "Private"}
               >
