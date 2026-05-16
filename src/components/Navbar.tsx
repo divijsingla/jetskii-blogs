@@ -1,14 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
+import { navCategories } from "@/data/categories";
 
 const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
     { name: "All", path: "/blog" },
-    // { name: "Math", path: "/category/math" },
-    { name: "Musings", path: "/category/musings" },
-    // { name: "Tech", path: "/category/tech" },
-    { name: "Misc", path: "/category/misc" },
+    ...navCategories.map((c) => ({
+      name: c.navLabel ?? c.label,
+      path: `/category/${c.id}`,
+    })),
     { name: "Books", path: "/books" },
   ];
 

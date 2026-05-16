@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { Lock } from "lucide-react";
+import { assetUrl } from "@/lib/assets";
+import type { BlogPost } from "@/types/blog";
 
-const BlogCard = ({ post }) => {
+interface BlogCardProps {
+  post: BlogPost;
+}
+
+const BlogCard = ({ post }: BlogCardProps) => {
   const isProtected = !!post.protected;
   return (
     <article className="py-4">
@@ -9,7 +15,7 @@ const BlogCard = ({ post }) => {
         {post.image && (
           <Link to={`/blog/${post.slug}`} tabIndex={-1} className="shrink-0">
             <img
-              src={`${import.meta.env.BASE_URL}assets/${post.image}`}
+              src={assetUrl(post.image)}
               alt={post.title + " cover"}
               className="w-[90px] h-[90px] sm:w-[120px] sm:h-[120px] md:w-[160px] md:h-[160px] aspect-square object-cover rounded-2xl bg-white"
               loading="lazy"

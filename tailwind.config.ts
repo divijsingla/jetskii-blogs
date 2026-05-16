@@ -51,6 +51,15 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				brand: {
+					DEFAULT: 'hsl(24 60% 30%)',
+					fg: 'hsl(24 60% 30%)',
+					hover: 'hsl(24 60% 25%)',
+					muted: 'hsl(24 60% 95%)',
+					soft: 'hsl(24 60% 90%)',
+					border: 'hsl(24 60% 80%)',
+					ring: 'hsl(24 60% 60%)'
 				}
 			},
 			borderRadius: {

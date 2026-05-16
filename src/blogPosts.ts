@@ -1,26 +1,17 @@
-// Removed BlogPost interface for JS compatibility
 import intro from './blogs/01_test-blog.md?raw';
 import rocket from './blogs/02_test-blog-2.md?raw';
 import schedule from './blogs/02_test-blog-3.md?raw';
-import paperchase from './blogs/04_paper-chase.md?raw';
 import basis from './blogs/05_basis.md?raw';
 import asileave from './blogs/04_as-i-leave.md?raw';
 import musings1 from './blogs/06_musings-1.md?raw';
 import musings2 from './blogs/07_musings-2.md?raw';
 import musings3 from './blogs/08_musings-3.md?raw';
 
-export const blogPosts = [
-  // {
-  //   slug: "probab-1",
-  //   title: "Numbers game",
-  //   excerpt: "",
-  //   content: musings2,
-  //   date: "7 January 2026",
-  //   readTime: "10 min read",
-  //   tags: ["numbers", "probability", "second law"],
-  //   category: "math",
-  //   image: "tower.jpeg"
-  // },
+import type { BlogPost } from "@/types/blog";
+import type { CategoryId } from "@/data/categories";
+import { privateBlogProtection } from "@/data/protectionPresets";
+
+export const blogPosts: BlogPost[] = [
   {
     slug: "musings-2",
     title: "Finding myself",
@@ -35,14 +26,7 @@ export const blogPosts = [
       title: "If you were me for a moment, what part of me would you try to reshape?"
     },
     protected: true,
-    protection: {
-      type: "password",
-      values: ["Divij@123"],
-      label: "Enter the password to read",
-      placeholder: "Password",
-      message: "This is a private blog.",
-      errorMessage: "That's not it. Try again."
-    }
+    protection: privateBlogProtection,
   },
   {
     slug: "musings-1",
@@ -55,16 +39,9 @@ export const blogPosts = [
     category: "musings",
     image: "wanna_fall_wide_awake.jpeg",
     protected: true,
-    protection: {
-      type: "password",
-      values: ["Divij@123"],
-      label: "Enter the password to read",
-      placeholder: "Password",
-      message: "This is a private blog.",
-      errorMessage: "That's not it. Try again."
-    }
+    protection: privateBlogProtection,
   },
-    {
+  {
     slug: "musings-3",
     title: "Don't give up, it's rare",
     excerpt: "",
@@ -78,14 +55,7 @@ export const blogPosts = [
       title: "How can I make your life better?"
     },
     protected: true,
-    protection: {
-      type: "password",
-      values: ["Divij@123"],
-      label: "Enter the password to read",
-      placeholder: "Password",
-      message: "This is a private blog.",
-      errorMessage: "That's not it. Try again."
-    }
+    protection: privateBlogProtection,
   },
   {
     slug: "basis-of-effortlessness",
@@ -96,7 +66,7 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["conflicts", "choices"],
     category: "misc",
-    image: "scenery.jpeg"
+    image: "scenery.jpeg",
   },
   {
     slug: "a-special-one",
@@ -115,7 +85,7 @@ export const blogPosts = [
       label: "Enter your name to continue",
       placeholder: "Your Name",
       message: "Yeah, this isn't some top-tier encryption, it's actually pretty shitty. But that's the point.\nIt's not about security; it's about effort.\nThe fact that I sat down to code this page at 2AM just so only a few names could open it, that's me saying you matter.\nSo, type your name and step in, if you're one of the special ones, you'll be able to read this.",
-      errorMessage: "Sorry, you are not allowed to view this blog."
+      errorMessage: "Sorry, you are not allowed to view this blog.",
     },
     extraImages: [
       "memories_blr/02_wp.jpeg",
@@ -123,7 +93,7 @@ export const blogPosts = [
       "memories_blr/07_wp.jpeg",
       "memories_blr/04_wp.jpeg",
       "memories_blr/01_wp.jpeg",
-      "memories_blr/05_wp.jpeg"
+      "memories_blr/05_wp.jpeg",
     ],
     imageCaptions: {
       "memories_blr/02_wp.jpeg": "Last Sunday, despite Daksh having a fever and Hitesh just returning exhausted from a Mysore trip, they still made time to come see me before I leave",
@@ -132,9 +102,9 @@ export const blogPosts = [
     restrictedImages: [
       {
         src: "memories_blr/06_wp.jpeg",
-        allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"]
-      }
-    ]
+        allowedNames: ["Rohan", "Vinayak", "Aditi", "Daksh", "Hitesh", "Gautam", "Ujjawal"],
+      },
+    ],
   },
   {
     slug: "massless-rockets",
@@ -156,7 +126,7 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["timetable", "tabletime"],
     category: "misc",
-    image: "el_metador.jpeg"
+    image: "el_metador.jpeg",
   },
   {
     slug: "intro",
@@ -167,15 +137,15 @@ export const blogPosts = [
     readTime: "8 min read",
     tags: ["intro", "hello world"],
     category: "misc",
-    image: "mystery.jpeg"
+    image: "mystery.jpeg",
   },
 ];
 
-export const getPostsByCategory = (category) => {
+export const getPostsByCategory = (category: CategoryId | "all" | string): BlogPost[] => {
   if (category === "all") return blogPosts;
-  return blogPosts.filter(post => post.category === category);
+  return blogPosts.filter((post) => post.category === category);
 };
 
-export const getPostBySlug = (slug) => {
-  return blogPosts.find(post => post.slug === slug);
+export const getPostBySlug = (slug: string): BlogPost | undefined => {
+  return blogPosts.find((post) => post.slug === slug);
 };

@@ -1,45 +1,17 @@
 // --- Anonymous Prompt Form Component ---
 function AnonymousPromptForm({ slug, promptTitle }) {
   const [response, setResponse] = React.useState("");
-  const [loading, setLoading] = React.useState(false);
-  const [error, setError] = React.useState("");
-  const [submitted, setSubmitted] = React.useState(false);
+  const { status, error, submit } = useStaticmanSubmit();
+  const loading = status === "loading";
+  const submitted = status === "submitted";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("");
-    setLoading(true);
-    setSubmitted(false);
-    const actionUrl = `https://staticman-g2u2.onrender.com/v3/entry/github/divijsingla/jetskii-blogs/main/comments`;
-    const body = JSON.stringify({
-      fields: {
-        name: "MUSINGS-2",
-        email: "",
-        message: response
-      },
-      options: {
-        slug: slug
-      }
+    await submit({
+      slug,
+      name: "MUSINGS-2",
+      message: response,
     });
-    try {
-      const res = await fetch(actionUrl, {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body,
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        setResponse("");
-      } else {
-        setError("Failed to submit response. Please try again later.");
-      }
-    } catch (err) {
-      setError("Failed to submit response. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
   };
 
   if (loading) {
@@ -95,6 +67,8 @@ import { Button } from "@/components/ui/button";
 import SuperPage from "@/components/SuperPage";
 import { CommentForm } from "@/components/CommentForm";
 import { CommentList } from "@/components/CommentList";
+import { useStaticmanSubmit } from "@/hooks/useStaticmanSubmit";
+import { assetUrl } from "@/lib/assets";
 
 // Returns the resolved protection config for a post, or null if it's not protected.
 function getProtection(post) {
@@ -198,7 +172,7 @@ const BlogPost = () => {
           {/* First image full width with caption */}
           <div className="w-full flex flex-col items-center mb-6">
             <img
-              src={`${import.meta.env.BASE_URL}assets/${post.extraImages[0]}`}
+              src={assetUrl(post.extraImages[0])}
               alt={`Attached 1`}
               className="rounded-lg shadow border border-[hsl(24,60%,30%)] w-full max-w-3xl max-h-96 object-cover"
             />
@@ -213,7 +187,7 @@ const BlogPost = () => {
             {post.extraImages.slice(1, post.extraImages.length - 1).map((img, idx) => (
               <div key={idx + 1} className="flex flex-col items-center mb-4">
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/${img}`}
+                  src={assetUrl(img)}
                   alt={`Attached ${idx + 2}`}
                   className="rounded-lg shadow border border-[hsl(24,60%,30%)] max-w-xs max-h-80 object-cover"
                 />
@@ -229,7 +203,7 @@ const BlogPost = () => {
           {post.extraImages.length > 1 && (
             <div className="w-full flex justify-center mt-6">
               <img
-                src={`${import.meta.env.BASE_URL}assets/${post.extraImages[post.extraImages.length - 1]}`}
+                src={assetUrl(post.extraImages[post.extraImages.length - 1])}
                 alt={`Attached ${post.extraImages.length}`}
                 className="rounded-lg shadow border border-[hsl(24,60%,30%)] w-full max-w-3xl max-h-96 object-cover"
               />
@@ -244,7 +218,7 @@ const BlogPost = () => {
                   return (
                     <img
                       key={idx}
-                      src={`${import.meta.env.BASE_URL}assets/${imgObj.src}`}
+                      src={assetUrl(imgObj.src)}
                       alt={`Restricted ${idx + 1}`}
                       className="rounded-lg shadow border border-[hsl(24,60%,30%)] h-auto w-auto max-w-full"
                       style={{ display: 'block', margin: '0 auto' }}

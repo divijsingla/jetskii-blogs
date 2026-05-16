@@ -1,6 +1,7 @@
 import BlogLayout from "@/components/BlogLayout";
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import { Link } from "react-router-dom";
+import { assetUrl } from "@/lib/assets";
 
 interface SuperPageProps {
   isHome?: boolean;
@@ -12,8 +13,6 @@ interface SuperPageProps {
   image?: string;
   children?: React.ReactNode;
 }
-
-const base = import.meta.env.BASE_URL;
 
 const SuperPage = ({
   isHome = false,
@@ -29,10 +28,10 @@ const SuperPage = ({
     <BlogLayout>
       <div className="max-w-2xl px-2 py-4 ml-0">
         {/* Top Image */}
-        <img src={`${base}assets/heading.png`} alt="Heading" className="w-full max-w-xl mb-4 opacity-5" />
+        <img src={assetUrl("heading.png")} alt="Heading" className="w-full max-w-xl mb-4 opacity-5" />
         <div className="flex gap-0 mb-2">
           <img
-            src={`${base}assets/${image || "drawing.jpeg"}`}
+            src={assetUrl(image || "drawing.jpeg")}
             alt="Visual"
             className="w-72 h-72 object-cover opacity-100"
           />

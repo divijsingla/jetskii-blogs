@@ -1,7 +1,8 @@
 import BlogCard from "@/components/BlogCard";
+import type { BlogPost } from "@/types/blog";
 
 interface BlogListSectionProps {
-  posts: any[];
+  posts: BlogPost[];
   headerLines: string[];
   emptyState?: string;
   compact?: boolean;

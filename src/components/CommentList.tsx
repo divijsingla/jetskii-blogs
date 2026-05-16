@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import yaml from "js-yaml";
-
-interface Comment {
-  _id: string;
-  name: string;
-  message: string;
-  date?: string;
-}
+import type { Comment } from "@/types/comment";
 
 interface CommentListProps {
   slug: string;

@@ -3,13 +3,6 @@ import BlogLayout from "@/components/BlogLayout";
 import BlogListSection from "@/components/BlogListSection";
 import { getPostsByCategory } from "@/blogPosts";
 
-const categoryTitles: Record<string, string> = {
-  math: "Mathematics",
-  music: "Music",
-  tech: "Technology",
-  misc: "Miscellaneous",
-};
-
 const CategoryPage = () => {
   const { category } = useParams<{ category: string }>();
   const posts = category ? getPostsByCategory(category) : [];

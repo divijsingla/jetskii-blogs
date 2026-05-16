@@ -1,14 +1,13 @@
 import React, { useState } from "react";
+import { useStaticmanSubmit } from "@/hooks/useStaticmanSubmit";
 
 interface CommentFormProps {
-  slug: string; // Unique identifier for the blog post
+  slug: string;
 }
 
 export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const { status, error, submit } = useStaticmanSubmit();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -16,41 +15,15 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError("");
-    setLoading(true);
-    const actionUrl = `https://staticman-g2u2.onrender.com/v3/entry/github/divijsingla/jetskii-blogs/main/comments`;
-    const body = JSON.stringify({
-      fields: {
-        name: form.name,
-        email: form.email,
-        message: form.message
-      },
-      options: {
-        slug
-      }
+    await submit({
+      slug,
+      name: form.name,
+      email: form.email,
+      message: form.message,
     });
-    try {
-      const res = await fetch(actionUrl, {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body,
-      });
-      if (res.ok) {
-        setSubmitted(true);
-      } else {
-        setError("Failed to submit comment. Please try again later.");
-      }
-    } catch (err) {
-      setError("Failed to submit comment. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
   };
 
-
-  if (loading) {
+  if (status === "loading") {
     return (
       <div className="p-4 bg-[hsl(24,60%,95%)] text-[hsl(24,60%,20%)] border border-[hsl(24,60%,40%)] rounded">
         <div className="w-full h-2 mb-3 bg-[hsl(24,60%,85%)] rounded overflow-hidden">
@@ -60,18 +33,8 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
       </div>
     );
   }
-/* Add this to your global CSS (e.g., index.css or tailwind.css) if not already present:
-@keyframes loading-bar {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-.animate-loading-bar {
-  animation: loading-bar 1.2s linear infinite;
-  will-change: transform;
-}
-*/
 
-  if (submitted) {
+  if (status === "submitted") {
     return <div className="p-4 bg-[hsl(24,60%,90%)] text-[hsl(24,60%,20%)] border border-[hsl(24,60%,40%)] rounded">Nice one! Your comment is awaiting moderation.</div>;
   }
 
@@ -110,7 +73,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ slug }) => {
         />
       </div>
       {error && <div className="text-red-600">{error}</div>}
-  <button type="submit" className="bg-[hsl(24,60%,30%)] hover:bg-[hsl(24,60%,25%)] text-white px-4 py-2 rounded transition-colors">Submit</button>
+      <button type="submit" className="bg-[hsl(24,60%,30%)] hover:bg-[hsl(24,60%,25%)] text-white px-4 py-2 rounded transition-colors">Submit</button>
     </form>
   );
 };

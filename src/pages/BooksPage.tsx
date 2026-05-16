@@ -1,69 +1,41 @@
 import React from "react";
 import BlogLayout from "@/components/BlogLayout";
-const base = import.meta.env.BASE_URL;
+import { useStaticmanSubmit } from "@/hooks/useStaticmanSubmit";
+import { assetUrl } from "@/lib/assets";
+
 const bookCovers = [
-  // Add your book cover filenames here as you upload them
-  { src: '/assets/book_covers/the_stranger.jpg', alt: "The Stranger, Albert Camus", reading: true },
-  { src: '/assets/book_covers/horrible_science.jpg', alt: "Horrible Science: Space, Stars and Slimy Aliens, Nick Arnold" },
-  { src: '/assets/book_covers/peter_atkins.jpg', alt: "Atkin's Physical Chemistry, Peter William Atkins", reading: true },
-  { src: '/assets/book_covers/paul_hoffman_erdos.jpg', alt: "The Man Who Loved Only Numbers, Paul Hoffman", reading: true },
-  { src: '/assets/book_covers/mastery.jpg', alt: "Mastery, Robert Greene" },
-  { src: '/assets/book_covers/almanack.jpg', alt: "The Almanack of Naval Ravikant, Eric Jorgenson" },
-  { src: `/assets/book_covers/cant_hurt_me.jpg`, alt: "Can't Hurt Me, David Goggins" },
-  { src: `/assets/book_covers/shoe_dog.jpg`, alt: "Shoe Dog, Phil Knight", reading: true },
-  // Add more as needed
+  { src: 'book_covers/the_stranger.jpg', alt: "The Stranger, Albert Camus", reading: true },
+  { src: 'book_covers/horrible_science.jpg', alt: "Horrible Science: Space, Stars and Slimy Aliens, Nick Arnold" },
+  { src: 'book_covers/peter_atkins.jpg', alt: "Atkin's Physical Chemistry, Peter William Atkins", reading: true },
+  { src: 'book_covers/paul_hoffman_erdos.jpg', alt: "The Man Who Loved Only Numbers, Paul Hoffman", reading: true },
+  { src: 'book_covers/mastery.jpg', alt: "Mastery, Robert Greene" },
+  { src: 'book_covers/almanack.jpg', alt: "The Almanack of Naval Ravikant, Eric Jorgenson" },
+  { src: 'book_covers/cant_hurt_me.jpg', alt: "Can't Hurt Me, David Goggins" },
+  { src: 'book_covers/shoe_dog.jpg', alt: "Shoe Dog, Phil Knight", reading: true },
 ];
 
 const childhoodBooks = [
-  { src: '/assets/book_covers/brief_history_of_time.jpg', alt: 'A Brief History of Time, Stephen Hawkings' },
-  { src: '/assets/book_covers/my_inventions.jpg', alt: 'My Inventions, Nikola Tesla' },
-  { src: '/assets/book_covers/a_wild_west_ride.jpg', alt: 'Magic Tree House, Mary Pope Osborne (A Wild West Ride, etc.)' },
-  { src: '/assets/book_covers/horrible_science_evil.jpg', alt: 'Horrible Science, Nick Arnold (some books of this series)' },
+  { src: 'book_covers/brief_history_of_time.jpg', alt: 'A Brief History of Time, Stephen Hawkings' },
+  { src: 'book_covers/my_inventions.jpg', alt: 'My Inventions, Nikola Tesla' },
+  { src: 'book_covers/a_wild_west_ride.jpg', alt: 'Magic Tree House, Mary Pope Osborne (A Wild West Ride, etc.)' },
+  { src: 'book_covers/horrible_science_evil.jpg', alt: 'Horrible Science, Nick Arnold (some books of this series)' },
 ];
 
 
 // --- Book Recommendation Form Component ---
 function BookRecommendationForm() {
   const [recommendation, setRecommendation] = React.useState("");
-  const [loading, setLoading] = React.useState(false);
-  const [error, setError] = React.useState("");
-  const [submitted, setSubmitted] = React.useState(false);
+  const { status, error, submit } = useStaticmanSubmit();
+  const loading = status === "loading";
+  const submitted = status === "submitted";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("");
-    setLoading(true);
-    setSubmitted(false);
-    const actionUrl = `https://staticman-g2u2.onrender.com/v3/entry/github/divijsingla/jetskii-blogs/main/comments`;
-    const body = JSON.stringify({
-      fields: {
-        name: "BOOK RECOMMENDATION", // No separate name field
-        email: "", // not used
-        message: recommendation
-      },
-      options: {
-        slug: "book-recommendations"
-      }
+    await submit({
+      slug: "book-recommendations",
+      name: "BOOK RECOMMENDATION",
+      message: recommendation,
     });
-    try {
-      const res = await fetch(actionUrl, {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body,
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        setRecommendation("");
-      } else {
-        setError("Failed to submit recommendation. Please try again later.");
-      }
-    } catch (err) {
-      setError("Failed to submit recommendation. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
   };
 
   if (loading) {
@@ -121,7 +93,7 @@ const BooksPage = () => {
           {bookCovers.map((book, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <img
-                src={`${base}${book.src}`}
+                src={assetUrl(book.src)}
                 alt={book.alt}
                 className="w-full max-w-[160px] aspect-[3/4] object-cover rounded-2xl shadow border-2 border-[hsl(24,60%,80%)] bg-white"
               />
@@ -139,7 +111,7 @@ const BooksPage = () => {
           {childhoodBooks.map((book, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <img
-                src={`${base}${book.src}`}
+                src={assetUrl(book.src)}
                 alt={book.alt}
                 className="w-full max-w-[160px] aspect-[3/4] object-cover rounded-2xl shadow border-2 border-[hsl(24,60%,80%)] bg-white"
               />
