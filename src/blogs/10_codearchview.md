@@ -1,6 +1,6 @@
 It's a Sunday afternoon, and I just spent the last few hours teaching this blog to draw a picture of itself.
 
-You can check out the graph from the [Architecture](/architecture) tab.
+You can check out the graph from the [Architecture](/jetskii-blogs/architecture) tab.
 
 ## Why
 

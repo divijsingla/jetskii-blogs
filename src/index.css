@@ -10,22 +10,23 @@
 .markdown-brown strong, .markdown-brown b {
   color: hsl(24,60%,30%) !important;
 }
-/* Brown links (override @uiw/react-markdown-preview's blue default) */
+/* Brown highlighted links (override @uiw/react-markdown-preview's blue default) */
 .markdown-brown a,
 .markdown-brown a:link,
 .markdown-brown a:visited {
-  color: hsl(24,60%,30%) !important;
-  text-decoration: underline !important;
-  text-decoration-color: hsl(24,60%,70%) !important;
-  text-decoration-thickness: 1px !important;
-  text-underline-offset: 2px !important;
+  color: hsl(24,60%,25%) !important;
+  text-decoration: none !important;
+  background-color: hsl(24,60%,90%);
+  padding: 0 0.15em;
+  border-radius: 2px;
+  transition: background-color 0.15s ease-in-out;
 }
 .markdown-brown a:hover,
 .markdown-brown a:focus {
-  color: hsl(24,60%,25%) !important;
-  text-decoration-color: hsl(24,60%,30%) !important;
+  background-color: hsl(24,60%,80%);
+  color: hsl(24,60%,20%) !important;
 }
-/* Inline code inside a link should inherit the brown link color */
+/* Inline code inside a link should inherit the link's foreground colour */
 .markdown-brown a code {
   color: inherit !important;
   background: transparent !important;

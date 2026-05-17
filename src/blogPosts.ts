@@ -15,14 +15,14 @@ import { privateBlogProtection } from "@/data/protectionPresets";
 export const blogPosts: BlogPost[] = [
   {
     slug: "codearchview",
-    title: "I taught this blog to draw a picture of itself",
+    title: "Blog now draws its own picture",
     excerpt: "A Sunday afternoon spent writing a tool that maps the wiring of a TypeScript codebase, then wiring that map into this site.",
     content: codearchview,
     date: "17 May 2026",
     readTime: "5 min read",
     tags: ["tools", "tree-sitter", "lsp", "for fun"],
     category: "tech",
-    image: "drawing.jpeg",
+    image: "graph.jpg",
   },
   {
     slug: "musings-2",

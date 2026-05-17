@@ -95,6 +95,23 @@ const SuperPage = ({
                           }}
                           {...props}
                         />),
+                      a: ({ href, children, ...props }) => {
+                        const isExternal =
+                          typeof href === "string" &&
+                          /^(https?:)?\/\//i.test(href) &&
+                          !href.startsWith(window.location.origin);
+                        return (
+                          <a
+                            href={href}
+                            {...(isExternal
+                              ? { target: "_blank", rel: "noopener noreferrer" }
+                              : {})}
+                            {...props}
+                          >
+                            {children}
+                          </a>
+                        );
+                      },
                     }}
                   />
                 </div>

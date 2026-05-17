@@ -9,7 +9,7 @@ export const categories = [
   { id: "musings", label: "Musings", inNav: true },
   { id: "misc", label: "Miscellaneous", navLabel: "Misc", inNav: true },
   { id: "math", label: "Mathematics", inNav: false },
-  { id: "tech", label: "Technology", inNav: false },
+  { id: "tech", label: "Technology", navLabel: "Tech", inNav: true },
   { id: "music", label: "Music", inNav: false },
 ] as const satisfies readonly Category[];
 
