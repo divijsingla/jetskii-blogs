@@ -1,8 +1,8 @@
 {
   "meta": {
     "entry": "src/main.tsx",
-    "commit": "edc15b6",
-    "generatedAt": "2026-05-17T10:29:27+00:00",
+    "commit": "343b3b1",
+    "generatedAt": "2026-05-17T10:34:51+00:00",
     "tool": "codearchview",
     "toolVersion": "0.1.0"
   },
@@ -557,8 +557,8 @@
       "name": "graph",
       "file": "src/pages/Architecture.tsx",
       "loc": {
-        "startLine": 6,
-        "endLine": 6
+        "startLine": 7,
+        "endLine": 7
       },
       "exported": false
     },
@@ -568,8 +568,8 @@
       "name": "ArchitecturePage",
       "file": "src/pages/Architecture.tsx",
       "loc": {
-        "startLine": 8,
-        "endLine": 16
+        "startLine": 9,
+        "endLine": 56
       },
       "exported": false
     },
@@ -579,8 +579,8 @@
       "name": "default",
       "file": "src/pages/Architecture.tsx",
       "loc": {
-        "startLine": 18,
-        "endLine": 18
+        "startLine": 58,
+        "endLine": 58
       },
       "exported": true
     },
@@ -1183,6 +1183,12 @@
       "source": "asset"
     },
     {
+      "id": "ext::./blogs/10_codearchview.md",
+      "kind": "external",
+      "name": "./blogs/10_codearchview.md",
+      "source": "asset"
+    },
+    {
       "id": "file::src/data/categories.ts",
       "kind": "file",
       "name": "categories.ts",
@@ -1200,8 +1206,8 @@
       "name": "blogPosts",
       "file": "src/blogPosts.ts",
       "loc": {
-        "startLine": 14,
-        "endLine": 142
+        "startLine": 15,
+        "endLine": 154
       },
       "exported": true
     },
@@ -1211,8 +1217,8 @@
       "name": "getPostsByCategory",
       "file": "src/blogPosts.ts",
       "loc": {
-        "startLine": 144,
-        "endLine": 147
+        "startLine": 156,
+        "endLine": 159
       },
       "exported": true
     },
@@ -1222,8 +1228,8 @@
       "name": "getPostBySlug",
       "file": "src/blogPosts.ts",
       "loc": {
-        "startLine": 149,
-        "endLine": 151
+        "startLine": 161,
+        "endLine": 163
       },
       "exported": true
     },
@@ -2671,6 +2677,11 @@
     },
     {
       "source": "file::src/pages/Architecture.tsx",
+      "target": "ext::react-router-dom",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/pages/Architecture.tsx",
       "target": "file::src/components/BlogLayout.tsx",
       "kind": "imports"
     },
@@ -2851,12 +2862,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "target": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "target": "file::src/hooks/use-toast.ts",
       "kind": "uses-type"
     },
     {
@@ -2896,22 +2907,22 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::Action",
       "target": "sym::src/hooks/use-toast.ts::ActionType",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
-      "target": "ext::typescript",
+      "target": "sym::src/hooks/use-toast.ts::Action",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
-      "target": "sym::src/hooks/use-toast.ts::Action",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::Action",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -2921,12 +2932,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::State",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "target": "sym::src/hooks/use-toast.ts::State",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::State",
-      "target": "sym::src/hooks/use-toast.ts::State",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
       "kind": "uses-type"
     },
     {
@@ -2946,12 +2957,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::addToRemoveQueue",
-      "target": "sym::src/hooks/use-toast.ts::toastTimeouts",
+      "target": "ext::typescript",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::addToRemoveQueue",
-      "target": "ext::typescript",
+      "target": "sym::src/hooks/use-toast.ts::toastTimeouts",
       "kind": "calls"
     },
     {
@@ -2971,12 +2982,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::reducer",
-      "target": "sym::src/hooks/use-toast.ts::State",
+      "target": "sym::src/hooks/use-toast.ts::Action",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::reducer",
-      "target": "sym::src/hooks/use-toast.ts::Action",
+      "target": "sym::src/hooks/use-toast.ts::State",
       "kind": "uses-type"
     },
     {
@@ -3011,17 +3022,17 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::dispatch",
+      "target": "sym::src/hooks/use-toast.ts::listeners",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::dispatch",
       "target": "sym::src/hooks/use-toast.ts::reducer",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::dispatch",
       "target": "sym::src/hooks/use-toast.ts::dispatch",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::dispatch",
-      "target": "sym::src/hooks/use-toast.ts::listeners",
       "kind": "calls"
     },
     {
@@ -3036,7 +3047,7 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Toast",
-      "target": "ext::typescript",
+      "target": "sym::src/hooks/use-toast.ts::Toast",
       "kind": "uses-type"
     },
     {
@@ -3046,7 +3057,7 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Toast",
-      "target": "sym::src/hooks/use-toast.ts::Toast",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -3057,6 +3068,11 @@
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
       "target": "sym::src/hooks/use-toast.ts::dispatch",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::toast",
+      "target": "sym::src/hooks/use-toast.ts::toast",
       "kind": "calls"
     },
     {
@@ -3066,17 +3082,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::toast",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "target": "sym::src/hooks/use-toast.ts::Toast",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::Toast",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
       "kind": "uses-type"
     },
     {
@@ -3086,17 +3097,17 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::useToast",
+      "target": "file::src/hooks/use-toast.ts",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::useToast",
       "target": "sym::src/hooks/use-toast.ts::listeners",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::useToast",
       "target": "sym::src/hooks/use-toast.ts::dispatch",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::useToast",
-      "target": "file::src/hooks/use-toast.ts",
       "kind": "calls"
     },
     {
@@ -3256,12 +3267,12 @@
     },
     {
       "source": "sym::src/components/ui/toast.tsx::ToastDescription",
-      "target": "sym::src/components/ui/toast.tsx::ToastDescription",
+      "target": "file::src/components/ui/toast.tsx",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/ui/toast.tsx::ToastDescription",
-      "target": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastDescription",
       "kind": "calls"
     },
     {
@@ -3506,6 +3517,11 @@
     },
     {
       "source": "file::src/blogPosts.ts",
+      "target": "ext::./blogs/10_codearchview.md",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/blogPosts.ts",
       "target": "file::src/types/blog.ts",
       "kind": "imports"
     },
@@ -3631,12 +3647,12 @@
     },
     {
       "source": "sym::src/components/CommentForm.tsx::CommentForm",
-      "target": "ext::typescript",
+      "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/CommentForm.tsx::CommentForm",
-      "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -3681,13 +3697,18 @@
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
+      "target": "sym::src/components/CommentList.tsx::CommentList",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/components/CommentList.tsx::CommentList",
       "target": "ext::typescript",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
-      "target": "sym::src/components/CommentList.tsx::CommentList",
-      "kind": "calls"
+      "target": "ext::typescript",
+      "kind": "uses-type"
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
@@ -3697,11 +3718,6 @@
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
       "target": "sym::src/components/CommentList.tsx::CommentListProps",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/CommentList.tsx::CommentList",
-      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -3771,12 +3787,12 @@
     },
     {
       "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
-      "target": "ext::typescript",
+      "target": "file::src/components/blog/BlogImageGallery.tsx",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
-      "target": "file::src/components/blog/BlogImageGallery.tsx",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -3951,22 +3967,22 @@
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
       "target": "ext::typescript",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
-      "kind": "uses-type"
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
+      "kind": "calls"
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
       "target": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
       "kind": "uses-type"
     },
     {
@@ -4061,12 +4077,12 @@
     },
     {
       "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
-      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
-      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
+      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
       "kind": "uses-type"
     },
     {
@@ -4576,12 +4592,12 @@
     },
     {
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
-      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
+      "target": "sym::src/components/architecture/GraphControls.tsx::DEPTHS",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
-      "target": "sym::src/components/architecture/GraphControls.tsx::DEPTHS",
+      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
       "kind": "calls"
     },
     {
@@ -4641,12 +4657,12 @@
     },
     {
       "source": "sym::src/components/architecture/NodeCard.tsx::KIND_LABEL",
-      "target": "ext::typescript",
+      "target": "file::src/components/architecture/NodeCard.tsx",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/architecture/NodeCard.tsx::KIND_LABEL",
-      "target": "file::src/components/architecture/NodeCard.tsx",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -4736,12 +4752,12 @@
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
+      "target": "file::src/components/architecture/useArchitectureGraph.ts",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
       "kind": "uses-type"
     },
     {
@@ -4811,12 +4827,12 @@
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
+      "target": "file::src/components/architecture/useArchitectureGraph.ts",
       "kind": "calls"
     },
     {
@@ -4866,7 +4882,7 @@
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
       "kind": "calls"
     },
     {
@@ -4877,11 +4893,6 @@
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
       "kind": "calls"
     },
     {
@@ -4897,6 +4908,11 @@
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
       "kind": "calls"
     },
     {

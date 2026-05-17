@@ -6,12 +6,24 @@ import asileave from './blogs/04_as-i-leave.md?raw';
 import musings1 from './blogs/06_musings-1.md?raw';
 import musings2 from './blogs/07_musings-2.md?raw';
 import musings3 from './blogs/08_musings-3.md?raw';
+import codearchview from './blogs/10_codearchview.md?raw';
 
 import type { BlogPost } from "@/types/blog";
 import type { CategoryId } from "@/data/categories";
 import { privateBlogProtection } from "@/data/protectionPresets";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "codearchview",
+    title: "I taught this blog to draw a picture of itself",
+    excerpt: "A Sunday afternoon spent writing a tool that maps the wiring of a TypeScript codebase, then wiring that map into this site.",
+    content: codearchview,
+    date: "17 May 2026",
+    readTime: "5 min read",
+    tags: ["tools", "tree-sitter", "lsp", "for fun"],
+    category: "tech",
+    image: "drawing.jpeg",
+  },
   {
     slug: "musings-2",
     title: "Finding myself",
