@@ -9,6 +9,7 @@ import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 import CategoryPage from "./pages/CategoryPage";
 import BooksPage from "./pages/BooksPage";
+import Architecture from "./pages/Architecture";
 import NotFound from "./pages/NotFound";
 import AnalyticsWrapper from "@/components/AnalyticsWrapper";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/category/:category" element={<CategoryPage />} />
           <Route path="/books" element={<BooksPage />} />
+          <Route path="/architecture" element={<Architecture />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -11,6 +11,7 @@ const Navbar = () => {
       path: `/category/${c.id}`,
     })),
     { name: "Books", path: "/books" },
+    { name: "Architecture", path: "/architecture" },
   ];
 
   const isActive = (path: string) => {
