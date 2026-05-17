@@ -1,8 +1,8 @@
 {
   "meta": {
     "entry": "src/main.tsx",
-    "commit": "4583444",
-    "generatedAt": "2026-05-17T11:15:29+00:00",
+    "commit": "5817eea",
+    "generatedAt": "2026-05-17T11:21:05+00:00",
     "tool": "codearchview",
     "toolVersion": "0.1.0"
   },
@@ -14,112 +14,10 @@
       "path": "src/main.tsx"
     },
     {
-      "id": "ext::react-dom/client",
-      "kind": "external",
-      "name": "react-dom/client",
-      "source": "npm"
-    },
-    {
       "id": "file::src/App.tsx",
       "kind": "file",
       "name": "App.tsx",
       "path": "src/App.tsx"
-    },
-    {
-      "id": "ext::./index.css",
-      "kind": "external",
-      "name": "./index.css",
-      "source": "asset"
-    },
-    {
-      "id": "file::src/lib/analytics.ts",
-      "kind": "file",
-      "name": "analytics.ts",
-      "path": "src/lib/analytics.ts"
-    },
-    {
-      "id": "file::src/components/ui/toaster.tsx",
-      "kind": "file",
-      "name": "toaster.tsx",
-      "path": "src/components/ui/toaster.tsx"
-    },
-    {
-      "id": "file::src/components/ui/sonner.tsx",
-      "kind": "file",
-      "name": "sonner.tsx",
-      "path": "src/components/ui/sonner.tsx"
-    },
-    {
-      "id": "file::src/components/ui/tooltip.tsx",
-      "kind": "file",
-      "name": "tooltip.tsx",
-      "path": "src/components/ui/tooltip.tsx"
-    },
-    {
-      "id": "ext::@tanstack/react-query",
-      "kind": "external",
-      "name": "@tanstack/react-query",
-      "source": "npm"
-    },
-    {
-      "id": "ext::react-router-dom",
-      "kind": "external",
-      "name": "react-router-dom",
-      "source": "npm"
-    },
-    {
-      "id": "file::src/pages/Index.tsx",
-      "kind": "file",
-      "name": "Index.tsx",
-      "path": "src/pages/Index.tsx"
-    },
-    {
-      "id": "file::src/pages/BlogList.tsx",
-      "kind": "file",
-      "name": "BlogList.tsx",
-      "path": "src/pages/BlogList.tsx"
-    },
-    {
-      "id": "file::src/pages/BlogPost.tsx",
-      "kind": "file",
-      "name": "BlogPost.tsx",
-      "path": "src/pages/BlogPost.tsx"
-    },
-    {
-      "id": "file::src/pages/CategoryPage.tsx",
-      "kind": "file",
-      "name": "CategoryPage.tsx",
-      "path": "src/pages/CategoryPage.tsx"
-    },
-    {
-      "id": "file::src/pages/BooksPage.tsx",
-      "kind": "file",
-      "name": "BooksPage.tsx",
-      "path": "src/pages/BooksPage.tsx"
-    },
-    {
-      "id": "file::src/pages/Architecture.tsx",
-      "kind": "file",
-      "name": "Architecture.tsx",
-      "path": "src/pages/Architecture.tsx"
-    },
-    {
-      "id": "file::src/pages/NotFound.tsx",
-      "kind": "file",
-      "name": "NotFound.tsx",
-      "path": "src/pages/NotFound.tsx"
-    },
-    {
-      "id": "file::src/components/AnalyticsWrapper.tsx",
-      "kind": "file",
-      "name": "AnalyticsWrapper.tsx",
-      "path": "src/components/AnalyticsWrapper.tsx"
-    },
-    {
-      "id": "file::src/components/ScrollToTop.tsx",
-      "kind": "file",
-      "name": "ScrollToTop.tsx",
-      "path": "src/components/ScrollToTop.tsx"
     },
     {
       "id": "sym::src/App.tsx::queryClient",
@@ -155,6 +53,12 @@
       "exported": true
     },
     {
+      "id": "file::src/lib/analytics.ts",
+      "kind": "file",
+      "name": "analytics.ts",
+      "path": "src/lib/analytics.ts"
+    },
+    {
       "id": "sym::src/lib/analytics.ts::GA_MEASUREMENT_ID",
       "kind": "const",
       "name": "GA_MEASUREMENT_ID",
@@ -177,12 +81,6 @@
       "exported": true
     },
     {
-      "id": "ext::typescript",
-      "kind": "external",
-      "name": "typescript",
-      "source": "npm"
-    },
-    {
       "id": "sym::src/lib/analytics.ts::trackPageView",
       "kind": "function",
       "name": "trackPageView",
@@ -194,16 +92,10 @@
       "exported": true
     },
     {
-      "id": "file::src/hooks/use-toast.ts",
+      "id": "file::src/components/ui/toaster.tsx",
       "kind": "file",
-      "name": "use-toast.ts",
-      "path": "src/hooks/use-toast.ts"
-    },
-    {
-      "id": "file::src/components/ui/toast.tsx",
-      "kind": "file",
-      "name": "toast.tsx",
-      "path": "src/components/ui/toast.tsx"
+      "name": "toaster.tsx",
+      "path": "src/components/ui/toaster.tsx"
     },
     {
       "id": "sym::src/components/ui/toaster.tsx::Toaster",
@@ -217,16 +109,10 @@
       "exported": true
     },
     {
-      "id": "ext::next-themes",
-      "kind": "external",
-      "name": "next-themes",
-      "source": "npm"
-    },
-    {
-      "id": "ext::sonner",
-      "kind": "external",
-      "name": "sonner",
-      "source": "npm"
+      "id": "file::src/components/ui/sonner.tsx",
+      "kind": "file",
+      "name": "sonner.tsx",
+      "path": "src/components/ui/sonner.tsx"
     },
     {
       "id": "sym::src/components/ui/sonner.tsx::ToasterProps",
@@ -251,22 +137,10 @@
       "exported": false
     },
     {
-      "id": "ext::react",
-      "kind": "external",
-      "name": "react",
-      "source": "npm"
-    },
-    {
-      "id": "ext::@radix-ui/react-tooltip",
-      "kind": "external",
-      "name": "@radix-ui/react-tooltip",
-      "source": "npm"
-    },
-    {
-      "id": "file::src/lib/utils.ts",
+      "id": "file::src/components/ui/tooltip.tsx",
       "kind": "file",
-      "name": "utils.ts",
-      "path": "src/lib/utils.ts"
+      "name": "tooltip.tsx",
+      "path": "src/components/ui/tooltip.tsx"
     },
     {
       "id": "sym::src/components/ui/tooltip.tsx::TooltipProvider",
@@ -313,10 +187,10 @@
       "exported": false
     },
     {
-      "id": "file::src/components/SuperPage.tsx",
+      "id": "file::src/pages/Index.tsx",
       "kind": "file",
-      "name": "SuperPage.tsx",
-      "path": "src/components/SuperPage.tsx"
+      "name": "Index.tsx",
+      "path": "src/pages/Index.tsx"
     },
     {
       "id": "sym::src/pages/Index.tsx::Index",
@@ -341,22 +215,10 @@
       "exported": true
     },
     {
-      "id": "file::src/components/BlogLayout.tsx",
+      "id": "file::src/pages/BlogList.tsx",
       "kind": "file",
-      "name": "BlogLayout.tsx",
-      "path": "src/components/BlogLayout.tsx"
-    },
-    {
-      "id": "file::src/components/BlogListSection.tsx",
-      "kind": "file",
-      "name": "BlogListSection.tsx",
-      "path": "src/components/BlogListSection.tsx"
-    },
-    {
-      "id": "file::src/blogPosts.ts",
-      "kind": "file",
-      "name": "blogPosts.ts",
-      "path": "src/blogPosts.ts"
+      "name": "BlogList.tsx",
+      "path": "src/pages/BlogList.tsx"
     },
     {
       "id": "sym::src/pages/BlogList.tsx::BlogList",
@@ -381,46 +243,10 @@
       "exported": true
     },
     {
-      "id": "file::src/lib/protection.ts",
+      "id": "file::src/pages/BlogPost.tsx",
       "kind": "file",
-      "name": "protection.ts",
-      "path": "src/lib/protection.ts"
-    },
-    {
-      "id": "file::src/components/CommentForm.tsx",
-      "kind": "file",
-      "name": "CommentForm.tsx",
-      "path": "src/components/CommentForm.tsx"
-    },
-    {
-      "id": "file::src/components/CommentList.tsx",
-      "kind": "file",
-      "name": "CommentList.tsx",
-      "path": "src/components/CommentList.tsx"
-    },
-    {
-      "id": "file::src/components/blog/AnonymousPromptForm.tsx",
-      "kind": "file",
-      "name": "AnonymousPromptForm.tsx",
-      "path": "src/components/blog/AnonymousPromptForm.tsx"
-    },
-    {
-      "id": "file::src/components/blog/BlogImageGallery.tsx",
-      "kind": "file",
-      "name": "BlogImageGallery.tsx",
-      "path": "src/components/blog/BlogImageGallery.tsx"
-    },
-    {
-      "id": "file::src/components/blog/BlogPostNotFound.tsx",
-      "kind": "file",
-      "name": "BlogPostNotFound.tsx",
-      "path": "src/components/blog/BlogPostNotFound.tsx"
-    },
-    {
-      "id": "file::src/components/blog/ProtectionGate.tsx",
-      "kind": "file",
-      "name": "ProtectionGate.tsx",
-      "path": "src/components/blog/ProtectionGate.tsx"
+      "name": "BlogPost.tsx",
+      "path": "src/pages/BlogPost.tsx"
     },
     {
       "id": "sym::src/pages/BlogPost.tsx::BlogPost",
@@ -445,6 +271,12 @@
       "exported": true
     },
     {
+      "id": "file::src/pages/CategoryPage.tsx",
+      "kind": "file",
+      "name": "CategoryPage.tsx",
+      "path": "src/pages/CategoryPage.tsx"
+    },
+    {
       "id": "sym::src/pages/CategoryPage.tsx::CategoryPage",
       "kind": "component",
       "name": "CategoryPage",
@@ -467,16 +299,10 @@
       "exported": true
     },
     {
-      "id": "file::src/hooks/useStaticmanSubmit.ts",
+      "id": "file::src/pages/BooksPage.tsx",
       "kind": "file",
-      "name": "useStaticmanSubmit.ts",
-      "path": "src/hooks/useStaticmanSubmit.ts"
-    },
-    {
-      "id": "file::src/lib/assets.ts",
-      "kind": "file",
-      "name": "assets.ts",
-      "path": "src/lib/assets.ts"
+      "name": "BooksPage.tsx",
+      "path": "src/pages/BooksPage.tsx"
     },
     {
       "id": "sym::src/pages/BooksPage.tsx::bookCovers",
@@ -534,22 +360,10 @@
       "exported": true
     },
     {
-      "id": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "id": "file::src/pages/Architecture.tsx",
       "kind": "file",
-      "name": "ArchitectureGraph.tsx",
-      "path": "src/components/architecture/ArchitectureGraph.tsx"
-    },
-    {
-      "id": "file::src/data/architecture.json",
-      "kind": "file",
-      "name": "architecture.json",
-      "path": "src/data/architecture.json"
-    },
-    {
-      "id": "file::src/components/architecture/types.ts",
-      "kind": "file",
-      "name": "types.ts",
-      "path": "src/components/architecture/types.ts"
+      "name": "Architecture.tsx",
+      "path": "src/pages/Architecture.tsx"
     },
     {
       "id": "sym::src/pages/Architecture.tsx::graph",
@@ -585,16 +399,10 @@
       "exported": true
     },
     {
-      "id": "file::src/components/ui/button.tsx",
+      "id": "file::src/pages/NotFound.tsx",
       "kind": "file",
-      "name": "button.tsx",
-      "path": "src/components/ui/button.tsx"
-    },
-    {
-      "id": "ext::lucide-react",
-      "kind": "external",
-      "name": "lucide-react",
-      "source": "npm"
+      "name": "NotFound.tsx",
+      "path": "src/pages/NotFound.tsx"
     },
     {
       "id": "sym::src/pages/NotFound.tsx::NotFound",
@@ -619,6 +427,12 @@
       "exported": true
     },
     {
+      "id": "file::src/components/AnalyticsWrapper.tsx",
+      "kind": "file",
+      "name": "AnalyticsWrapper.tsx",
+      "path": "src/components/AnalyticsWrapper.tsx"
+    },
+    {
       "id": "sym::src/components/AnalyticsWrapper.tsx::AnalyticsWrapper",
       "kind": "const",
       "name": "AnalyticsWrapper",
@@ -641,6 +455,12 @@
       "exported": true
     },
     {
+      "id": "file::src/components/ScrollToTop.tsx",
+      "kind": "file",
+      "name": "ScrollToTop.tsx",
+      "path": "src/components/ScrollToTop.tsx"
+    },
+    {
       "id": "sym::src/components/ScrollToTop.tsx::ScrollToTop",
       "kind": "const",
       "name": "ScrollToTop",
@@ -661,6 +481,12 @@
         "endLine": 14
       },
       "exported": true
+    },
+    {
+      "id": "file::src/hooks/use-toast.ts",
+      "kind": "file",
+      "name": "use-toast.ts",
+      "path": "src/hooks/use-toast.ts"
     },
     {
       "id": "sym::src/hooks/use-toast.ts::TOAST_LIMIT",
@@ -861,16 +687,10 @@
       "exported": false
     },
     {
-      "id": "ext::@radix-ui/react-toast",
-      "kind": "external",
-      "name": "@radix-ui/react-toast",
-      "source": "npm"
-    },
-    {
-      "id": "ext::class-variance-authority",
-      "kind": "external",
-      "name": "class-variance-authority",
-      "source": "npm"
+      "id": "file::src/components/ui/toast.tsx",
+      "kind": "file",
+      "name": "toast.tsx",
+      "path": "src/components/ui/toast.tsx"
     },
     {
       "id": "sym::src/components/ui/toast.tsx::ToastProvider",
@@ -983,16 +803,10 @@
       "exported": false
     },
     {
-      "id": "ext::clsx",
-      "kind": "external",
-      "name": "clsx",
-      "source": "npm"
-    },
-    {
-      "id": "ext::tailwind-merge",
-      "kind": "external",
-      "name": "tailwind-merge",
-      "source": "npm"
+      "id": "file::src/lib/utils.ts",
+      "kind": "file",
+      "name": "utils.ts",
+      "path": "src/lib/utils.ts"
     },
     {
       "id": "sym::src/lib/utils.ts::cn",
@@ -1006,10 +820,10 @@
       "exported": true
     },
     {
-      "id": "ext::@uiw/react-markdown-preview",
-      "kind": "external",
-      "name": "@uiw/react-markdown-preview",
-      "source": "npm"
+      "id": "file::src/components/SuperPage.tsx",
+      "kind": "file",
+      "name": "SuperPage.tsx",
+      "path": "src/components/SuperPage.tsx"
     },
     {
       "id": "sym::src/components/SuperPage.tsx::SuperPageProps",
@@ -1045,16 +859,10 @@
       "exported": true
     },
     {
-      "id": "file::src/components/Navbar.tsx",
+      "id": "file::src/components/BlogLayout.tsx",
       "kind": "file",
-      "name": "Navbar.tsx",
-      "path": "src/components/Navbar.tsx"
-    },
-    {
-      "id": "file::src/components/Footer.tsx",
-      "kind": "file",
-      "name": "Footer.tsx",
-      "path": "src/components/Footer.tsx"
+      "name": "BlogLayout.tsx",
+      "path": "src/components/BlogLayout.tsx"
     },
     {
       "id": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
@@ -1090,16 +898,10 @@
       "exported": true
     },
     {
-      "id": "file::src/components/BlogCard.tsx",
+      "id": "file::src/components/BlogListSection.tsx",
       "kind": "file",
-      "name": "BlogCard.tsx",
-      "path": "src/components/BlogCard.tsx"
-    },
-    {
-      "id": "file::src/types/blog.ts",
-      "kind": "file",
-      "name": "blog.ts",
-      "path": "src/types/blog.ts"
+      "name": "BlogListSection.tsx",
+      "path": "src/components/BlogListSection.tsx"
     },
     {
       "id": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
@@ -1135,70 +937,10 @@
       "exported": true
     },
     {
-      "id": "ext::./blogs/01_test-blog.md",
-      "kind": "external",
-      "name": "./blogs/01_test-blog.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/02_test-blog-2.md",
-      "kind": "external",
-      "name": "./blogs/02_test-blog-2.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/02_test-blog-3.md",
-      "kind": "external",
-      "name": "./blogs/02_test-blog-3.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/05_basis.md",
-      "kind": "external",
-      "name": "./blogs/05_basis.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/04_as-i-leave.md",
-      "kind": "external",
-      "name": "./blogs/04_as-i-leave.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/06_musings-1.md",
-      "kind": "external",
-      "name": "./blogs/06_musings-1.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/07_musings-2.md",
-      "kind": "external",
-      "name": "./blogs/07_musings-2.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/08_musings-3.md",
-      "kind": "external",
-      "name": "./blogs/08_musings-3.md",
-      "source": "asset"
-    },
-    {
-      "id": "ext::./blogs/10_codearchview.md",
-      "kind": "external",
-      "name": "./blogs/10_codearchview.md",
-      "source": "asset"
-    },
-    {
-      "id": "file::src/data/categories.ts",
+      "id": "file::src/blogPosts.ts",
       "kind": "file",
-      "name": "categories.ts",
-      "path": "src/data/categories.ts"
-    },
-    {
-      "id": "file::src/data/protectionPresets.ts",
-      "kind": "file",
-      "name": "protectionPresets.ts",
-      "path": "src/data/protectionPresets.ts"
+      "name": "blogPosts.ts",
+      "path": "src/blogPosts.ts"
     },
     {
       "id": "sym::src/blogPosts.ts::blogPosts",
@@ -1234,6 +976,12 @@
       "exported": true
     },
     {
+      "id": "file::src/lib/protection.ts",
+      "kind": "file",
+      "name": "protection.ts",
+      "path": "src/lib/protection.ts"
+    },
+    {
       "id": "sym::src/lib/protection.ts::getProtection",
       "kind": "function",
       "name": "getProtection",
@@ -1254,6 +1002,12 @@
         "endLine": 11
       },
       "exported": true
+    },
+    {
+      "id": "file::src/components/CommentForm.tsx",
+      "kind": "file",
+      "name": "CommentForm.tsx",
+      "path": "src/components/CommentForm.tsx"
     },
     {
       "id": "sym::src/components/CommentForm.tsx::CommentFormProps",
@@ -1278,16 +1032,10 @@
       "exported": true
     },
     {
-      "id": "ext::js-yaml",
-      "kind": "external",
-      "name": "js-yaml",
-      "source": "npm"
-    },
-    {
-      "id": "file::src/types/comment.ts",
+      "id": "file::src/components/CommentList.tsx",
       "kind": "file",
-      "name": "comment.ts",
-      "path": "src/types/comment.ts"
+      "name": "CommentList.tsx",
+      "path": "src/components/CommentList.tsx"
     },
     {
       "id": "sym::src/components/CommentList.tsx::CommentListProps",
@@ -1323,6 +1071,12 @@
       "exported": true
     },
     {
+      "id": "file::src/components/blog/AnonymousPromptForm.tsx",
+      "kind": "file",
+      "name": "AnonymousPromptForm.tsx",
+      "path": "src/components/blog/AnonymousPromptForm.tsx"
+    },
+    {
       "id": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptFormProps",
       "kind": "interface",
       "name": "AnonymousPromptFormProps",
@@ -1354,6 +1108,12 @@
         "endLine": 71
       },
       "exported": true
+    },
+    {
+      "id": "file::src/components/blog/BlogImageGallery.tsx",
+      "kind": "file",
+      "name": "BlogImageGallery.tsx",
+      "path": "src/components/blog/BlogImageGallery.tsx"
     },
     {
       "id": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
@@ -1389,6 +1149,12 @@
       "exported": true
     },
     {
+      "id": "file::src/components/blog/BlogPostNotFound.tsx",
+      "kind": "file",
+      "name": "BlogPostNotFound.tsx",
+      "path": "src/components/blog/BlogPostNotFound.tsx"
+    },
+    {
       "id": "sym::src/components/blog/BlogPostNotFound.tsx::BlogPostNotFound",
       "kind": "component",
       "name": "BlogPostNotFound",
@@ -1409,6 +1175,12 @@
         "endLine": 21
       },
       "exported": true
+    },
+    {
+      "id": "file::src/components/blog/ProtectionGate.tsx",
+      "kind": "file",
+      "name": "ProtectionGate.tsx",
+      "path": "src/components/blog/ProtectionGate.tsx"
     },
     {
       "id": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
@@ -1444,10 +1216,10 @@
       "exported": true
     },
     {
-      "id": "file::src/config/staticman.ts",
+      "id": "file::src/hooks/useStaticmanSubmit.ts",
       "kind": "file",
-      "name": "staticman.ts",
-      "path": "src/config/staticman.ts"
+      "name": "useStaticmanSubmit.ts",
+      "path": "src/hooks/useStaticmanSubmit.ts"
     },
     {
       "id": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
@@ -1483,6 +1255,12 @@
       "exported": true
     },
     {
+      "id": "file::src/lib/assets.ts",
+      "kind": "file",
+      "name": "assets.ts",
+      "path": "src/lib/assets.ts"
+    },
+    {
       "id": "sym::src/lib/assets.ts::base",
       "kind": "const",
       "name": "base",
@@ -1505,34 +1283,10 @@
       "exported": true
     },
     {
-      "id": "ext::reactflow",
-      "kind": "external",
-      "name": "reactflow",
-      "source": "npm"
-    },
-    {
-      "id": "ext::reactflow/dist/style.css",
-      "kind": "external",
-      "name": "reactflow/dist/style.css",
-      "source": "npm"
-    },
-    {
-      "id": "file::src/components/architecture/GraphControls.tsx",
+      "id": "file::src/components/architecture/ArchitectureGraph.tsx",
       "kind": "file",
-      "name": "GraphControls.tsx",
-      "path": "src/components/architecture/GraphControls.tsx"
-    },
-    {
-      "id": "file::src/components/architecture/NodeCard.tsx",
-      "kind": "file",
-      "name": "NodeCard.tsx",
-      "path": "src/components/architecture/NodeCard.tsx"
-    },
-    {
-      "id": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "file",
-      "name": "useArchitectureGraph.ts",
-      "path": "src/components/architecture/useArchitectureGraph.ts"
+      "name": "ArchitectureGraph.tsx",
+      "path": "src/components/architecture/ArchitectureGraph.tsx"
     },
     {
       "id": "sym::src/components/architecture/ArchitectureGraph.tsx::nodeTypes",
@@ -1588,6 +1342,12 @@
         "endLine": 111
       },
       "exported": true
+    },
+    {
+      "id": "file::src/components/architecture/types.ts",
+      "kind": "file",
+      "name": "types.ts",
+      "path": "src/components/architecture/types.ts"
     },
     {
       "id": "sym::src/components/architecture/types.ts::NodeKind",
@@ -1667,10 +1427,10 @@
       "exported": true
     },
     {
-      "id": "ext::@radix-ui/react-slot",
-      "kind": "external",
-      "name": "@radix-ui/react-slot",
-      "source": "npm"
+      "id": "file::src/components/ui/button.tsx",
+      "kind": "file",
+      "name": "button.tsx",
+      "path": "src/components/ui/button.tsx"
     },
     {
       "id": "sym::src/components/ui/button.tsx::buttonVariants",
@@ -1706,6 +1466,12 @@
       "exported": false
     },
     {
+      "id": "file::src/components/Navbar.tsx",
+      "kind": "file",
+      "name": "Navbar.tsx",
+      "path": "src/components/Navbar.tsx"
+    },
+    {
       "id": "sym::src/components/Navbar.tsx::Navbar",
       "kind": "component",
       "name": "Navbar",
@@ -1728,6 +1494,12 @@
       "exported": true
     },
     {
+      "id": "file::src/components/Footer.tsx",
+      "kind": "file",
+      "name": "Footer.tsx",
+      "path": "src/components/Footer.tsx"
+    },
+    {
       "id": "sym::src/components/Footer.tsx::Footer",
       "kind": "const",
       "name": "Footer",
@@ -1748,6 +1520,12 @@
         "endLine": 24
       },
       "exported": true
+    },
+    {
+      "id": "file::src/components/BlogCard.tsx",
+      "kind": "file",
+      "name": "BlogCard.tsx",
+      "path": "src/components/BlogCard.tsx"
     },
     {
       "id": "sym::src/components/BlogCard.tsx::BlogCardProps",
@@ -1781,6 +1559,12 @@
         "endLine": 63
       },
       "exported": true
+    },
+    {
+      "id": "file::src/types/blog.ts",
+      "kind": "file",
+      "name": "blog.ts",
+      "path": "src/types/blog.ts"
     },
     {
       "id": "sym::src/types/blog.ts::ProtectionType",
@@ -1838,6 +1622,12 @@
       "exported": true
     },
     {
+      "id": "file::src/data/categories.ts",
+      "kind": "file",
+      "name": "categories.ts",
+      "path": "src/data/categories.ts"
+    },
+    {
       "id": "sym::src/data/categories.ts::Category",
       "kind": "interface",
       "name": "Category",
@@ -1893,6 +1683,12 @@
       "exported": true
     },
     {
+      "id": "file::src/data/protectionPresets.ts",
+      "kind": "file",
+      "name": "protectionPresets.ts",
+      "path": "src/data/protectionPresets.ts"
+    },
+    {
       "id": "sym::src/data/protectionPresets.ts::privateBlogProtection",
       "kind": "const",
       "name": "privateBlogProtection",
@@ -1902,6 +1698,12 @@
         "endLine": 10
       },
       "exported": true
+    },
+    {
+      "id": "file::src/types/comment.ts",
+      "kind": "file",
+      "name": "comment.ts",
+      "path": "src/types/comment.ts"
     },
     {
       "id": "sym::src/types/comment.ts::Comment",
@@ -1915,6 +1717,12 @@
       "exported": true
     },
     {
+      "id": "file::src/config/staticman.ts",
+      "kind": "file",
+      "name": "staticman.ts",
+      "path": "src/config/staticman.ts"
+    },
+    {
       "id": "sym::src/config/staticman.ts::STATICMAN_ENDPOINT",
       "kind": "const",
       "name": "STATICMAN_ENDPOINT",
@@ -1924,6 +1732,12 @@
         "endLine": 2
       },
       "exported": true
+    },
+    {
+      "id": "file::src/components/architecture/GraphControls.tsx",
+      "kind": "file",
+      "name": "GraphControls.tsx",
+      "path": "src/components/architecture/GraphControls.tsx"
     },
     {
       "id": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
@@ -1981,6 +1795,12 @@
       "exported": true
     },
     {
+      "id": "file::src/components/architecture/NodeCard.tsx",
+      "kind": "file",
+      "name": "NodeCard.tsx",
+      "path": "src/components/architecture/NodeCard.tsx"
+    },
+    {
       "id": "sym::src/components/architecture/NodeCard.tsx::KIND_ACCENT",
       "kind": "const",
       "name": "KIND_ACCENT",
@@ -2036,10 +1856,10 @@
       "exported": true
     },
     {
-      "id": "ext::dagre",
-      "kind": "external",
-      "name": "dagre",
-      "source": "npm"
+      "id": "file::src/components/architecture/useArchitectureGraph.ts",
+      "kind": "file",
+      "name": "useArchitectureGraph.ts",
+      "path": "src/components/architecture/useArchitectureGraph.ts"
     },
     {
       "id": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
@@ -2172,9 +1992,969 @@
         "endLine": 256
       },
       "exported": true
+    },
+    {
+      "id": "ext::react-dom/client",
+      "kind": "external",
+      "name": "react-dom/client",
+      "source": "npm"
+    },
+    {
+      "id": "ext::./index.css",
+      "kind": "external",
+      "name": "./index.css",
+      "source": "asset"
+    },
+    {
+      "id": "ext::@tanstack/react-query",
+      "kind": "external",
+      "name": "@tanstack/react-query",
+      "source": "npm"
+    },
+    {
+      "id": "ext::react-router-dom",
+      "kind": "external",
+      "name": "react-router-dom",
+      "source": "npm"
+    },
+    {
+      "id": "ext::typescript",
+      "kind": "external",
+      "name": "typescript",
+      "source": "npm"
+    },
+    {
+      "id": "ext::next-themes",
+      "kind": "external",
+      "name": "next-themes",
+      "source": "npm"
+    },
+    {
+      "id": "ext::sonner",
+      "kind": "external",
+      "name": "sonner",
+      "source": "npm"
+    },
+    {
+      "id": "ext::react",
+      "kind": "external",
+      "name": "react",
+      "source": "npm"
+    },
+    {
+      "id": "ext::@radix-ui/react-tooltip",
+      "kind": "external",
+      "name": "@radix-ui/react-tooltip",
+      "source": "npm"
+    },
+    {
+      "id": "file::src/data/architecture.json",
+      "kind": "file",
+      "name": "architecture.json",
+      "path": "src/data/architecture.json"
+    },
+    {
+      "id": "ext::lucide-react",
+      "kind": "external",
+      "name": "lucide-react",
+      "source": "npm"
+    },
+    {
+      "id": "ext::@radix-ui/react-toast",
+      "kind": "external",
+      "name": "@radix-ui/react-toast",
+      "source": "npm"
+    },
+    {
+      "id": "ext::class-variance-authority",
+      "kind": "external",
+      "name": "class-variance-authority",
+      "source": "npm"
+    },
+    {
+      "id": "ext::clsx",
+      "kind": "external",
+      "name": "clsx",
+      "source": "npm"
+    },
+    {
+      "id": "ext::tailwind-merge",
+      "kind": "external",
+      "name": "tailwind-merge",
+      "source": "npm"
+    },
+    {
+      "id": "ext::@uiw/react-markdown-preview",
+      "kind": "external",
+      "name": "@uiw/react-markdown-preview",
+      "source": "npm"
+    },
+    {
+      "id": "ext::./blogs/01_test-blog.md",
+      "kind": "external",
+      "name": "./blogs/01_test-blog.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/02_test-blog-2.md",
+      "kind": "external",
+      "name": "./blogs/02_test-blog-2.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/02_test-blog-3.md",
+      "kind": "external",
+      "name": "./blogs/02_test-blog-3.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/05_basis.md",
+      "kind": "external",
+      "name": "./blogs/05_basis.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/04_as-i-leave.md",
+      "kind": "external",
+      "name": "./blogs/04_as-i-leave.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/06_musings-1.md",
+      "kind": "external",
+      "name": "./blogs/06_musings-1.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/07_musings-2.md",
+      "kind": "external",
+      "name": "./blogs/07_musings-2.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/08_musings-3.md",
+      "kind": "external",
+      "name": "./blogs/08_musings-3.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::./blogs/10_codearchview.md",
+      "kind": "external",
+      "name": "./blogs/10_codearchview.md",
+      "source": "asset"
+    },
+    {
+      "id": "ext::js-yaml",
+      "kind": "external",
+      "name": "js-yaml",
+      "source": "npm"
+    },
+    {
+      "id": "ext::reactflow",
+      "kind": "external",
+      "name": "reactflow",
+      "source": "npm"
+    },
+    {
+      "id": "ext::reactflow/dist/style.css",
+      "kind": "external",
+      "name": "reactflow/dist/style.css",
+      "source": "npm"
+    },
+    {
+      "id": "ext::@radix-ui/react-slot",
+      "kind": "external",
+      "name": "@radix-ui/react-slot",
+      "source": "npm"
+    },
+    {
+      "id": "ext::dagre",
+      "kind": "external",
+      "name": "dagre",
+      "source": "npm"
     }
   ],
   "edges": [
+    {
+      "source": "file::src/App.tsx",
+      "target": "sym::src/App.tsx::queryClient",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/App.tsx",
+      "target": "sym::src/App.tsx::App",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/App.tsx",
+      "target": "sym::src/App.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/analytics.ts",
+      "target": "sym::src/lib/analytics.ts::GA_MEASUREMENT_ID",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/analytics.ts",
+      "target": "sym::src/lib/analytics.ts::initGA",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/analytics.ts",
+      "target": "sym::src/lib/analytics.ts::trackPageView",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toaster.tsx",
+      "target": "sym::src/components/ui/toaster.tsx::Toaster",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/sonner.tsx",
+      "target": "sym::src/components/ui/sonner.tsx::ToasterProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/sonner.tsx",
+      "target": "sym::src/components/ui/sonner.tsx::Toaster",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/tooltip.tsx",
+      "target": "sym::src/components/ui/tooltip.tsx::TooltipProvider",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/tooltip.tsx",
+      "target": "sym::src/components/ui/tooltip.tsx::Tooltip",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/tooltip.tsx",
+      "target": "sym::src/components/ui/tooltip.tsx::TooltipTrigger",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/tooltip.tsx",
+      "target": "sym::src/components/ui/tooltip.tsx::TooltipContent",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/Index.tsx",
+      "target": "sym::src/pages/Index.tsx::Index",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/Index.tsx",
+      "target": "sym::src/pages/Index.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::BlogList",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogPost.tsx",
+      "target": "sym::src/pages/BlogPost.tsx::BlogPost",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogPost.tsx",
+      "target": "sym::src/pages/BlogPost.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/CategoryPage.tsx",
+      "target": "sym::src/pages/CategoryPage.tsx::CategoryPage",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/CategoryPage.tsx",
+      "target": "sym::src/pages/CategoryPage.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BooksPage.tsx",
+      "target": "sym::src/pages/BooksPage.tsx::bookCovers",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BooksPage.tsx",
+      "target": "sym::src/pages/BooksPage.tsx::childhoodBooks",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BooksPage.tsx",
+      "target": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BooksPage.tsx",
+      "target": "sym::src/pages/BooksPage.tsx::BooksPage",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BooksPage.tsx",
+      "target": "sym::src/pages/BooksPage.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/Architecture.tsx",
+      "target": "sym::src/pages/Architecture.tsx::graph",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/Architecture.tsx",
+      "target": "sym::src/pages/Architecture.tsx::ArchitecturePage",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/Architecture.tsx",
+      "target": "sym::src/pages/Architecture.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/NotFound.tsx",
+      "target": "sym::src/pages/NotFound.tsx::NotFound",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/NotFound.tsx",
+      "target": "sym::src/pages/NotFound.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/AnalyticsWrapper.tsx",
+      "target": "sym::src/components/AnalyticsWrapper.tsx::AnalyticsWrapper",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/AnalyticsWrapper.tsx",
+      "target": "sym::src/components/AnalyticsWrapper.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ScrollToTop.tsx",
+      "target": "sym::src/components/ScrollToTop.tsx::ScrollToTop",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ScrollToTop.tsx",
+      "target": "sym::src/components/ScrollToTop.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::TOAST_LIMIT",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::TOAST_REMOVE_DELAY",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::actionTypes",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::count",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::genId",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::ActionType",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::Action",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::State",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::toastTimeouts",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::addToRemoveQueue",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::reducer",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::listeners",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::memoryState",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::dispatch",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::Toast",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::toast",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::useToast",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastProvider",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastViewport",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::toastVariants",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::Toast",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastAction",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastClose",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastTitle",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastDescription",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/toast.tsx",
+      "target": "sym::src/components/ui/toast.tsx::ToastActionElement",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/utils.ts",
+      "target": "sym::src/lib/utils.ts::cn",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/SuperPage.tsx",
+      "target": "sym::src/components/SuperPage.tsx::SuperPageProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/SuperPage.tsx",
+      "target": "sym::src/components/SuperPage.tsx::SuperPage",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/SuperPage.tsx",
+      "target": "sym::src/components/SuperPage.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogLayout.tsx",
+      "target": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogLayout.tsx",
+      "target": "sym::src/components/BlogLayout.tsx::BlogLayout",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogLayout.tsx",
+      "target": "sym::src/components/BlogLayout.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogListSection.tsx",
+      "target": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogListSection.tsx",
+      "target": "sym::src/components/BlogListSection.tsx::BlogListSection",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogListSection.tsx",
+      "target": "sym::src/components/BlogListSection.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/blogPosts.ts",
+      "target": "sym::src/blogPosts.ts::blogPosts",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/blogPosts.ts",
+      "target": "sym::src/blogPosts.ts::getPostsByCategory",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/blogPosts.ts",
+      "target": "sym::src/blogPosts.ts::getPostBySlug",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/protection.ts",
+      "target": "sym::src/lib/protection.ts::getProtection",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/protection.ts",
+      "target": "sym::src/lib/protection.ts::matchesProtection",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/CommentForm.tsx",
+      "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/CommentForm.tsx",
+      "target": "sym::src/components/CommentForm.tsx::CommentForm",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/CommentList.tsx",
+      "target": "sym::src/components/CommentList.tsx::CommentListProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/CommentList.tsx",
+      "target": "sym::src/components/CommentList.tsx::allCommentModules",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/CommentList.tsx",
+      "target": "sym::src/components/CommentList.tsx::CommentList",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/AnonymousPromptForm.tsx",
+      "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptFormProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/AnonymousPromptForm.tsx",
+      "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptForm",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/AnonymousPromptForm.tsx",
+      "target": "sym::src/components/blog/AnonymousPromptForm.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogImageGallery.tsx",
+      "target": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogImageGallery.tsx",
+      "target": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGallery",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogImageGallery.tsx",
+      "target": "sym::src/components/blog/BlogImageGallery.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogPostNotFound.tsx",
+      "target": "sym::src/components/blog/BlogPostNotFound.tsx::BlogPostNotFound",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogPostNotFound.tsx",
+      "target": "sym::src/components/blog/BlogPostNotFound.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/ProtectionGate.tsx",
+      "target": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/ProtectionGate.tsx",
+      "target": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGate",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/ProtectionGate.tsx",
+      "target": "sym::src/components/blog/ProtectionGate.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/useStaticmanSubmit.ts",
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/useStaticmanSubmit.ts",
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/hooks/useStaticmanSubmit.ts",
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/assets.ts",
+      "target": "sym::src/lib/assets.ts::base",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/lib/assets.ts",
+      "target": "sym::src/lib/assets.ts::assetUrl",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::nodeTypes",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphView",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
+      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::NodeKind",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::EdgeKind",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::ExternalSource",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::ArchNode",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::ArchEdge",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::ArchitectureGraph",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/types.ts",
+      "target": "sym::src/components/architecture/types.ts::Granularity",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/button.tsx",
+      "target": "sym::src/components/ui/button.tsx::buttonVariants",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/button.tsx",
+      "target": "sym::src/components/ui/button.tsx::ButtonProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/ui/button.tsx",
+      "target": "sym::src/components/ui/button.tsx::Button",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/Navbar.tsx",
+      "target": "sym::src/components/Navbar.tsx::Navbar",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/Navbar.tsx",
+      "target": "sym::src/components/Navbar.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/Footer.tsx",
+      "target": "sym::src/components/Footer.tsx::Footer",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/Footer.tsx",
+      "target": "sym::src/components/Footer.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogCard.tsx",
+      "target": "sym::src/components/BlogCard.tsx::BlogCardProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogCard.tsx",
+      "target": "sym::src/components/BlogCard.tsx::BlogCard",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/BlogCard.tsx",
+      "target": "sym::src/components/BlogCard.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::ProtectionType",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::Protection",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::RestrictedImage",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::AnonymousPrompt",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::BlogPost",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/data/categories.ts",
+      "target": "sym::src/data/categories.ts::Category",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/data/categories.ts",
+      "target": "sym::src/data/categories.ts::categories",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/data/categories.ts",
+      "target": "sym::src/data/categories.ts::CategoryId",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/data/categories.ts",
+      "target": "sym::src/data/categories.ts::navCategories",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/data/categories.ts",
+      "target": "sym::src/data/categories.ts::getCategoryLabel",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/data/protectionPresets.ts",
+      "target": "sym::src/data/protectionPresets.ts::privateBlogProtection",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/comment.ts",
+      "target": "sym::src/types/comment.ts::Comment",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/config/staticman.ts",
+      "target": "sym::src/config/staticman.ts::STATICMAN_ENDPOINT",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/GraphControls.tsx",
+      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/GraphControls.tsx",
+      "target": "sym::src/components/architecture/GraphControls.tsx::GRANULARITY_OPTIONS",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/GraphControls.tsx",
+      "target": "sym::src/components/architecture/GraphControls.tsx::DEPTHS",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/GraphControls.tsx",
+      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/GraphControls.tsx",
+      "target": "sym::src/components/architecture/GraphControls.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/NodeCard.tsx",
+      "target": "sym::src/components/architecture/NodeCard.tsx::KIND_ACCENT",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/NodeCard.tsx",
+      "target": "sym::src/components/architecture/NodeCard.tsx::KIND_LABEL",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/NodeCard.tsx",
+      "target": "sym::src/components/architecture/NodeCard.tsx::subtitleFor",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/NodeCard.tsx",
+      "target": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/NodeCard.tsx",
+      "target": "sym::src/components/architecture/NodeCard.tsx::NodeCard",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::NODE_WIDTH",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::NODE_HEIGHT",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::SYMBOL_KINDS_FOR_GRANULARITY",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_COLORS",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_DASHED",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
+      "kind": "contains"
+    },
     {
       "source": "file::src/main.tsx",
       "target": "ext::react-dom/client",
@@ -2266,49 +3046,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/App.tsx",
-      "target": "sym::src/App.tsx::queryClient",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/App.tsx::queryClient",
-      "target": "file::src/App.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "file::src/App.tsx",
-      "target": "sym::src/App.tsx::App",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/App.tsx::App",
-      "target": "file::src/App.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/App.tsx",
-      "target": "sym::src/App.tsx::default",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/lib/analytics.ts",
-      "target": "sym::src/lib/analytics.ts::GA_MEASUREMENT_ID",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/lib/analytics.ts",
-      "target": "sym::src/lib/analytics.ts::initGA",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/lib/analytics.ts::initGA",
       "target": "ext::typescript",
       "kind": "calls"
-    },
-    {
-      "source": "file::src/lib/analytics.ts",
-      "target": "sym::src/lib/analytics.ts::trackPageView",
-      "kind": "contains"
     },
     {
       "source": "sym::src/lib/analytics.ts::trackPageView",
@@ -2326,24 +3066,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/ui/toaster.tsx",
-      "target": "sym::src/components/ui/toaster.tsx::Toaster",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toaster.tsx::Toaster",
-      "target": "file::src/components/ui/toaster.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/ui/toaster.tsx::Toaster",
       "target": "sym::src/components/ui/toaster.tsx::Toaster",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/toaster.tsx::Toaster",
-      "target": "file::src/components/ui/toaster.tsx",
-      "kind": "renders"
     },
     {
       "source": "file::src/components/ui/sonner.tsx",
@@ -2356,29 +3081,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/ui/sonner.tsx",
-      "target": "sym::src/components/ui/sonner.tsx::ToasterProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/ui/sonner.tsx::ToasterProps",
       "target": "sym::src/components/ui/sonner.tsx::ToasterProps",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/ui/sonner.tsx",
-      "target": "sym::src/components/ui/sonner.tsx::Toaster",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/ui/sonner.tsx::Toaster",
-      "target": "file::src/components/ui/sonner.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/sonner.tsx::Toaster",
-      "target": "file::src/components/ui/sonner.tsx",
-      "kind": "renders"
+      "target": "sym::src/components/ui/sonner.tsx::ToasterProps",
+      "kind": "uses-type"
     },
     {
       "source": "file::src/components/ui/tooltip.tsx",
@@ -2396,39 +3106,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/ui/tooltip.tsx",
-      "target": "sym::src/components/ui/tooltip.tsx::TooltipProvider",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/ui/tooltip.tsx",
-      "target": "sym::src/components/ui/tooltip.tsx::Tooltip",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/ui/tooltip.tsx",
-      "target": "sym::src/components/ui/tooltip.tsx::TooltipTrigger",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/ui/tooltip.tsx",
-      "target": "sym::src/components/ui/tooltip.tsx::TooltipContent",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/tooltip.tsx::TooltipContent",
-      "target": "file::src/components/ui/tooltip.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/ui/tooltip.tsx::TooltipContent",
       "target": "sym::src/components/ui/tooltip.tsx::TooltipContent",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/tooltip.tsx::TooltipContent",
-      "target": "file::src/components/ui/tooltip.tsx",
-      "kind": "renders"
     },
     {
       "source": "file::src/pages/Index.tsx",
@@ -2439,21 +3119,6 @@
       "source": "file::src/pages/Index.tsx",
       "target": "file::src/components/SuperPage.tsx",
       "kind": "imports"
-    },
-    {
-      "source": "file::src/pages/Index.tsx",
-      "target": "sym::src/pages/Index.tsx::Index",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/Index.tsx::Index",
-      "target": "file::src/pages/Index.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/Index.tsx",
-      "target": "sym::src/pages/Index.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/pages/BlogList.tsx",
@@ -2469,21 +3134,6 @@
       "source": "file::src/pages/BlogList.tsx",
       "target": "file::src/blogPosts.ts",
       "kind": "imports"
-    },
-    {
-      "source": "file::src/pages/BlogList.tsx",
-      "target": "sym::src/pages/BlogList.tsx::BlogList",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/BlogList.tsx::BlogList",
-      "target": "file::src/pages/BlogList.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/BlogList.tsx",
-      "target": "sym::src/pages/BlogList.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/pages/BlogPost.tsx",
@@ -2541,26 +3191,6 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/pages/BlogPost.tsx",
-      "target": "sym::src/pages/BlogPost.tsx::BlogPost",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/BlogPost.tsx::BlogPost",
-      "target": "file::src/pages/BlogPost.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/pages/BlogPost.tsx::BlogPost",
-      "target": "file::src/pages/BlogPost.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/BlogPost.tsx",
-      "target": "sym::src/pages/BlogPost.tsx::default",
-      "kind": "contains"
-    },
-    {
       "source": "file::src/pages/CategoryPage.tsx",
       "target": "ext::react-router-dom",
       "kind": "imports"
@@ -2579,26 +3209,6 @@
       "source": "file::src/pages/CategoryPage.tsx",
       "target": "file::src/blogPosts.ts",
       "kind": "imports"
-    },
-    {
-      "source": "file::src/pages/CategoryPage.tsx",
-      "target": "sym::src/pages/CategoryPage.tsx::CategoryPage",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/CategoryPage.tsx::CategoryPage",
-      "target": "file::src/pages/CategoryPage.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/pages/CategoryPage.tsx::CategoryPage",
-      "target": "file::src/pages/CategoryPage.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/CategoryPage.tsx",
-      "target": "sym::src/pages/CategoryPage.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/pages/BooksPage.tsx",
@@ -2621,34 +3231,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/pages/BooksPage.tsx",
-      "target": "sym::src/pages/BooksPage.tsx::bookCovers",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/pages/BooksPage.tsx",
-      "target": "sym::src/pages/BooksPage.tsx::childhoodBooks",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/pages/BooksPage.tsx",
-      "target": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
-      "target": "file::src/pages/BooksPage.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
       "target": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
       "kind": "calls"
-    },
-    {
-      "source": "file::src/pages/BooksPage.tsx",
-      "target": "sym::src/pages/BooksPage.tsx::BooksPage",
-      "kind": "contains"
     },
     {
       "source": "sym::src/pages/BooksPage.tsx::BooksPage",
@@ -2664,16 +3249,6 @@
       "source": "sym::src/pages/BooksPage.tsx::BooksPage",
       "target": "sym::src/pages/BooksPage.tsx::childhoodBooks",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/pages/BooksPage.tsx::BooksPage",
-      "target": "file::src/pages/BooksPage.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/BooksPage.tsx",
-      "target": "sym::src/pages/BooksPage.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/pages/Architecture.tsx",
@@ -2701,31 +3276,6 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/pages/Architecture.tsx",
-      "target": "sym::src/pages/Architecture.tsx::graph",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/Architecture.tsx::graph",
-      "target": "file::src/pages/Architecture.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/pages/Architecture.tsx",
-      "target": "sym::src/pages/Architecture.tsx::ArchitecturePage",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/Architecture.tsx::ArchitecturePage",
-      "target": "file::src/pages/Architecture.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/Architecture.tsx",
-      "target": "sym::src/pages/Architecture.tsx::default",
-      "kind": "contains"
-    },
-    {
       "source": "file::src/pages/NotFound.tsx",
       "target": "ext::react-router-dom",
       "kind": "imports"
@@ -2751,29 +3301,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/pages/NotFound.tsx",
-      "target": "sym::src/pages/NotFound.tsx::NotFound",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/pages/NotFound.tsx::NotFound",
-      "target": "file::src/pages/NotFound.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/pages/NotFound.tsx::NotFound",
       "target": "ext::typescript",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/pages/NotFound.tsx::NotFound",
-      "target": "file::src/pages/NotFound.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/pages/NotFound.tsx",
-      "target": "sym::src/pages/NotFound.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/AnalyticsWrapper.tsx",
@@ -2791,21 +3321,6 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/AnalyticsWrapper.tsx",
-      "target": "sym::src/components/AnalyticsWrapper.tsx::AnalyticsWrapper",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/AnalyticsWrapper.tsx::AnalyticsWrapper",
-      "target": "file::src/components/AnalyticsWrapper.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "file::src/components/AnalyticsWrapper.tsx",
-      "target": "sym::src/components/AnalyticsWrapper.tsx::default",
-      "kind": "contains"
-    },
-    {
       "source": "file::src/components/ScrollToTop.tsx",
       "target": "ext::react",
       "kind": "imports"
@@ -2816,24 +3331,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/ScrollToTop.tsx",
-      "target": "sym::src/components/ScrollToTop.tsx::ScrollToTop",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ScrollToTop.tsx::ScrollToTop",
-      "target": "file::src/components/ScrollToTop.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/ScrollToTop.tsx::ScrollToTop",
       "target": "ext::typescript",
       "kind": "calls"
-    },
-    {
-      "source": "file::src/components/ScrollToTop.tsx",
-      "target": "sym::src/components/ScrollToTop.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/hooks/use-toast.ts",
@@ -2846,44 +3346,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::TOAST_LIMIT",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::TOAST_REMOVE_DELAY",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "target": "file::src/hooks/use-toast.ts",
-      "kind": "uses-type"
-    },
-    {
       "source": "sym::src/hooks/use-toast.ts::ToasterToast",
       "target": "sym::src/hooks/use-toast.ts::ToasterToast",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::actionTypes",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::count",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::genId",
-      "kind": "contains"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::genId",
@@ -2891,19 +3356,14 @@
       "kind": "calls"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::ActionType",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/hooks/use-toast.ts::ActionType",
       "target": "sym::src/hooks/use-toast.ts::ActionType",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::Action",
-      "kind": "contains"
+      "source": "sym::src/hooks/use-toast.ts::Action",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
@@ -2912,11 +3372,6 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::Action",
       "target": "sym::src/hooks/use-toast.ts::ActionType",
       "kind": "uses-type"
     },
@@ -2926,24 +3381,14 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
+      "source": "sym::src/hooks/use-toast.ts::State",
       "target": "sym::src/hooks/use-toast.ts::State",
-      "kind": "contains"
+      "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::State",
       "target": "sym::src/hooks/use-toast.ts::ToasterToast",
       "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::State",
-      "target": "sym::src/hooks/use-toast.ts::State",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::toastTimeouts",
-      "kind": "contains"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toastTimeouts",
@@ -2951,13 +3396,8 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::addToRemoveQueue",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/hooks/use-toast.ts::addToRemoveQueue",
-      "target": "file::src/hooks/use-toast.ts",
+      "target": "ext::typescript",
       "kind": "calls"
     },
     {
@@ -2967,13 +3407,8 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::addToRemoveQueue",
-      "target": "ext::typescript",
+      "target": "sym::src/hooks/use-toast.ts::dispatch",
       "kind": "calls"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::reducer",
-      "kind": "contains"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::reducer",
@@ -2991,11 +3426,6 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::listeners",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/hooks/use-toast.ts::listeners",
       "target": "ext::typescript",
       "kind": "uses-type"
@@ -3006,19 +3436,9 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::memoryState",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/hooks/use-toast.ts::memoryState",
       "target": "sym::src/hooks/use-toast.ts::State",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::dispatch",
-      "kind": "contains"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::dispatch",
@@ -3039,11 +3459,6 @@
       "source": "sym::src/hooks/use-toast.ts::dispatch",
       "target": "sym::src/hooks/use-toast.ts::Action",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::Toast",
-      "kind": "contains"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Toast",
@@ -3059,21 +3474,6 @@
       "source": "sym::src/hooks/use-toast.ts::Toast",
       "target": "sym::src/hooks/use-toast.ts::Toast",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::toast",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::dispatch",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::toast",
-      "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
@@ -3082,8 +3482,13 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
-      "kind": "uses-type"
+      "target": "sym::src/hooks/use-toast.ts::dispatch",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::toast",
+      "target": "sym::src/hooks/use-toast.ts::toast",
+      "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
@@ -3091,23 +3496,18 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/use-toast.ts",
-      "target": "sym::src/hooks/use-toast.ts::useToast",
-      "kind": "contains"
+      "source": "sym::src/hooks/use-toast.ts::toast",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::useToast",
-      "target": "file::src/hooks/use-toast.ts",
+      "target": "sym::src/hooks/use-toast.ts::dispatch",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::useToast",
       "target": "sym::src/hooks/use-toast.ts::listeners",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::useToast",
-      "target": "sym::src/hooks/use-toast.ts::dispatch",
       "kind": "calls"
     },
     {
@@ -3141,48 +3541,8 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastProvider",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastViewport",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastViewport",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/ui/toast.tsx::ToastViewport",
       "target": "sym::src/components/ui/toast.tsx::ToastViewport",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastViewport",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::toastVariants",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::toastVariants",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::Toast",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::Toast",
-      "target": "file::src/components/ui/toast.tsx",
       "kind": "calls"
     },
     {
@@ -3191,43 +3551,8 @@
       "kind": "calls"
     },
     {
-      "source": "sym::src/components/ui/toast.tsx::Toast",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::Toast",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastAction",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastAction",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/ui/toast.tsx::ToastAction",
       "target": "sym::src/components/ui/toast.tsx::ToastAction",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastAction",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastClose",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastClose",
-      "target": "file::src/components/ui/toast.tsx",
       "kind": "calls"
     },
     {
@@ -3236,64 +3561,19 @@
       "kind": "calls"
     },
     {
-      "source": "sym::src/components/ui/toast.tsx::ToastClose",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastTitle",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastTitle",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/ui/toast.tsx::ToastTitle",
       "target": "sym::src/components/ui/toast.tsx::ToastTitle",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastTitle",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastDescription",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastDescription",
-      "target": "file::src/components/ui/toast.tsx",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/ui/toast.tsx::ToastDescription",
       "target": "sym::src/components/ui/toast.tsx::ToastDescription",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/toast.tsx::ToastDescription",
-      "target": "file::src/components/ui/toast.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastProps",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/ui/toast.tsx::ToastProps",
       "target": "sym::src/components/ui/toast.tsx::ToastProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/ui/toast.tsx",
-      "target": "sym::src/components/ui/toast.tsx::ToastActionElement",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/ui/toast.tsx::ToastActionElement",
@@ -3309,21 +3589,6 @@
       "source": "file::src/lib/utils.ts",
       "target": "ext::tailwind-merge",
       "kind": "imports"
-    },
-    {
-      "source": "file::src/lib/utils.ts",
-      "target": "sym::src/lib/utils.ts::cn",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/lib/utils.ts::cn",
-      "target": "file::src/lib/utils.ts",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/lib/utils.ts::cn",
-      "target": "file::src/lib/utils.ts",
-      "kind": "uses-type"
     },
     {
       "source": "file::src/components/SuperPage.tsx",
@@ -3346,19 +3611,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/SuperPage.tsx",
-      "target": "sym::src/components/SuperPage.tsx::SuperPageProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/SuperPage.tsx::SuperPageProps",
       "target": "sym::src/components/SuperPage.tsx::SuperPageProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/SuperPage.tsx",
-      "target": "sym::src/components/SuperPage.tsx::SuperPage",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/SuperPage.tsx::SuperPage",
@@ -3367,18 +3622,8 @@
     },
     {
       "source": "sym::src/components/SuperPage.tsx::SuperPage",
-      "target": "file::src/components/SuperPage.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "sym::src/components/SuperPage.tsx::SuperPage",
       "target": "sym::src/components/SuperPage.tsx::SuperPageProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/SuperPage.tsx",
-      "target": "sym::src/components/SuperPage.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/BlogLayout.tsx",
@@ -3396,39 +3641,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/BlogLayout.tsx",
-      "target": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
       "target": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
       "kind": "uses-type"
     },
     {
-      "source": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
-      "target": "file::src/components/BlogLayout.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/BlogLayout.tsx",
-      "target": "sym::src/components/BlogLayout.tsx::BlogLayout",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/BlogLayout.tsx::BlogLayout",
-      "target": "file::src/components/BlogLayout.tsx",
-      "kind": "renders"
-    },
-    {
       "source": "sym::src/components/BlogLayout.tsx::BlogLayout",
       "target": "sym::src/components/BlogLayout.tsx::BlogLayoutProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/BlogLayout.tsx",
-      "target": "sym::src/components/BlogLayout.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/BlogListSection.tsx",
@@ -3441,39 +3661,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/BlogListSection.tsx",
-      "target": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
       "target": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
       "kind": "uses-type"
     },
     {
-      "source": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
-      "target": "file::src/components/BlogListSection.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/BlogListSection.tsx",
-      "target": "sym::src/components/BlogListSection.tsx::BlogListSection",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/BlogListSection.tsx::BlogListSection",
-      "target": "file::src/components/BlogListSection.tsx",
-      "kind": "renders"
-    },
-    {
       "source": "sym::src/components/BlogListSection.tsx::BlogListSection",
       "target": "sym::src/components/BlogListSection.tsx::BlogListSectionProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/BlogListSection.tsx",
-      "target": "sym::src/components/BlogListSection.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/blogPosts.ts",
@@ -3536,64 +3731,19 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/blogPosts.ts",
-      "target": "sym::src/blogPosts.ts::blogPosts",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/blogPosts.ts::blogPosts",
-      "target": "file::src/blogPosts.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/blogPosts.ts",
-      "target": "sym::src/blogPosts.ts::getPostsByCategory",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/blogPosts.ts::getPostsByCategory",
       "target": "sym::src/blogPosts.ts::blogPosts",
       "kind": "calls"
     },
     {
-      "source": "sym::src/blogPosts.ts::getPostsByCategory",
-      "target": "file::src/blogPosts.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/blogPosts.ts",
-      "target": "sym::src/blogPosts.ts::getPostBySlug",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/blogPosts.ts::getPostBySlug",
       "target": "sym::src/blogPosts.ts::blogPosts",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/blogPosts.ts::getPostBySlug",
-      "target": "file::src/blogPosts.ts",
-      "kind": "uses-type"
     },
     {
       "source": "file::src/lib/protection.ts",
       "target": "file::src/types/blog.ts",
       "kind": "imports"
-    },
-    {
-      "source": "file::src/lib/protection.ts",
-      "target": "sym::src/lib/protection.ts::getProtection",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/lib/protection.ts::getProtection",
-      "target": "file::src/lib/protection.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/lib/protection.ts",
-      "target": "sym::src/lib/protection.ts::matchesProtection",
-      "kind": "contains"
     },
     {
       "source": "sym::src/lib/protection.ts::matchesProtection",
@@ -3604,11 +3754,6 @@
       "source": "sym::src/lib/protection.ts::matchesProtection",
       "target": "ext::typescript",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/lib/protection.ts::matchesProtection",
-      "target": "file::src/lib/protection.ts",
-      "kind": "uses-type"
     },
     {
       "source": "file::src/components/CommentForm.tsx",
@@ -3621,38 +3766,23 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/CommentForm.tsx",
-      "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/CommentForm.tsx::CommentFormProps",
       "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/CommentForm.tsx",
-      "target": "sym::src/components/CommentForm.tsx::CommentForm",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/CommentForm.tsx::CommentForm",
-      "target": "file::src/components/CommentForm.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/CommentForm.tsx::CommentForm",
       "target": "sym::src/components/CommentForm.tsx::CommentForm",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/CommentForm.tsx::CommentForm",
-      "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
-      "kind": "uses-type"
     },
     {
       "source": "sym::src/components/CommentForm.tsx::CommentForm",
       "target": "ext::typescript",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/components/CommentForm.tsx::CommentForm",
+      "target": "sym::src/components/CommentForm.tsx::CommentFormProps",
       "kind": "uses-type"
     },
     {
@@ -3671,29 +3801,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/CommentList.tsx",
-      "target": "sym::src/components/CommentList.tsx::CommentListProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/CommentList.tsx::CommentListProps",
       "target": "sym::src/components/CommentList.tsx::CommentListProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/CommentList.tsx",
-      "target": "sym::src/components/CommentList.tsx::allCommentModules",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/CommentList.tsx",
-      "target": "sym::src/components/CommentList.tsx::CommentList",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/CommentList.tsx::CommentList",
-      "target": "file::src/components/CommentList.tsx",
-      "kind": "calls"
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
@@ -3708,11 +3818,6 @@
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
       "target": "sym::src/components/CommentList.tsx::CommentListProps",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/CommentList.tsx::CommentList",
-      "target": "file::src/components/CommentList.tsx",
       "kind": "uses-type"
     },
     {
@@ -3731,26 +3836,11 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/blog/AnonymousPromptForm.tsx",
-      "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptFormProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptFormProps",
       "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptFormProps",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/blog/AnonymousPromptForm.tsx",
-      "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptForm",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptForm",
-      "target": "file::src/components/blog/AnonymousPromptForm.tsx",
-      "kind": "calls"
-    },
-    {
       "source": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptForm",
       "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptForm",
       "kind": "calls"
@@ -3759,11 +3849,6 @@
       "source": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptForm",
       "target": "sym::src/components/blog/AnonymousPromptForm.tsx::AnonymousPromptFormProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/blog/AnonymousPromptForm.tsx",
-      "target": "sym::src/components/blog/AnonymousPromptForm.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/blog/BlogImageGallery.tsx",
@@ -3781,29 +3866,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/blog/BlogImageGallery.tsx",
-      "target": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
       "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
-      "target": "file::src/components/blog/BlogImageGallery.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
       "target": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/blog/BlogImageGallery.tsx",
-      "target": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGallery",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGallery",
@@ -3812,18 +3882,8 @@
     },
     {
       "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGallery",
-      "target": "file::src/components/blog/BlogImageGallery.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGallery",
       "target": "sym::src/components/blog/BlogImageGallery.tsx::BlogImageGalleryProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/blog/BlogImageGallery.tsx",
-      "target": "sym::src/components/blog/BlogImageGallery.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/blog/BlogPostNotFound.tsx",
@@ -3846,21 +3906,6 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/blog/BlogPostNotFound.tsx",
-      "target": "sym::src/components/blog/BlogPostNotFound.tsx::BlogPostNotFound",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/blog/BlogPostNotFound.tsx::BlogPostNotFound",
-      "target": "file::src/components/blog/BlogPostNotFound.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/blog/BlogPostNotFound.tsx",
-      "target": "sym::src/components/blog/BlogPostNotFound.tsx::default",
-      "kind": "contains"
-    },
-    {
       "source": "file::src/components/blog/ProtectionGate.tsx",
       "target": "ext::react",
       "kind": "imports"
@@ -3881,29 +3926,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/blog/ProtectionGate.tsx",
-      "target": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
-      "target": "file::src/components/blog/ProtectionGate.tsx",
-      "kind": "uses-type"
-    },
-    {
       "source": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
       "target": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/blog/ProtectionGate.tsx",
-      "target": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGate",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGate",
-      "target": "file::src/components/blog/ProtectionGate.tsx",
-      "kind": "calls"
     },
     {
       "source": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGate",
@@ -3912,18 +3937,8 @@
     },
     {
       "source": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGate",
-      "target": "file::src/components/blog/ProtectionGate.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGate",
       "target": "sym::src/components/blog/ProtectionGate.tsx::ProtectionGateProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/blog/ProtectionGate.tsx",
-      "target": "sym::src/components/blog/ProtectionGate.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/hooks/useStaticmanSubmit.ts",
@@ -3936,19 +3951,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/hooks/useStaticmanSubmit.ts",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
       "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/hooks/useStaticmanSubmit.ts",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
-      "kind": "contains"
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
@@ -3956,13 +3961,8 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/hooks/useStaticmanSubmit.ts",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "file::src/hooks/useStaticmanSubmit.ts",
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
       "kind": "calls"
     },
     {
@@ -3972,28 +3972,13 @@
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "kind": "calls"
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
+      "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
       "target": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
       "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::StaticmanStatus",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/lib/assets.ts",
-      "target": "sym::src/lib/assets.ts::base",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/lib/assets.ts",
-      "target": "sym::src/lib/assets.ts::assetUrl",
-      "kind": "contains"
     },
     {
       "source": "sym::src/lib/assets.ts::assetUrl",
@@ -4036,34 +4021,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::nodeTypes",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
-      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "kind": "uses-type"
-    },
-    {
       "source": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
       "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
-      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
@@ -4072,43 +4032,13 @@
     },
     {
       "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
-      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
-      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphInner",
       "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphView",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphView",
-      "target": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "kind": "renders"
     },
     {
       "source": "sym::src/components/architecture/ArchitectureGraph.tsx::ArchitectureGraphView",
       "target": "sym::src/components/architecture/ArchitectureGraph.tsx::Props",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/ArchitectureGraph.tsx",
-      "target": "sym::src/components/architecture/ArchitectureGraph.tsx::default",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::NodeKind",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/types.ts::NodeKind",
@@ -4116,29 +4046,14 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::EdgeKind",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/types.ts::EdgeKind",
       "target": "sym::src/components/architecture/types.ts::EdgeKind",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::ExternalSource",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/types.ts::ExternalSource",
       "target": "sym::src/components/architecture/types.ts::ExternalSource",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::ArchNode",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/types.ts::ArchNode",
@@ -4156,11 +4071,6 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::ArchEdge",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/types.ts::ArchEdge",
       "target": "sym::src/components/architecture/types.ts::EdgeKind",
       "kind": "uses-type"
@@ -4169,11 +4079,6 @@
       "source": "sym::src/components/architecture/types.ts::ArchEdge",
       "target": "sym::src/components/architecture/types.ts::ArchEdge",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::ArchitectureGraph",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/types.ts::ArchitectureGraph",
@@ -4189,11 +4094,6 @@
       "source": "sym::src/components/architecture/types.ts::ArchitectureGraph",
       "target": "sym::src/components/architecture/types.ts::ArchitectureGraph",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/types.ts",
-      "target": "sym::src/components/architecture/types.ts::Granularity",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/types.ts::Granularity",
@@ -4221,48 +4121,18 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/ui/button.tsx",
-      "target": "sym::src/components/ui/button.tsx::buttonVariants",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/ui/button.tsx::buttonVariants",
-      "target": "file::src/components/ui/button.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "file::src/components/ui/button.tsx",
-      "target": "sym::src/components/ui/button.tsx::ButtonProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/ui/button.tsx::ButtonProps",
       "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/ui/button.tsx::ButtonProps",
-      "target": "file::src/components/ui/button.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/ui/button.tsx::ButtonProps",
       "target": "sym::src/components/ui/button.tsx::ButtonProps",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/ui/button.tsx",
-      "target": "sym::src/components/ui/button.tsx::Button",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/ui/button.tsx::Button",
       "target": "sym::src/components/ui/button.tsx::Button",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/ui/button.tsx::Button",
-      "target": "file::src/components/ui/button.tsx",
       "kind": "calls"
     },
     {
@@ -4284,36 +4154,6 @@
       "source": "file::src/components/Navbar.tsx",
       "target": "file::src/data/categories.ts",
       "kind": "imports"
-    },
-    {
-      "source": "file::src/components/Navbar.tsx",
-      "target": "sym::src/components/Navbar.tsx::Navbar",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/Navbar.tsx::Navbar",
-      "target": "file::src/components/Navbar.tsx",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/Navbar.tsx::Navbar",
-      "target": "file::src/components/Navbar.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "file::src/components/Navbar.tsx",
-      "target": "sym::src/components/Navbar.tsx::default",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/Footer.tsx",
-      "target": "sym::src/components/Footer.tsx::Footer",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/Footer.tsx",
-      "target": "sym::src/components/Footer.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/BlogCard.tsx",
@@ -4336,39 +4176,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/BlogCard.tsx",
-      "target": "sym::src/components/BlogCard.tsx::BlogCardProps",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/BlogCard.tsx::BlogCardProps",
       "target": "sym::src/components/BlogCard.tsx::BlogCardProps",
       "kind": "uses-type"
     },
     {
-      "source": "sym::src/components/BlogCard.tsx::BlogCardProps",
-      "target": "file::src/components/BlogCard.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/BlogCard.tsx",
-      "target": "sym::src/components/BlogCard.tsx::BlogCard",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/BlogCard.tsx::BlogCard",
-      "target": "file::src/components/BlogCard.tsx",
-      "kind": "renders"
-    },
-    {
       "source": "sym::src/components/BlogCard.tsx::BlogCard",
       "target": "sym::src/components/BlogCard.tsx::BlogCardProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/BlogCard.tsx",
-      "target": "sym::src/components/BlogCard.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/types/blog.ts",
@@ -4376,21 +4191,11 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::ProtectionType",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/types/blog.ts::ProtectionType",
       "target": "sym::src/types/blog.ts::ProtectionType",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::Protection",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/types/blog.ts::Protection",
       "target": "sym::src/types/blog.ts::ProtectionType",
       "kind": "uses-type"
@@ -4399,11 +4204,6 @@
       "source": "sym::src/types/blog.ts::Protection",
       "target": "sym::src/types/blog.ts::Protection",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::RestrictedImage",
-      "kind": "contains"
     },
     {
       "source": "sym::src/types/blog.ts::RestrictedImage",
@@ -4411,23 +4211,8 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::AnonymousPrompt",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/types/blog.ts::AnonymousPrompt",
       "target": "sym::src/types/blog.ts::AnonymousPrompt",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::BlogPost",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/types/blog.ts::BlogPost",
-      "target": "file::src/types/blog.ts",
       "kind": "uses-type"
     },
     {
@@ -4456,19 +4241,9 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/data/categories.ts",
-      "target": "sym::src/data/categories.ts::Category",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/data/categories.ts::Category",
       "target": "sym::src/data/categories.ts::Category",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/data/categories.ts",
-      "target": "sym::src/data/categories.ts::categories",
-      "kind": "contains"
     },
     {
       "source": "sym::src/data/categories.ts::categories",
@@ -4476,29 +4251,14 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/data/categories.ts",
-      "target": "sym::src/data/categories.ts::CategoryId",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/data/categories.ts::CategoryId",
       "target": "sym::src/data/categories.ts::CategoryId",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/data/categories.ts",
-      "target": "sym::src/data/categories.ts::navCategories",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/data/categories.ts::navCategories",
       "target": "sym::src/data/categories.ts::categories",
       "kind": "calls"
-    },
-    {
-      "source": "file::src/data/categories.ts",
-      "target": "sym::src/data/categories.ts::getCategoryLabel",
-      "kind": "contains"
     },
     {
       "source": "sym::src/data/categories.ts::getCategoryLabel",
@@ -4511,29 +4271,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/data/protectionPresets.ts",
-      "target": "sym::src/data/protectionPresets.ts::privateBlogProtection",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/data/protectionPresets.ts::privateBlogProtection",
-      "target": "file::src/data/protectionPresets.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/types/comment.ts",
-      "target": "sym::src/types/comment.ts::Comment",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/types/comment.ts::Comment",
       "target": "sym::src/types/comment.ts::Comment",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/config/staticman.ts",
-      "target": "sym::src/config/staticman.ts::STATICMAN_ENDPOINT",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/architecture/GraphControls.tsx",
@@ -4546,39 +4286,9 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/architecture/GraphControls.tsx",
-      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
-      "target": "file::src/components/architecture/GraphControls.tsx",
-      "kind": "uses-type"
-    },
-    {
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
       "target": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/GraphControls.tsx",
-      "target": "sym::src/components/architecture/GraphControls.tsx::GRANULARITY_OPTIONS",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/GraphControls.tsx::GRANULARITY_OPTIONS",
-      "target": "file::src/components/architecture/GraphControls.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/GraphControls.tsx",
-      "target": "sym::src/components/architecture/GraphControls.tsx::DEPTHS",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/architecture/GraphControls.tsx",
-      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
@@ -4599,11 +4309,6 @@
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
       "target": "sym::src/components/architecture/GraphControls.tsx::GraphControlsProps",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/GraphControls.tsx",
-      "target": "sym::src/components/architecture/GraphControls.tsx::default",
-      "kind": "contains"
     },
     {
       "source": "file::src/components/architecture/NodeCard.tsx",
@@ -4631,49 +4336,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/architecture/NodeCard.tsx",
-      "target": "sym::src/components/architecture/NodeCard.tsx::KIND_ACCENT",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/NodeCard.tsx::KIND_ACCENT",
       "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
-      "source": "sym::src/components/architecture/NodeCard.tsx::KIND_ACCENT",
-      "target": "file::src/components/architecture/NodeCard.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/NodeCard.tsx",
-      "target": "sym::src/components/architecture/NodeCard.tsx::KIND_LABEL",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/NodeCard.tsx::KIND_LABEL",
       "target": "ext::typescript",
       "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/architecture/NodeCard.tsx::KIND_LABEL",
-      "target": "file::src/components/architecture/NodeCard.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/NodeCard.tsx",
-      "target": "sym::src/components/architecture/NodeCard.tsx::subtitleFor",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/NodeCard.tsx::subtitleFor",
-      "target": "file::src/components/architecture/NodeCard.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/NodeCard.tsx",
-      "target": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
@@ -4683,26 +4353,6 @@
     {
       "source": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
       "target": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
-      "target": "file::src/components/architecture/NodeCard.tsx",
-      "kind": "renders"
-    },
-    {
-      "source": "sym::src/components/architecture/NodeCard.tsx::NodeCardImpl",
-      "target": "file::src/components/architecture/NodeCard.tsx",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/NodeCard.tsx",
-      "target": "sym::src/components/architecture/NodeCard.tsx::NodeCard",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/NodeCard.tsx::NodeCard",
-      "target": "file::src/components/architecture/NodeCard.tsx",
       "kind": "calls"
     },
     {
@@ -4726,49 +4376,14 @@
       "kind": "imports"
     },
     {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
       "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::NODE_WIDTH",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::NODE_HEIGHT",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::SYMBOL_KINDS_FOR_GRANULARITY",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::SYMBOL_KINDS_FOR_GRANULARITY",
@@ -4776,39 +4391,9 @@
       "kind": "uses-type"
     },
     {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::SYMBOL_KINDS_FOR_GRANULARITY",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
@@ -4816,24 +4401,9 @@
       "kind": "calls"
     },
     {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
       "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
@@ -4841,39 +4411,14 @@
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_COLORS",
-      "kind": "contains"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_COLORS",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
-    },
-    {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_COLORS",
       "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_DASHED",
-      "kind": "contains"
-    },
-    {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_DASHED",
       "target": "ext::typescript",
       "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::EDGE_DASHED",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/components/architecture/useArchitectureGraph.ts",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "kind": "contains"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
@@ -4887,12 +4432,12 @@
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
+      "target": "ext::typescript",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
       "kind": "calls"
     },
     {
@@ -4902,27 +4447,17 @@
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "ext::typescript",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "file::src/components/architecture/useArchitectureGraph.ts",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::UseArchitectureGraphOptions",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::ArchNodeData",
       "kind": "uses-type"
     }
   ]
