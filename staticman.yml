@@ -23,3 +23,19 @@ comments:
       type: date
       options:
         format: "iso8601"
+
+subscribers:
+  allowedFields: ["email", "sourceSlug"]
+  requiredFields: ["email"]
+  branch: "main"
+  path: "src/subscribers/{options.slug}"
+  filename: "subscriber-{@timestamp}"
+  format: "yml"
+  moderation: true
+  reCaptcha:
+    enabled: false
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"

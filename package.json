@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "email:local": "node scripts/local-send-blog-email.mjs",
     "prebuild": "node scripts/regen-architecture.mjs",
     "build": "vite build",
     "build:dev": "vite build --mode development",
@@ -57,6 +58,7 @@
     "js-yaml": "^4.1.0",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
+    "nodemailer": "^8.0.7",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18.3.1",

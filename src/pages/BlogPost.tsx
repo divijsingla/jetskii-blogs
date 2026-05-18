@@ -8,6 +8,7 @@ import { CommentList } from "@/components/CommentList";
 import AnonymousPromptForm from "@/components/blog/AnonymousPromptForm";
 import BlogImageGallery from "@/components/blog/BlogImageGallery";
 import BlogPostNotFound from "@/components/blog/BlogPostNotFound";
+import BlogSubscribeFooter from "@/components/blog/BlogSubscribeFooter";
 import ProtectionGate from "@/components/blog/ProtectionGate";
 
 const BlogPost = () => {
@@ -44,6 +45,8 @@ const BlogPost = () => {
         restrictedImages={post.restrictedImages}
         unlockedCredential={unlockedCredential}
       />
+
+      <BlogSubscribeFooter />
 
       <section className="mt-12 border-t border-border pt-8">
         <h2 className="text-xl font-semibold mb-4 text-brand">Want to say something?</h2>
