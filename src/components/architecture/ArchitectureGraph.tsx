@@ -93,8 +93,8 @@ const ArchitectureGraphInner = ({ graph }: Props) => {
           onNodeClick={onNodeClick}
           proOptions={{ hideAttribution: true }}
         >
-          <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="hsl(24 60% 85%)" />
-          <MiniMap pannable zoomable nodeColor={() => "hsl(24 60% 70%)"} />
+          <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="hsl(var(--brand-85))" />
+          <MiniMap pannable zoomable nodeColor={() => "hsl(var(--brand-70))"} />
           <Controls />
         </ReactFlow>
       </div>

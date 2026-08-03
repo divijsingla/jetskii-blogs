@@ -5,26 +5,26 @@
 .markdown-brown h4,
 .markdown-brown h5,
 .markdown-brown h6 {
-  color: hsl(24,60%,30%) !important;
+  color: hsl(var(--brand)) !important;
 }
 .markdown-brown strong, .markdown-brown b {
-  color: hsl(24,60%,30%) !important;
+  color: hsl(var(--brand)) !important;
 }
 /* Brown highlighted links (override @uiw/react-markdown-preview's blue default) */
 .markdown-brown a,
 .markdown-brown a:link,
 .markdown-brown a:visited {
-  color: hsl(24,60%,25%) !important;
+  color: hsl(var(--brand-20)) !important;
   text-decoration: none !important;
-  background-color: hsl(24,60%,90%);
+  background-color: hsl(var(--brand-90));
   padding: 0 0.15em;
   border-radius: 2px;
   transition: background-color 0.15s ease-in-out;
 }
 .markdown-brown a:hover,
 .markdown-brown a:focus {
-  background-color: hsl(24,60%,80%);
-  color: hsl(24,60%,20%) !important;
+  background-color: hsl(var(--brand-80));
+  color: hsl(var(--brand-20)) !important;
 }
 /* Inline code inside a link should inherit the link's foreground colour */
 .markdown-brown a code {
@@ -39,6 +39,239 @@
   animation: loading-bar 1.2s linear infinite;
   will-change: transform;
 }
+
+/* Hover motion for hand-drawn blog covers.
+   The frame clips, the boil layer wobbles the whole drawing like frame-by-frame
+   animation, and the art layer runs a motion matched to what the drawing shows. */
+.cover-frame {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.cover-boil {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-art {
+  transform: scale(1.06);
+}
+
+.cover-motion-sway {
+  transform-origin: bottom center;
+}
+
+@keyframes cover-boil {
+  0%, 33%   { transform: rotate(-0.4deg) translate(0.4px, -0.3px); }
+  34%, 66%  { transform: rotate(0.5deg) translate(-0.3px, 0.4px); }
+  67%, 100% { transform: rotate(-0.15deg) translate(0.2px, 0.3px); }
+}
+
+@keyframes cover-beat {
+  0%        { transform: scale(1.06); }
+  12%       { transform: scale(1.15); }
+  24%       { transform: scale(1.08); }
+  36%       { transform: scale(1.13); }
+  52%, 100% { transform: scale(1.06); }
+}
+
+@keyframes cover-bob {
+  0%, 100% { transform: scale(1.06) translateY(0) rotate(0deg); }
+  25%      { transform: scale(1.06) translateY(-1.5%) rotate(1.4deg); }
+  75%      { transform: scale(1.06) translateY(1.5%) rotate(-1.4deg); }
+}
+
+@keyframes cover-drive {
+  0%   { transform: scale(1.06) translateX(0) translateY(0); }
+  35%  { transform: scale(1.11) translateX(-2%) translateY(0.5%); }
+  55%  { transform: scale(1.12) translateX(-2.6%) translateY(-0.5%); }
+  75%  { transform: scale(1.11) translateX(-2%) translateY(0.5%); }
+  100% { transform: scale(1.06) translateX(0) translateY(0); }
+}
+
+@keyframes cover-fall {
+  0%, 100% { transform: scale(1.06) translateY(0) rotate(0deg); }
+  50%      { transform: scale(1.09) translateY(3%) rotate(3deg); }
+}
+
+@keyframes cover-sway {
+  0%, 100% { transform: scale(1.06) rotate(0deg); }
+  25%      { transform: scale(1.06) rotate(1.6deg); }
+  75%      { transform: scale(1.06) rotate(-1.6deg); }
+}
+
+@keyframes cover-drift {
+  0%, 100% { transform: scale(1.06) translateY(0); }
+  50%      { transform: scale(1.12) translateY(-3%); }
+}
+
+/* Water covers: the drawing itself never moves. A second copy of the image is
+   masked down to just the wet part, rippled with an SVG displacement filter and
+   overlaid with scrolling glints so only the water appears to flow.
+   The mask coordinates are tuned per drawing, so the art must sit unscaled. */
+.cover-still {
+  transform: none;
+}
+
+.cover-water {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+
+.cover-water-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-water-glints {
+  position: absolute;
+  inset: -25% -25%;
+  mix-blend-mode: screen;
+}
+
+/* Waterfall cutting down the middle of the valley */
+.cover-water-river {
+  -webkit-mask-image: radial-gradient(ellipse 26% 46% at 44% 70%, #000 45%, transparent 100%);
+  mask-image: radial-gradient(ellipse 26% 46% at 44% 70%, #000 45%, transparent 100%);
+}
+
+.cover-water-river .cover-water-glints {
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0px,
+    rgba(255, 255, 255, 0.22) 5px,
+    rgba(255, 255, 255, 0) 14px
+  );
+}
+
+/* Open water on either side of the boat */
+.cover-water-sea {
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 15%, transparent 30%, transparent 70%, #000 85%, #000 100%);
+  mask-image: linear-gradient(to right, #000 0%, #000 15%, transparent 30%, transparent 70%, #000 85%, #000 100%);
+}
+
+.cover-water-sea .cover-water-glints {
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0px,
+    rgba(255, 255, 255, 0.16) 6px,
+    rgba(255, 255, 255, 0) 18px
+  );
+}
+
+/* The swell filling the lower half, below the falling figure */
+.cover-water-tide {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 34%, #000 56%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 34%, #000 56%, #000 100%);
+}
+
+.cover-water-tide .cover-water-glints {
+  background-image: repeating-linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 0px,
+    rgba(255, 255, 255, 0.18) 7px,
+    rgba(255, 255, 255, 0) 20px
+  );
+}
+
+@keyframes cover-glints-down {
+  from { transform: translateY(0); }
+  to   { transform: translateY(14px); }
+}
+
+@keyframes cover-glints-slow-down {
+  from { transform: translateY(0); }
+  to   { transform: translateY(18px); }
+}
+
+@keyframes cover-glints-across {
+  from { transform: translateX(0); }
+  to   { transform: translateX(20px); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cover-frame:hover .cover-water {
+    opacity: 1;
+  }
+
+  .cover-frame:hover .cover-water-river .cover-water-img {
+    filter: url(#cover-ripple-strong);
+  }
+
+  .cover-frame:hover .cover-water-sea .cover-water-img,
+  .cover-frame:hover .cover-water-tide .cover-water-img {
+    filter: url(#cover-ripple-soft);
+  }
+
+  .cover-frame:hover .cover-water-river .cover-water-glints {
+    animation: cover-glints-down 1.5s linear infinite;
+  }
+
+  .cover-frame:hover .cover-water-sea .cover-water-glints {
+    animation: cover-glints-slow-down 3.6s linear infinite;
+  }
+
+  .cover-frame:hover .cover-water-tide .cover-water-glints {
+    animation: cover-glints-across 5s linear infinite;
+  }
+
+  .cover-frame:hover .cover-boil-active,
+  .cover-frame:focus-visible .cover-boil-active {
+    animation: cover-boil 0.36s steps(1, end) infinite;
+    will-change: transform;
+  }
+
+  .cover-frame:hover .cover-art,
+  .cover-frame:focus-visible .cover-art {
+    will-change: transform;
+  }
+
+  .cover-frame:hover .cover-motion-beat {
+    animation: cover-beat 1.1s ease-in-out infinite;
+  }
+
+  .cover-frame:hover .cover-motion-bob {
+    animation: cover-bob 2.4s ease-in-out infinite;
+  }
+
+  .cover-frame:hover .cover-motion-drive {
+    animation: cover-drive 1.6s ease-in-out infinite;
+  }
+
+  .cover-frame:hover .cover-motion-fall {
+    animation: cover-fall 2.6s ease-in-out infinite;
+  }
+
+  .cover-frame:hover .cover-motion-sway {
+    animation: cover-sway 2.8s ease-in-out infinite;
+  }
+
+  .cover-frame:hover .cover-motion-drift {
+    animation: cover-drift 5s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover-frame:hover .cover-boil-active,
+  .cover-frame:focus-visible .cover-boil-active,
+  .cover-frame:hover .cover-art,
+  .cover-frame:focus-visible .cover-art,
+  .cover-frame:hover .cover-water-glints {
+    animation: none;
+  }
+
+  .cover-frame:hover .cover-water {
+    opacity: 0;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -64,7 +297,21 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 30 80% 40%;
+    --brand: 24 60% 30%;
+    --brand-20: 24 60% 20%;
+    --brand-25: 24 60% 25%;
+    --brand-30: 24 60% 30%;
+    --brand-40: 24 60% 40%;
+    --brand-60: 24 60% 60%;
+    --brand-70: 24 60% 70%;
+    --brand-80: 24 60% 80%;
+    --brand-85: 24 60% 85%;
+    --brand-90: 24 60% 90%;
+    --brand-92: 24 60% 92%;
+    --brand-94: 24 60% 94%;
+    --brand-95: 24 60% 95%;
     --radius: 0;
+    color-scheme: light;
   }
 
   .dark {
@@ -87,6 +334,20 @@
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 30 80% 60%;
+    --brand: 30 80% 68%;
+    --brand-20: 30 70% 88%;
+    --brand-25: 30 72% 80%;
+    --brand-30: 30 75% 74%;
+    --brand-40: 30 72% 62%;
+    --brand-60: 28 52% 50%;
+    --brand-70: 28 40% 38%;
+    --brand-80: 28 34% 29%;
+    --brand-85: 28 30% 24%;
+    --brand-90: 28 28% 20%;
+    --brand-92: 28 25% 18%;
+    --brand-94: 28 22% 16%;
+    --brand-95: 28 20% 14%;
+    color-scheme: dark;
   }
 
   html {
@@ -99,6 +360,13 @@
     line-height: 1.3;
     letter-spacing: normal;
     font-size: 1rem;
+  }
+
+  body,
+  input,
+  textarea,
+  select {
+    transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -119,4 +387,24 @@
   .shadow, .shadow-md, .shadow-lg, .shadow-sm, .shadow-xl, .shadow-2xl {
     box-shadow: none !important;
   }
+}
+
+.dark .bg-brand.text-white,
+.dark .hover\:text-white:hover {
+  color: hsl(var(--background));
+}
+
+.react-flow__controls-button,
+.react-flow__minimap {
+  background-color: hsl(var(--card)) !important;
+  border-color: hsl(var(--border)) !important;
+  color: hsl(var(--card-foreground)) !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: hsl(var(--accent)) !important;
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor !important;
 }

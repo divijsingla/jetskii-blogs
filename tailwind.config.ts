@@ -53,19 +53,19 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				brand: {
-					DEFAULT: 'hsl(24 60% 30%)',
-					20: 'hsl(24 60% 20%)',
-					25: 'hsl(24 60% 25%)',
-					30: 'hsl(24 60% 30%)',
-					40: 'hsl(24 60% 40%)',
-					60: 'hsl(24 60% 60%)',
-					70: 'hsl(24 60% 70%)',
-					80: 'hsl(24 60% 80%)',
-					85: 'hsl(24 60% 85%)',
-					90: 'hsl(24 60% 90%)',
-					92: 'hsl(24 60% 92%)',
-					94: 'hsl(24 60% 94%)',
-					95: 'hsl(24 60% 95%)'
+					DEFAULT: 'hsl(var(--brand))',
+					20: 'hsl(var(--brand-20))',
+					25: 'hsl(var(--brand-25))',
+					30: 'hsl(var(--brand-30))',
+					40: 'hsl(var(--brand-40))',
+					60: 'hsl(var(--brand-60))',
+					70: 'hsl(var(--brand-70))',
+					80: 'hsl(var(--brand-80))',
+					85: 'hsl(var(--brand-85))',
+					90: 'hsl(var(--brand-90))',
+					92: 'hsl(var(--brand-92))',
+					94: 'hsl(var(--brand-94))',
+					95: 'hsl(var(--brand-95))'
 				}
 			},
 			borderRadius: {

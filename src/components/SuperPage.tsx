@@ -1,5 +1,6 @@
 import BlogLayout from "@/components/BlogLayout";
 import MarkdownPreview from '@uiw/react-markdown-preview';
+import { useTheme } from "next-themes";
 import { Link } from "react-router-dom";
 import { assetUrl } from "@/lib/assets";
 
@@ -24,6 +25,8 @@ const SuperPage = ({
   image,
   children
 }: SuperPageProps) => {
+  const { resolvedTheme } = useTheme();
+
   return (
     <BlogLayout>
       <div className="max-w-2xl px-2 py-4 ml-0">
@@ -78,19 +81,20 @@ const SuperPage = ({
                 <div className="w-full" style={{ maxWidth: '70rem' }}>
                   <MarkdownPreview 
                     source={content} 
+                    data-color-mode={resolvedTheme === "dark" ? "dark" : "light"}
                     style={{ 
                       background: 'transparent', 
                       fontFamily: 'inherit', 
                       color: 'inherit', 
                       fontSize: '1rem',
-                      '--brown': 'hsl(24,60%,30%)',
                     } as React.CSSProperties}
                     className="!bg-transparent !text-foreground !font-mono !text-base markdown-brown"
                     components={{
                       hr: (props) => (
                         <hr
                           style={{
-                            border: "0.1px solid #000", // thin black line
+                            border: "0.1px solid currentColor",
+                            opacity: 0.35,
                             margin: "1rem 0"
                           }}
                           {...props}

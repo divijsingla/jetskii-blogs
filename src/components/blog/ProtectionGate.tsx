@@ -25,7 +25,7 @@ const ProtectionGate: React.FC<ProtectionGateProps> = ({ protection, onUnlock })
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-brand-94">
-      <div className="w-full max-w-sm p-8 rounded-lg shadow-lg border border-brand bg-white">
+      <div className="w-full max-w-sm p-8 rounded-lg shadow-lg border border-brand bg-card text-card-foreground">
         <form onSubmit={handleSubmit}>
           <label htmlFor="credential" className="block text-lg font-medium text-brand mb-4 text-center">
             {protection.label}
@@ -36,7 +36,7 @@ const ProtectionGate: React.FC<ProtectionGateProps> = ({ protection, onUnlock })
             value={credential}
             onChange={(e) => setCredential(e.target.value)}
             placeholder={protection.placeholder || (isPassword ? "Password" : "Your Name")}
-            className="border border-brand px-3 py-2 rounded w-full mb-2 focus:outline-none focus:ring-2 focus:ring-brand text-center"
+            className="border border-brand bg-background text-foreground px-3 py-2 rounded w-full mb-2 focus:outline-none focus:ring-2 focus:ring-brand text-center"
             required
             autoFocus
           />

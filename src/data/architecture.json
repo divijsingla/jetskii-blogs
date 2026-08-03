@@ -1,8 +1,8 @@
 {
   "meta": {
     "entry": "src/main.tsx",
-    "commit": "49eca82",
-    "generatedAt": "2026-05-17T11:24:35+00:00",
+    "commit": "904b321",
+    "generatedAt": "2026-08-03T08:44:27+00:00",
     "tool": "codearchview",
     "toolVersion": "0.1.0"
   },
@@ -221,13 +221,134 @@
       "path": "src/pages/BlogList.tsx"
     },
     {
+      "id": "sym::src/pages/BlogList.tsx::SortView",
+      "kind": "type",
+      "name": "SortView",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 8,
+        "endLine": 8
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::DATE_VIEW_LABEL",
+      "kind": "const",
+      "name": "DATE_VIEW_LABEL",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 10,
+        "endLine": 10
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::TECH_VIEW_LABEL",
+      "kind": "const",
+      "name": "TECH_VIEW_LABEL",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 11,
+        "endLine": 11
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::CURATED_VIEW_LABEL",
+      "kind": "const",
+      "name": "CURATED_VIEW_LABEL",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 12,
+        "endLine": 12
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::TECH_FLOW_SLUG_ORDER",
+      "kind": "const",
+      "name": "TECH_FLOW_SLUG_ORDER",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 14,
+        "endLine": 24
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::FIRST_TIME_SLUG_ORDER",
+      "kind": "const",
+      "name": "FIRST_TIME_SLUG_ORDER",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 26,
+        "endLine": 36
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::parseDate",
+      "kind": "const",
+      "name": "parseDate",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 38,
+        "endLine": 43
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::sortByDateDesc",
+      "kind": "const",
+      "name": "sortByDateDesc",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 45,
+        "endLine": 46
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "kind": "const",
+      "name": "sortByCustomFlow",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 48,
+        "endLine": 53
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::sortByTechFlow",
+      "kind": "const",
+      "name": "sortByTechFlow",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 55,
+        "endLine": 55
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/pages/BlogList.tsx::sortByCuratedFlow",
+      "kind": "const",
+      "name": "sortByCuratedFlow",
+      "file": "src/pages/BlogList.tsx",
+      "loc": {
+        "startLine": 57,
+        "endLine": 57
+      },
+      "exported": false
+    },
+    {
       "id": "sym::src/pages/BlogList.tsx::BlogList",
       "kind": "component",
       "name": "BlogList",
       "file": "src/pages/BlogList.tsx",
       "loc": {
-        "startLine": 5,
-        "endLine": 18
+        "startLine": 59,
+        "endLine": 123
       },
       "exported": false
     },
@@ -237,8 +358,8 @@
       "name": "default",
       "file": "src/pages/BlogList.tsx",
       "loc": {
-        "startLine": 20,
-        "endLine": 20
+        "startLine": 125,
+        "endLine": 125
       },
       "exported": true
     },
@@ -254,8 +375,8 @@
       "name": "BlogPost",
       "file": "src/pages/BlogPost.tsx",
       "loc": {
-        "startLine": 13,
-        "endLine": 57
+        "startLine": 14,
+        "endLine": 60
       },
       "exported": false
     },
@@ -265,8 +386,8 @@
       "name": "default",
       "file": "src/pages/BlogPost.tsx",
       "loc": {
-        "startLine": 59,
-        "endLine": 59
+        "startLine": 62,
+        "endLine": 62
       },
       "exported": true
     },
@@ -311,7 +432,7 @@
       "file": "src/pages/BooksPage.tsx",
       "loc": {
         "startLine": 6,
-        "endLine": 15
+        "endLine": 17
       },
       "exported": false
     },
@@ -321,8 +442,8 @@
       "name": "childhoodBooks",
       "file": "src/pages/BooksPage.tsx",
       "loc": {
-        "startLine": 17,
-        "endLine": 22
+        "startLine": 19,
+        "endLine": 24
       },
       "exported": false
     },
@@ -332,8 +453,8 @@
       "name": "BookRecommendationForm",
       "file": "src/pages/BooksPage.tsx",
       "loc": {
-        "startLine": 26,
-        "endLine": 84
+        "startLine": 28,
+        "endLine": 86
       },
       "exported": false
     },
@@ -343,8 +464,8 @@
       "name": "BooksPage",
       "file": "src/pages/BooksPage.tsx",
       "loc": {
-        "startLine": 86,
-        "endLine": 127
+        "startLine": 88,
+        "endLine": 153
       },
       "exported": false
     },
@@ -354,8 +475,8 @@
       "name": "default",
       "file": "src/pages/BooksPage.tsx",
       "loc": {
-        "startLine": 129,
-        "endLine": 129
+        "startLine": 155,
+        "endLine": 155
       },
       "exported": true
     },
@@ -976,6 +1097,67 @@
       "exported": true
     },
     {
+      "id": "file::src/types/blog.ts",
+      "kind": "file",
+      "name": "blog.ts",
+      "path": "src/types/blog.ts"
+    },
+    {
+      "id": "sym::src/types/blog.ts::ProtectionType",
+      "kind": "type",
+      "name": "ProtectionType",
+      "file": "src/types/blog.ts",
+      "loc": {
+        "startLine": 3,
+        "endLine": 3
+      },
+      "exported": true
+    },
+    {
+      "id": "sym::src/types/blog.ts::Protection",
+      "kind": "interface",
+      "name": "Protection",
+      "file": "src/types/blog.ts",
+      "loc": {
+        "startLine": 5,
+        "endLine": 12
+      },
+      "exported": true
+    },
+    {
+      "id": "sym::src/types/blog.ts::RestrictedImage",
+      "kind": "interface",
+      "name": "RestrictedImage",
+      "file": "src/types/blog.ts",
+      "loc": {
+        "startLine": 14,
+        "endLine": 17
+      },
+      "exported": true
+    },
+    {
+      "id": "sym::src/types/blog.ts::AnonymousPrompt",
+      "kind": "interface",
+      "name": "AnonymousPrompt",
+      "file": "src/types/blog.ts",
+      "loc": {
+        "startLine": 19,
+        "endLine": 21
+      },
+      "exported": true
+    },
+    {
+      "id": "sym::src/types/blog.ts::BlogPost",
+      "kind": "interface",
+      "name": "BlogPost",
+      "file": "src/types/blog.ts",
+      "loc": {
+        "startLine": 23,
+        "endLine": 39
+      },
+      "exported": true
+    },
+    {
       "id": "file::src/lib/protection.ts",
       "kind": "file",
       "name": "protection.ts",
@@ -1177,6 +1359,45 @@
       "exported": true
     },
     {
+      "id": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "kind": "file",
+      "name": "BlogSubscribeFooter.tsx",
+      "path": "src/components/blog/BlogSubscribeFooter.tsx"
+    },
+    {
+      "id": "sym::src/components/blog/BlogSubscribeFooter.tsx::SubscribeStatus",
+      "kind": "type",
+      "name": "SubscribeStatus",
+      "file": "src/components/blog/BlogSubscribeFooter.tsx",
+      "loc": {
+        "startLine": 5,
+        "endLine": 5
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "kind": "component",
+      "name": "BlogSubscribeFooter",
+      "file": "src/components/blog/BlogSubscribeFooter.tsx",
+      "loc": {
+        "startLine": 7,
+        "endLine": 70
+      },
+      "exported": false
+    },
+    {
+      "id": "sym::src/components/blog/BlogSubscribeFooter.tsx::default",
+      "kind": "default-export",
+      "name": "default",
+      "file": "src/components/blog/BlogSubscribeFooter.tsx",
+      "loc": {
+        "startLine": 72,
+        "endLine": 72
+      },
+      "exported": true
+    },
+    {
       "id": "file::src/components/blog/ProtectionGate.tsx",
       "kind": "file",
       "name": "ProtectionGate.tsx",
@@ -1239,7 +1460,7 @@
       "file": "src/hooks/useStaticmanSubmit.ts",
       "loc": {
         "startLine": 6,
-        "endLine": 11
+        "endLine": 12
       },
       "exported": false
     },
@@ -1249,8 +1470,8 @@
       "name": "useStaticmanSubmit",
       "file": "src/hooks/useStaticmanSubmit.ts",
       "loc": {
-        "startLine": 13,
-        "endLine": 50
+        "startLine": 14,
+        "endLine": 55
       },
       "exported": true
     },
@@ -1561,67 +1782,6 @@
       "exported": true
     },
     {
-      "id": "file::src/types/blog.ts",
-      "kind": "file",
-      "name": "blog.ts",
-      "path": "src/types/blog.ts"
-    },
-    {
-      "id": "sym::src/types/blog.ts::ProtectionType",
-      "kind": "type",
-      "name": "ProtectionType",
-      "file": "src/types/blog.ts",
-      "loc": {
-        "startLine": 3,
-        "endLine": 3
-      },
-      "exported": true
-    },
-    {
-      "id": "sym::src/types/blog.ts::Protection",
-      "kind": "interface",
-      "name": "Protection",
-      "file": "src/types/blog.ts",
-      "loc": {
-        "startLine": 5,
-        "endLine": 12
-      },
-      "exported": true
-    },
-    {
-      "id": "sym::src/types/blog.ts::RestrictedImage",
-      "kind": "interface",
-      "name": "RestrictedImage",
-      "file": "src/types/blog.ts",
-      "loc": {
-        "startLine": 14,
-        "endLine": 17
-      },
-      "exported": true
-    },
-    {
-      "id": "sym::src/types/blog.ts::AnonymousPrompt",
-      "kind": "interface",
-      "name": "AnonymousPrompt",
-      "file": "src/types/blog.ts",
-      "loc": {
-        "startLine": 19,
-        "endLine": 21
-      },
-      "exported": true
-    },
-    {
-      "id": "sym::src/types/blog.ts::BlogPost",
-      "kind": "interface",
-      "name": "BlogPost",
-      "file": "src/types/blog.ts",
-      "loc": {
-        "startLine": 23,
-        "endLine": 39
-      },
-      "exported": true
-    },
-    {
       "id": "file::src/data/categories.ts",
       "kind": "file",
       "name": "categories.ts",
@@ -1645,7 +1805,7 @@
       "file": "src/data/categories.ts",
       "loc": {
         "startLine": 8,
-        "endLine": 14
+        "endLine": 15
       },
       "exported": true
     },
@@ -1655,8 +1815,8 @@
       "name": "CategoryId",
       "file": "src/data/categories.ts",
       "loc": {
-        "startLine": 16,
-        "endLine": 16
+        "startLine": 17,
+        "endLine": 17
       },
       "exported": true
     },
@@ -1666,8 +1826,8 @@
       "name": "navCategories",
       "file": "src/data/categories.ts",
       "loc": {
-        "startLine": 18,
-        "endLine": 18
+        "startLine": 19,
+        "endLine": 19
       },
       "exported": true
     },
@@ -1677,8 +1837,8 @@
       "name": "getCategoryLabel",
       "file": "src/data/categories.ts",
       "loc": {
-        "startLine": 20,
-        "endLine": 21
+        "startLine": 21,
+        "endLine": 22
       },
       "exported": true
     },
@@ -1723,13 +1883,35 @@
       "path": "src/config/staticman.ts"
     },
     {
+      "id": "sym::src/config/staticman.ts::STATICMAN_BASE",
+      "kind": "const",
+      "name": "STATICMAN_BASE",
+      "file": "src/config/staticman.ts",
+      "loc": {
+        "startLine": 1,
+        "endLine": 2
+      },
+      "exported": false
+    },
+    {
       "id": "sym::src/config/staticman.ts::STATICMAN_ENDPOINT",
       "kind": "const",
       "name": "STATICMAN_ENDPOINT",
       "file": "src/config/staticman.ts",
       "loc": {
-        "startLine": 1,
-        "endLine": 2
+        "startLine": 4,
+        "endLine": 4
+      },
+      "exported": true
+    },
+    {
+      "id": "sym::src/config/staticman.ts::STATICMAN_SUBSCRIBERS_ENDPOINT",
+      "kind": "const",
+      "name": "STATICMAN_SUBSCRIBERS_ENDPOINT",
+      "file": "src/config/staticman.ts",
+      "loc": {
+        "startLine": 5,
+        "endLine": 5
       },
       "exported": true
     },
@@ -2048,6 +2230,12 @@
       "source": "npm"
     },
     {
+      "id": "ext::date-fns",
+      "kind": "external",
+      "name": "date-fns",
+      "source": "npm"
+    },
+    {
       "id": "file::src/data/architecture.json",
       "kind": "file",
       "name": "architecture.json",
@@ -2248,6 +2436,61 @@
     {
       "source": "file::src/pages/Index.tsx",
       "target": "sym::src/pages/Index.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::SortView",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::DATE_VIEW_LABEL",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::TECH_VIEW_LABEL",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::CURATED_VIEW_LABEL",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::TECH_FLOW_SLUG_ORDER",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::FIRST_TIME_SLUG_ORDER",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::parseDate",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::sortByDateDesc",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::sortByTechFlow",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "sym::src/pages/BlogList.tsx::sortByCuratedFlow",
       "kind": "contains"
     },
     {
@@ -2556,6 +2799,31 @@
       "kind": "contains"
     },
     {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::ProtectionType",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::Protection",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::RestrictedImage",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::AnonymousPrompt",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/types/blog.ts",
+      "target": "sym::src/types/blog.ts::BlogPost",
+      "kind": "contains"
+    },
+    {
       "source": "file::src/lib/protection.ts",
       "target": "sym::src/lib/protection.ts::getProtection",
       "kind": "contains"
@@ -2628,6 +2896,21 @@
     {
       "source": "file::src/components/blog/BlogPostNotFound.tsx",
       "target": "sym::src/components/blog/BlogPostNotFound.tsx::default",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "target": "sym::src/components/blog/BlogSubscribeFooter.tsx::SubscribeStatus",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "target": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "target": "sym::src/components/blog/BlogSubscribeFooter.tsx::default",
       "kind": "contains"
     },
     {
@@ -2781,31 +3064,6 @@
       "kind": "contains"
     },
     {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::ProtectionType",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::Protection",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::RestrictedImage",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::AnonymousPrompt",
-      "kind": "contains"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "sym::src/types/blog.ts::BlogPost",
-      "kind": "contains"
-    },
-    {
       "source": "file::src/data/categories.ts",
       "target": "sym::src/data/categories.ts::Category",
       "kind": "contains"
@@ -2842,7 +3100,17 @@
     },
     {
       "source": "file::src/config/staticman.ts",
+      "target": "sym::src/config/staticman.ts::STATICMAN_BASE",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/config/staticman.ts",
       "target": "sym::src/config/staticman.ts::STATICMAN_ENDPOINT",
+      "kind": "contains"
+    },
+    {
+      "source": "file::src/config/staticman.ts",
+      "target": "sym::src/config/staticman.ts::STATICMAN_SUBSCRIBERS_ENDPOINT",
       "kind": "contains"
     },
     {
@@ -3117,6 +3385,16 @@
     },
     {
       "source": "file::src/pages/BlogList.tsx",
+      "target": "ext::react",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "ext::date-fns",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
       "target": "file::src/components/BlogLayout.tsx",
       "kind": "imports"
     },
@@ -3129,6 +3407,76 @@
       "source": "file::src/pages/BlogList.tsx",
       "target": "file::src/blogPosts.ts",
       "kind": "imports"
+    },
+    {
+      "source": "file::src/pages/BlogList.tsx",
+      "target": "file::src/types/blog.ts",
+      "kind": "imports"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::SortView",
+      "target": "sym::src/pages/BlogList.tsx::SortView",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::parseDate",
+      "target": "ext::typescript",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::parseDate",
+      "target": "sym::src/pages/BlogList.tsx::parseDate",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::sortByDateDesc",
+      "target": "sym::src/pages/BlogList.tsx::parseDate",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "target": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "target": "ext::typescript",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "target": "sym::src/pages/BlogList.tsx::parseDate",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::sortByTechFlow",
+      "target": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::sortByCuratedFlow",
+      "target": "sym::src/pages/BlogList.tsx::sortByCustomFlow",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::BlogList",
+      "target": "sym::src/pages/BlogList.tsx::sortByTechFlow",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::BlogList",
+      "target": "sym::src/pages/BlogList.tsx::sortByDateDesc",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::BlogList",
+      "target": "sym::src/pages/BlogList.tsx::sortByCuratedFlow",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BlogList.tsx::BlogList",
+      "target": "sym::src/pages/BlogList.tsx::SortView",
+      "kind": "uses-type"
     },
     {
       "source": "file::src/pages/BlogPost.tsx",
@@ -3182,6 +3530,11 @@
     },
     {
       "source": "file::src/pages/BlogPost.tsx",
+      "target": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/pages/BlogPost.tsx",
       "target": "file::src/components/blog/ProtectionGate.tsx",
       "kind": "imports"
     },
@@ -3229,6 +3582,11 @@
       "source": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
       "target": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
       "kind": "calls"
+    },
+    {
+      "source": "sym::src/pages/BooksPage.tsx::BookRecommendationForm",
+      "target": "ext::typescript",
+      "kind": "uses-type"
     },
     {
       "source": "sym::src/pages/BooksPage.tsx::BooksPage",
@@ -3362,12 +3720,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
-      "target": "ext::typescript",
+      "target": "sym::src/hooks/use-toast.ts::ActionType",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::Action",
-      "target": "sym::src/hooks/use-toast.ts::ActionType",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -3412,12 +3770,12 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::reducer",
-      "target": "sym::src/hooks/use-toast.ts::Action",
+      "target": "sym::src/hooks/use-toast.ts::State",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::reducer",
-      "target": "sym::src/hooks/use-toast.ts::State",
+      "target": "sym::src/hooks/use-toast.ts::Action",
       "kind": "uses-type"
     },
     {
@@ -3437,11 +3795,6 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::dispatch",
-      "target": "sym::src/hooks/use-toast.ts::listeners",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/hooks/use-toast.ts::dispatch",
       "target": "sym::src/hooks/use-toast.ts::reducer",
       "kind": "calls"
     },
@@ -3452,7 +3805,17 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::dispatch",
+      "target": "sym::src/hooks/use-toast.ts::listeners",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::dispatch",
       "target": "sym::src/hooks/use-toast.ts::Action",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/hooks/use-toast.ts::Toast",
+      "target": "ext::typescript",
       "kind": "uses-type"
     },
     {
@@ -3466,13 +3829,8 @@
       "kind": "uses-type"
     },
     {
-      "source": "sym::src/hooks/use-toast.ts::Toast",
-      "target": "ext::typescript",
-      "kind": "uses-type"
-    },
-    {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::genId",
+      "target": "sym::src/hooks/use-toast.ts::dispatch",
       "kind": "calls"
     },
     {
@@ -3482,17 +3840,17 @@
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::dispatch",
+      "target": "sym::src/hooks/use-toast.ts::genId",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::Toast",
+      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/use-toast.ts::toast",
-      "target": "sym::src/hooks/use-toast.ts::ToasterToast",
+      "target": "sym::src/hooks/use-toast.ts::Toast",
       "kind": "uses-type"
     },
     {
@@ -3736,6 +4094,61 @@
       "kind": "calls"
     },
     {
+      "source": "file::src/types/blog.ts",
+      "target": "file::src/data/categories.ts",
+      "kind": "imports"
+    },
+    {
+      "source": "sym::src/types/blog.ts::ProtectionType",
+      "target": "sym::src/types/blog.ts::ProtectionType",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::Protection",
+      "target": "sym::src/types/blog.ts::ProtectionType",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::Protection",
+      "target": "sym::src/types/blog.ts::Protection",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::RestrictedImage",
+      "target": "sym::src/types/blog.ts::RestrictedImage",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::AnonymousPrompt",
+      "target": "sym::src/types/blog.ts::AnonymousPrompt",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::BlogPost",
+      "target": "sym::src/types/blog.ts::Protection",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::BlogPost",
+      "target": "sym::src/types/blog.ts::AnonymousPrompt",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::BlogPost",
+      "target": "ext::typescript",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::BlogPost",
+      "target": "sym::src/types/blog.ts::RestrictedImage",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/types/blog.ts::BlogPost",
+      "target": "sym::src/types/blog.ts::BlogPost",
+      "kind": "uses-type"
+    },
+    {
       "source": "file::src/lib/protection.ts",
       "target": "file::src/types/blog.ts",
       "kind": "imports"
@@ -3802,22 +4215,22 @@
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
-      "target": "ext::typescript",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/CommentList.tsx::CommentList",
       "target": "sym::src/components/CommentList.tsx::CommentList",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
-      "target": "sym::src/components/CommentList.tsx::CommentListProps",
-      "kind": "uses-type"
+      "target": "ext::typescript",
+      "kind": "calls"
     },
     {
       "source": "sym::src/components/CommentList.tsx::CommentList",
       "target": "ext::typescript",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/components/CommentList.tsx::CommentList",
+      "target": "sym::src/components/CommentList.tsx::CommentListProps",
       "kind": "uses-type"
     },
     {
@@ -3901,6 +4314,46 @@
       "kind": "imports"
     },
     {
+      "source": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "target": "ext::react",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "target": "file::src/config/staticman.ts",
+      "kind": "imports"
+    },
+    {
+      "source": "file::src/components/blog/BlogSubscribeFooter.tsx",
+      "target": "file::src/hooks/useStaticmanSubmit.ts",
+      "kind": "imports"
+    },
+    {
+      "source": "sym::src/components/blog/BlogSubscribeFooter.tsx::SubscribeStatus",
+      "target": "sym::src/components/blog/BlogSubscribeFooter.tsx::SubscribeStatus",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "target": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "target": "ext::typescript",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "target": "sym::src/components/blog/BlogSubscribeFooter.tsx::SubscribeStatus",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/components/blog/BlogSubscribeFooter.tsx::BlogSubscribeFooter",
+      "target": "ext::typescript",
+      "kind": "uses-type"
+    },
+    {
       "source": "file::src/components/blog/ProtectionGate.tsx",
       "target": "ext::react",
       "kind": "imports"
@@ -3952,17 +4405,22 @@
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
+      "target": "ext::typescript",
+      "kind": "uses-type"
+    },
+    {
+      "source": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
       "target": "sym::src/hooks/useStaticmanSubmit.ts::SubmitArgs",
       "kind": "uses-type"
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "ext::typescript",
+      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
       "kind": "calls"
     },
     {
       "source": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
-      "target": "sym::src/hooks/useStaticmanSubmit.ts::useStaticmanSubmit",
+      "target": "ext::typescript",
       "kind": "calls"
     },
     {
@@ -4151,11 +4609,6 @@
       "kind": "imports"
     },
     {
-      "source": "sym::src/components/Navbar.tsx::Navbar",
-      "target": "sym::src/components/Navbar.tsx::Navbar",
-      "kind": "calls"
-    },
-    {
       "source": "file::src/components/BlogCard.tsx",
       "target": "ext::react-router-dom",
       "kind": "imports"
@@ -4183,61 +4636,6 @@
     {
       "source": "sym::src/components/BlogCard.tsx::BlogCard",
       "target": "sym::src/components/BlogCard.tsx::BlogCardProps",
-      "kind": "uses-type"
-    },
-    {
-      "source": "file::src/types/blog.ts",
-      "target": "file::src/data/categories.ts",
-      "kind": "imports"
-    },
-    {
-      "source": "sym::src/types/blog.ts::ProtectionType",
-      "target": "sym::src/types/blog.ts::ProtectionType",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::Protection",
-      "target": "sym::src/types/blog.ts::ProtectionType",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::Protection",
-      "target": "sym::src/types/blog.ts::Protection",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::RestrictedImage",
-      "target": "sym::src/types/blog.ts::RestrictedImage",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::AnonymousPrompt",
-      "target": "sym::src/types/blog.ts::AnonymousPrompt",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::BlogPost",
-      "target": "sym::src/types/blog.ts::Protection",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::BlogPost",
-      "target": "sym::src/types/blog.ts::AnonymousPrompt",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::BlogPost",
-      "target": "ext::typescript",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::BlogPost",
-      "target": "sym::src/types/blog.ts::RestrictedImage",
-      "kind": "uses-type"
-    },
-    {
-      "source": "sym::src/types/blog.ts::BlogPost",
-      "target": "sym::src/types/blog.ts::BlogPost",
       "kind": "uses-type"
     },
     {
@@ -4297,12 +4695,12 @@
     },
     {
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
-      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
+      "target": "sym::src/components/architecture/GraphControls.tsx::DEPTHS",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
-      "target": "sym::src/components/architecture/GraphControls.tsx::DEPTHS",
+      "target": "sym::src/components/architecture/GraphControls.tsx::GraphControls",
       "kind": "calls"
     },
     {
@@ -4432,22 +4830,22 @@
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
-      "kind": "calls"
-    },
-    {
-      "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
       "target": "sym::src/components/architecture/useArchitectureGraph.ts::collapseEdge",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
       "kind": "calls"
     },
     {
       "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
-      "target": "sym::src/components/architecture/useArchitectureGraph.ts::layout",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::keepNodeForGranularity",
+      "kind": "calls"
+    },
+    {
+      "source": "sym::src/components/architecture/useArchitectureGraph.ts::useArchitectureGraph",
+      "target": "sym::src/components/architecture/useArchitectureGraph.ts::neighborhood",
       "kind": "calls"
     },
     {

@@ -26,9 +26,9 @@ const TECH_FLOW_SLUG_ORDER = [
 const FIRST_TIME_SLUG_ORDER = [
   "my-schedule",
   "intro",
+  "massless-rockets",
   "basis-of-effortlessness",
   "codearchview",
-  "massless-rockets",
   "musings-3",
   "musings-1",
   "musings-2",
