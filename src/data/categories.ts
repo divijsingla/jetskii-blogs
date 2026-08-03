@@ -6,10 +6,11 @@ export interface Category {
 }
 
 export const categories = [
-  { id: "musings", label: "Musings", inNav: true },
-  { id: "misc", label: "Miscellaneous", navLabel: "Misc", inNav: true },
+  // Temporarily hidden from navbar
+  { id: "musings", label: "Musings", inNav: false },
+  { id: "misc", label: "Miscellaneous", navLabel: "Misc", inNav: false },
   { id: "math", label: "Mathematics", inNav: false },
-  { id: "tech", label: "Technology", navLabel: "Tech", inNav: true },
+  { id: "tech", label: "Technology", navLabel: "Tech", inNav: false },
   { id: "music", label: "Music", inNav: false },
 ] as const satisfies readonly Category[];
 

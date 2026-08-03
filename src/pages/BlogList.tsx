@@ -57,7 +57,7 @@ const sortByTechFlow = (posts: BlogPost[]) => sortByCustomFlow(posts, TECH_FLOW_
 const sortByCuratedFlow = (posts: BlogPost[]) => sortByCustomFlow(posts, FIRST_TIME_SLUG_ORDER);
 
 const BlogList = () => {
-  const [view, setView] = useState<SortView>("date");
+  const [view, setView] = useState<SortView>("curated");
 
   const posts = useMemo(() => {
     if (view === "tech") return sortByTechFlow(blogPosts);

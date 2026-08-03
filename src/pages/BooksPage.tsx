@@ -4,7 +4,7 @@ import { useStaticmanSubmit } from "@/hooks/useStaticmanSubmit";
 import { assetUrl } from "@/lib/assets";
 
 const bookCovers = [
-  { src: 'book_covers/the_stranger.jpg', alt: "The Stranger, Albert Camus", reading: true },
+  { src: 'book_covers/the_stranger.jpg', alt: "The Stranger, Albert Camus" },
   { src: 'book_covers/horrible_science.jpg', alt: "Horrible Science: Space, Stars and Slimy Aliens, Nick Arnold" },
   { src: 'book_covers/peter_atkins.jpg', alt: "Atkin's Physical Chemistry, Peter William Atkins", reading: true },
   { src: 'book_covers/paul_hoffman_erdos.jpg', alt: "The Man Who Loved Only Numbers, Paul Hoffman", reading: true },
@@ -12,6 +12,8 @@ const bookCovers = [
   { src: 'book_covers/almanack.jpg', alt: "The Almanack of Naval Ravikant, Eric Jorgenson" },
   { src: 'book_covers/cant_hurt_me.jpg', alt: "Can't Hurt Me, David Goggins" },
   { src: 'book_covers/shoe_dog.jpg', alt: "Shoe Dog, Phil Knight", reading: true },
+  { src: 'book_covers/hitchhikers.png', alt: "The Hitchhiker's Guide to the Galaxy, Douglas Adams" },
+  { src: 'book_covers/hitchhikers_2.png', alt: "The Restaurant at the End of the Universe, Douglas Adams", reading: true },
 ];
 
 const childhoodBooks = [
